@@ -150,13 +150,39 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
   ```
   - (void)didShowBanner:(id)obj
   {
-    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]]   withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
   }
 
   - (void)openNoAdCallback:(id)obj
   {
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
   }
+  ```
+5. Additional Coding for Video Banner (optional)
+
+  To support auto pause and play when the banner scoll-off or scoll-on screen.
+
+  ```
+  #pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+      [HotmobManager calculateBannerPositionWithView:scrollView cellItems:self.tableView.visibleCells forVideoAdsBannerCell:_bannerViewCell andBanner:_bannerView];
+}
+  ```
+  and change the hotmobManagerDelegate as below
+  ```
+  #pragma mark - HotmobManagerDelegate
+- (void)didShowBanner:(id)obj {
+      [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+      [HotmobManager calculateBannerPositionWithView:self.tableView cellItems:self.tableView.visibleCells forVideoAdsBannerCell:_bannerViewCell andBanner:_bannerView];
+}
+
+- (void)openNoAdCallback:(id)obj {
+      [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+}
   ```
   ---
 
