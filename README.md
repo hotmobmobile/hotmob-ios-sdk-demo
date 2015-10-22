@@ -6,7 +6,7 @@ Visit http://www.hot-mob.com/ for more details.
 ### How To Get Started
 ---
 * [Download Hotmob iOS SDK](https://github.com/hotmobmobile/hotmob-ios-sdk/archive/master.zip) and try out the included iPhone example apps
-* Read the ["Getting Started" guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started), or [other articles on the Wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki)
+* Read the ["Getting Started" guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started), ["Overview"](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Overview) , or [other articles on the Wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki)
 * Check out the [documentation](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki) for a comprehensive look at all of the APIs available in Hotmob SDK
 * Read the [Hotmob SDK 4.0 Migration Guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Hotmob-SDK-4.0-Migration-Guide) for an overview of the architectural changes from 3.0 or below
 
@@ -35,8 +35,8 @@ Visit http://www.hot-mob.com/ for more details.
 ---
 | HotmobSDK Version     | Minimum iOS Target    | Notes |
 | --------              |---------              |-------|
-| 4.x                   | iOS 6                 |    Support Native Video Ad Format|
-| 3.x                   | iOS 5.1               |       |
+| 4.x                   | iOS 6                 |   Updated to ARC structure   |
+| 3.x                   | iOS 5.1               |   Architecture optimization    |
 
 ### Basic Usage
 ---
