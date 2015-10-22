@@ -12,7 +12,7 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 ---
 1. [Download the Hotmob iOS SDK from Github](https://github.com/hotmobmobile/hotmob-ios-sdk/archive/master.zip) or download link we provided.
 2. Drag the HotmobSDK into your project.
-3. Make sure `HotmobSDK.a` `HotmobSDK.bundle` `HotmobSDK.h` has been added into your project.
+3. Make sure `HotmobSDK.a` `HotmobSDK.bundle` `HotmobSDK.h` is added into your project.
 4. Set `View controller-based status bar appearance` to `NO` in Project `info.plist`.
 5. Add value `-ObjC` to `Other Linker Flags` in your project `Build Settings`.
 
@@ -41,7 +41,7 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 ---
 
 #### Popup
-In HotmobSDK create the Hotmob Popup can refercence following step.
+To create the Hotmob Popup can refercence following step.
 
 1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
@@ -63,7 +63,7 @@ In HotmobSDK create the Hotmob Popup can refercence following step.
   ---
 
 ####  Footer Banner
-In HotmobSDK create the Hotmob Banner can refercence following step.
+To create the Hotmob Banner can refercence following step.
 
 1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
@@ -107,7 +107,7 @@ In HotmobSDK create the Hotmob Banner can refercence following step.
 ---
 
 #### Banner in TableView
-In Hotmob SDK create the banner view and pass into UITableView can refercence following step.
+To create the Hotmob banner view and pass banner into UITableView can refercence following step.
 
 1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
