@@ -34,7 +34,7 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 ---
 | HotmobSDK Version     | Minimum iOS Target    | Notes |
 | --------              |---------              |-------|
-| 4.x                   | iOS 6                 |       |
+| 4.x                   | iOS 6                 |    Support Video Ads Format|
 | 3.x                   | iOS 5.1               |       |
 
 ### Usage
