@@ -3,19 +3,20 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 
 ### How To Get Started
 ---
-* Download Hotmob iOS SDK and try out the included iPhone example apps.
-* Check out the documentation for a comprehensive look at all of the APIs available in Hotmob SDK.
-* Read the Hotmob SDK 4.0 Migration Guide for an overview of the architectural changes from 3.0 or below.
+* [Download Hotmob iOS SDK](https://github.com/hotmobmobile/hotmob-ios-sdk/archive/master.zip) and try out the included iPhone example apps
+* Read the ["Getting Started" guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started), or [other articles on the Wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki)
+* Check out the [documentation](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki) for a comprehensive look at all of the APIs available in Hotmob SDK
+* Read the Hotmob SDK 4.0 Migration Guide for an overview of the architectural changes from 3.0 or below
 
-### Installation 
+### Integration 
 ---
-1. Download the Hotmob iOS SDK from Github or download link we provided.
+1. [Download the Hotmob iOS SDK from Github](https://github.com/hotmobmobile/hotmob-ios-sdk/archive/master.zip) or download link we provided.
 2. Drag the HotmobSDK into your project.
 3. Make sure `HotmobSDK.a` `HotmobSDK.bundle` `HotmobSDK.h` has been added into your project.
-4. Set `View controller-based status bar appearance` to `NO` in your `info.plist`.
+4. Set `View controller-based status bar appearance` to `NO` in Project `info.plist`.
 5. Add value `-ObjC` to `Other Linker Flags` in your project `Build Settings`.
 
-> If you application is no support the ARC `Automatic Reference Counting`, Please find Installation guide in wiki.
+> If your project is no support the ARC `Automatic Reference Counting`, Please find [Installation guide in wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started#settings-for-non-arc-projects).
 
 
 > You can try to implement following code to confirm `HotmobSDK`  is functional in your project.
@@ -23,7 +24,7 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 // Add to AppDelegate.h
 #import "HotmobManager.h"
 // Add to `-(bool)application: didFinishLaunchingWithOptions:` at AppDelegate.m
-[HotmobManager setDebug:NO];
+[HotmobManager setDebug:YES];
 [HotmobManager getPopup:nil delegate:nil identifier:@"launch" adCode:@"hotmob_uat_iphone_launch_popup" showWhenResume:YES autoRefresh:YES];
 ```
 
@@ -40,7 +41,8 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 ---
 
 #### Popup
-In the HotmobSDK create the Hotmob Popup can refercence following step.
+In HotmobSDK create the Hotmob Popup can refercence following step.
+
 1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
   ```
@@ -58,9 +60,10 @@ In the HotmobSDK create the Hotmob Popup can refercence following step.
   ```
     [HotmobManager getPopup:nil delegate:nil identifier:@"launch" adCode:@"hotmob_uat_iphone_launch_popup" showWhenResume:YES autoRefresh:YES];
   ```
+  ---
 
 ####  Footer Banner
-In the HotmobSDK create the Hotmob Banner can refercence following step.
+In HotmobSDK create the Hotmob Banner can refercence following step.
 
 1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
@@ -156,6 +159,8 @@ In Hotmob SDK create the banner view and pass into UITableView can refercence fo
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
   }
   ```
+  ---
 
 ### Contact
+---
 Website: [http://www.hot-mob.com](http://www.hot-mob.com/)
