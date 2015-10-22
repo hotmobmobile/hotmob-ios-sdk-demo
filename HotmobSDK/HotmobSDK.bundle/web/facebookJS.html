@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<body>
+<div id='fb-root'></div>
+<script src='http://connect.facebook.net/en_US/all.js'></script>
+<p id='msg'></p>
+<script>
+
+    FB.init({appId: "95858652582", status: true, cookie: true});
+    function share() {
+        var share = {
+            method: 'stream.share',
+            u: '%@'
+        };
+        FB.ui(share, null);
+    }
+    
+    
+</script>
+</body>
+</html>
