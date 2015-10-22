@@ -1,12 +1,14 @@
 ###[Hotmob](http://www.hot-mob.com/)
 Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong Kong, where monetizes the mobile taffic of the top ranked publishers into revenue and meanwhile connects advertisers to target audience effectively.
 
+Visit http://www.hot-mob.com/ for more details.
+
 ### How To Get Started
 ---
 * [Download Hotmob iOS SDK](https://github.com/hotmobmobile/hotmob-ios-sdk/archive/master.zip) and try out the included iPhone example apps
 * Read the ["Getting Started" guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started), or [other articles on the Wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki)
 * Check out the [documentation](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki) for a comprehensive look at all of the APIs available in Hotmob SDK
-* Read the Hotmob SDK 4.0 Migration Guide for an overview of the architectural changes from 3.0 or below
+* Read the [Hotmob SDK 4.0 Migration Guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Hotmob-SDK-4.0-Migration-Guide) for an overview of the architectural changes from 3.0 or below
 
 ### Integration 
 ---
@@ -33,7 +35,7 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 ---
 | HotmobSDK Version     | Minimum iOS Target    | Notes |
 | --------              |---------              |-------|
-| 4.x                   | iOS 6                 |    Support Video Ads Format|
+| 4.x                   | iOS 6                 |    Support Native Video Ad Format|
 | 3.x                   | iOS 5.1               |       |
 
 ### Basic Usage
@@ -158,7 +160,7 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
   }
   ```
-5. Additional Coding for Video Banner (optional)
+5. Additional Coding for Native Video Ad (optional)
 
   To support auto pause and play when the banner scoll-off or scoll-on screen.
 
