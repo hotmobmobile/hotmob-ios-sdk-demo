@@ -37,7 +37,7 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 | 4.x                   | iOS 6                 |    Support Video Ads Format|
 | 3.x                   | iOS 5.1               |       |
 
-### Usage
+### Basic Usage
 ---
 
 #### Popup
