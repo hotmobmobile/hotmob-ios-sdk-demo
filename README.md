@@ -18,7 +18,6 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 
 > If your project is no support the ARC `Automatic Reference Counting`, Please find [Installation guide in wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started#settings-for-non-arc-projects).
 
-
 > You can try to implement following code to confirm `HotmobSDK`  is functional in your project.
 ```
 // Add to AppDelegate.h
@@ -161,6 +160,7 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
   ```
   ---
 
+Other usage can refercence to wiki [Integrating Banner](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Integrating-Banner), [Integrating Popup](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Integrating-Popup).
 ### Contact
 ---
 Website: [http://www.hot-mob.com](http://www.hot-mob.com/)
