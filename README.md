@@ -1,12 +1,14 @@
 ###[Hotmob](http://www.hot-mob.com/)
 Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong Kong, where monetizes the mobile taffic of the top ranked publishers into revenue and meanwhile connects advertisers to target audience effectively.
 
+Visit http://www.hot-mob.com/ for more details.
+
 ### How To Get Started
 ---
 * [Download Hotmob iOS SDK](https://github.com/hotmobmobile/hotmob-ios-sdk/archive/master.zip) and try out the included iPhone example apps
-* Read the ["Getting Started" guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started), or [other articles on the Wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki)
+* Read the ["Getting Started" guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started), ["Overview"](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Overview) , or [other articles on the Wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki)
 * Check out the [documentation](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki) for a comprehensive look at all of the APIs available in Hotmob SDK
-* Read the Hotmob SDK 4.0 Migration Guide for an overview of the architectural changes from 3.0 or below
+* Read the [Hotmob SDK 4.0 Migration Guide](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Hotmob-SDK-4.0-Migration-Guide) for an overview of the architectural changes from 3.0 or below
 
 ### Integration 
 ---
@@ -19,7 +21,7 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 > If your project is no support the ARC `Automatic Reference Counting`, Please find [Installation guide in wiki](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Getting-Started#settings-for-non-arc-projects).
 
 > You can try to implement following code to confirm `HotmobSDK`  is functional in your project.
-```
+```objectivec
 // Add to AppDelegate.h
 #import "HotmobManager.h"
 // Add to `-(bool)application: didFinishLaunchingWithOptions:` at AppDelegate.m
@@ -33,8 +35,8 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 ---
 | HotmobSDK Version     | Minimum iOS Target    | Notes |
 | --------              |---------              |-------|
-| 4.x                   | iOS 6                 |    Support Video Ads Format|
-| 3.x                   | iOS 5.1               |       |
+| 4.x                   | iOS 6                 |   Updated to ARC structure   |
+| 3.x                   | iOS 5.1               |   Architecture optimization    |
 
 ### Basic Usage
 ---
@@ -44,19 +46,19 @@ To create the Hotmob Popup can refercence following step.
 
 1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
-  ```
+  ```objectivec
   #import "HotmobManager.h"
   ...
   @interface MyViewController : UIViewController <HotmobManagerDelegate> (Optional)
   ```
 2. When you call the popup in the `AppDelegate` or first time using in your application. Please using the following code to start the `HotmobManager`
 
-  ```
+  ```objectivec
     [HotmobManager setDebug:NO];
   ```
 3. Now you can request the popup by `+getPopup:delegate:identifier:adCode:showWhenResume:autoRefresh:`
 
-  ```
+  ```objectivec
     [HotmobManager getPopup:nil delegate:nil identifier:@"launch" adCode:@"hotmob_uat_iphone_launch_popup" showWhenResume:YES autoRefresh:YES];
   ```
   ---
@@ -66,14 +68,14 @@ To create the Hotmob Banner can refercence following step.
 
 1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
-  ```
+  ```objectivec
   #import "HotmobManager.h"
   ...
   @interface MyViewController : UIViewController <HotmobManagerDelegate>
   ```
 2. Create the Banner view and add this banner to ViewController in `- (void)viewWillAppear:(BOOL)animated`
 
-  ```
+  ```objectivec
   - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
@@ -89,7 +91,7 @@ To create the Hotmob Banner can refercence following step.
   }
   ```
 3. Resize the UI element and the banner, when the banner is readly
-  ```
+  ```objectivec
   #pragma mark - HotmobManagerDelegate
 - (void)didLoadBanner:(id)obj {
       UIView *view = obj;
@@ -110,14 +112,14 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
 
 1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
-  ```
+  ```objectivec
   #import "HotmobManager.h"
   ...
   @interface MyViewController : UIViewController <HotmobManagerDelegate>
   ```
 2. Identifier which row of UITableView you Want to show the banner in `-(UITableViewCell *)tableView: cellForRowAtIndexPath:`
 
-  ```
+  ```objectivec
   static NSString *cellIdentifier = @"bannerCell";
         
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -138,7 +140,7 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
   ```
 3. Set height of banner cell in `- (CGFloat)tableView: heightForRowAtIndexPath:`
 
-  ```
+  ```objectivec
   if (indexPath.row == 11) {
     return _bannerView.frame.size.height;
   } else {
@@ -147,7 +149,7 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
   ```
 4. Impelement the delegate methom and resize the banner cell
 
-  ```
+  ```objectivec
   - (void)didShowBanner:(id)obj
   {
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
@@ -158,11 +160,11 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
   }
   ```
-5. Additional Coding for Video Banner (optional)
+5. Additional Coding for Native Video Ad (optional)
 
   To support auto pause and play when the banner scoll-off or scoll-on screen.
 
-  ```
+  ```objectivec
   #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     
@@ -173,7 +175,7 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
 }
   ```
   and change the hotmobManagerDelegate as below
-  ```
+  ```objectivec
   #pragma mark - HotmobManagerDelegate
 - (void)didShowBanner:(id)obj {
       [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
