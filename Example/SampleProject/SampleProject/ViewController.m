@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "HotmobManager.h"
 
+#import "HotmobDemoGoogleBannerMediationViewController.h"
+#import "HotmobDemoGooglePopupMediationViewController.h"
+
 @interface ViewController () <HotmobManagerDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
@@ -21,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.itemsArray = @[@"Banner", @"Popups", @"Video Ads Banner", @"Multiple Banners"];
+    self.itemsArray = @[@"Banner", @"Popups", @"Video Ads Banner", @"Multiple Banners", @"Mediation Banner", @"Mediation Popup"];
     
     [self.tableView setTranslatesAutoresizingMaskIntoConstraints:YES];
 }
@@ -41,7 +44,7 @@
     UIView *bannerView = [HotmobManager getBanner:self
                                          delegate:self
                                        identifier:@"MainPageFooterBanner"
-                                           adCode:@"hotmob_uat_iphone_image_inapp_banner"
+                                           adCode:@"hotmob_iphone_sample_dynamic"
                                              size:bannerRect];
     /*
      add the banner to current view
@@ -99,7 +102,15 @@
         case 3:
             [self performSegueWithIdentifier:@"pushToMultipleBannerView" sender:self.view];
             break;
-        
+        case 4:{
+            HotmobDemoGoogleBannerMediationViewController *controller = [[HotmobDemoGoogleBannerMediationViewController alloc]initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:controller animated:YES];
+            break;
+        }
+        case 5:{
+            HotmobDemoGooglePopupMediationViewController *controller = [[HotmobDemoGooglePopupMediationViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
     }
 }
 

@@ -21,6 +21,11 @@
 		14E8646A1BD09BF900D7BEBA /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E864691BD09BF900D7BEBA /* PopupViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14E8646D1BD0A29700D7BEBA /* VideoBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8646C1BD0A29700D7BEBA /* VideoBannerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14E864701BD0AE9500D7BEBA /* multipleBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8646F1BD0AE9500D7BEBA /* multipleBannerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		14EEF89E1BDDBF2F00F0A7A4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EEF8951BDDBF2F00F0A7A4 /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
+		14EEF89F1BDDBF2F00F0A7A4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF89C1BDDBF2F00F0A7A4 /* README.txt */; settings = {ASSET_TAGS = (); }; };
+		14EEF8A01BDDBF2F00F0A7A4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF89D1BDDBF2F00F0A7A4 /* README.txt */; settings = {ASSET_TAGS = (); }; };
+		14EEF8A31BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF8A21BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		14EEF8A61BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF8A51BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,18 @@
 		14E8646C1BD0A29700D7BEBA /* VideoBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoBannerViewController.m; sourceTree = "<group>"; };
 		14E8646E1BD0AE9500D7BEBA /* multipleBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multipleBannerViewController.h; sourceTree = "<group>"; };
 		14E8646F1BD0AE9500D7BEBA /* multipleBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = multipleBannerViewController.m; sourceTree = "<group>"; };
+		14EEF8951BDDBF2F00F0A7A4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		14EEF8971BDDBF2F00F0A7A4 /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		14EEF8981BDDBF2F00F0A7A4 /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		14EEF8991BDDBF2F00F0A7A4 /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
+		14EEF89A1BDDBF2F00F0A7A4 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		14EEF89B1BDDBF2F00F0A7A4 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		14EEF89C1BDDBF2F00F0A7A4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		14EEF89D1BDDBF2F00F0A7A4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		14EEF8A11BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotmobDemoGoogleBannerMediationViewController.h; sourceTree = "<group>"; };
+		14EEF8A21BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotmobDemoGoogleBannerMediationViewController.m; sourceTree = "<group>"; };
+		14EEF8A41BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotmobDemoGooglePopupMediationViewController.h; sourceTree = "<group>"; };
+		14EEF8A51BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotmobDemoGooglePopupMediationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EEF89E1BDDBF2F00F0A7A4 /* GoogleMobileAds.framework in Frameworks */,
 				14E864661BCFA24900D7BEBA /* HotmobSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				14E864621BCFA24900D7BEBA /* HotmobSDK */,
+				14EEF8941BDDBF2F00F0A7A4 /* GoogleMobileAdsSDK */,
 				14E864211BCF66D800D7BEBA /* SampleProject */,
 				14E8643B1BCF66D800D7BEBA /* SampleProjectTests */,
 				14E864461BCF66D800D7BEBA /* SampleProjectUITests */,
@@ -132,6 +151,10 @@
 				14E8646C1BD0A29700D7BEBA /* VideoBannerViewController.m */,
 				14E8646E1BD0AE9500D7BEBA /* multipleBannerViewController.h */,
 				14E8646F1BD0AE9500D7BEBA /* multipleBannerViewController.m */,
+				14EEF8A11BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.h */,
+				14EEF8A21BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m */,
+				14EEF8A41BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.h */,
+				14EEF8A51BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m */,
 				14E8642B1BCF66D800D7BEBA /* Main.storyboard */,
 				14E8642E1BCF66D800D7BEBA /* Assets.xcassets */,
 				14E864301BCF66D800D7BEBA /* LaunchScreen.storyboard */,
@@ -175,6 +198,29 @@
 				14E864651BCFA24900D7BEBA /* HotmobSDK.bundle */,
 			);
 			path = HotmobSDK;
+			sourceTree = "<group>";
+		};
+		14EEF8941BDDBF2F00F0A7A4 /* GoogleMobileAdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				14EEF8951BDDBF2F00F0A7A4 /* GoogleMobileAds.framework */,
+				14EEF8961BDDBF2F00F0A7A4 /* Mediation Adapters */,
+				14EEF89D1BDDBF2F00F0A7A4 /* README.txt */,
+			);
+			path = GoogleMobileAdsSDK;
+			sourceTree = "<group>";
+		};
+		14EEF8961BDDBF2F00F0A7A4 /* Mediation Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				14EEF8971BDDBF2F00F0A7A4 /* GADMAdNetworkAdapterProtocol.h */,
+				14EEF8981BDDBF2F00F0A7A4 /* GADMAdNetworkConnectorProtocol.h */,
+				14EEF8991BDDBF2F00F0A7A4 /* GADMEnums.h */,
+				14EEF89A1BDDBF2F00F0A7A4 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
+				14EEF89B1BDDBF2F00F0A7A4 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
+				14EEF89C1BDDBF2F00F0A7A4 /* README.txt */,
+			);
+			path = "Mediation Adapters";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +330,8 @@
 				14E8642F1BCF66D800D7BEBA /* Assets.xcassets in Resources */,
 				14E8642D1BCF66D800D7BEBA /* Main.storyboard in Resources */,
 				14E864671BCFA24900D7BEBA /* HotmobSDK.bundle in Resources */,
+				14EEF8A01BDDBF2F00F0A7A4 /* README.txt in Resources */,
+				14EEF89F1BDDBF2F00F0A7A4 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +360,9 @@
 				14E8642A1BCF66D800D7BEBA /* ViewController.m in Sources */,
 				14E864271BCF66D800D7BEBA /* AppDelegate.m in Sources */,
 				14E8645F1BCFA17800D7BEBA /* BannerViewController.m in Sources */,
+				14EEF8A31BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m in Sources */,
 				14E864241BCF66D800D7BEBA /* main.m in Sources */,
+				14EEF8A61BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m in Sources */,
 				14E8646D1BD0A29700D7BEBA /* VideoBannerViewController.m in Sources */,
 				14E8646A1BD09BF900D7BEBA /* PopupViewController.m in Sources */,
 			);
@@ -389,6 +439,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -432,6 +483,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -453,6 +505,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSDK",
+				);
 				INFOPLIST_FILE = SampleProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -470,6 +526,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSDK",
+				);
 				INFOPLIST_FILE = SampleProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -550,6 +610,7 @@
 				14E8644E1BCF66D800D7BEBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14E8644F1BCF66D800D7BEBA /* Build configuration list for PBXNativeTarget "SampleProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +619,7 @@
 				14E864511BCF66D800D7BEBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14E864521BCF66D800D7BEBA /* Build configuration list for PBXNativeTarget "SampleProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +628,7 @@
 				14E864541BCF66D800D7BEBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

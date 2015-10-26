@@ -31,7 +31,13 @@
      identifier "hotmob_uat_iphone_launch_popup"    , the identifier let hotmob sdk to reuse banner object
      showWhenResume                                 , set the popup when auto reload when resume app from background
      */
-    [HotmobManager getPopup:nil delegate:self identifier:@"launch" adCode:@"hotmob_uat_iphone_launch_popup" showWhenResume:YES autoRefresh:YES];
+    
+    NSString *adcode = @"hotmob_iphone_sample_popup";
+    if (!IS_IPHONE_4_OR_LESS) {
+        adcode = [adcode stringByReplacingOccurrencesOfString:@"iphone" withString:@"iphone5"];
+    }
+    
+    [HotmobManager getPopup:nil delegate:self identifier:@"launch" adCode:adcode showWhenResume:YES autoRefresh:YES];
     
     return YES;
 }
