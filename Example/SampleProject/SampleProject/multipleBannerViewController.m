@@ -71,7 +71,7 @@
             }
         }
         
-        NSString *adCode = @"hotmob_uat_iphone_image_inapp_banner";
+        NSString *adCode = @"hotmob_iphone_sample_dynamic";
         
         if (bannerView == nil) {
             bannerView = [HotmobManager getBanner:self delegate:self identifier:cellIdentifier adCode:adCode size:CGRectMake(0, 0, self.view.frame.size.width, 0)];

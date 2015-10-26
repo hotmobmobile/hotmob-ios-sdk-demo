@@ -26,13 +26,19 @@
 }
 
 - (IBAction)normalPopupClick:(id)sender {
+    
+    NSString *adcode = @"hotmob_iphone_sample_popup";
+    if (!IS_IPHONE_4_OR_LESS) {
+        adcode = [adcode stringByReplacingOccurrencesOfString:@"iphone" withString:@"iphone5"];
+    }
+    
     // Load popup
-    [HotmobManager getPopup:self delegate:self identifier:@"popViewNormalBanner" adCode:[@"hotmob_uat_iphone_image_inapp_popup" stringByReplacingOccurrencesOfString:@"iphone" withString:@"iphone5"] showWhenResume:NO];
+    [HotmobManager getPopup:self delegate:self identifier:@"popViewNormalBanner" adCode:adcode showWhenResume:NO];
 }
 
 - (IBAction)videoPopupClick:(id)sender {
     // Load popup
-    [HotmobManager getPopup:self delegate:self identifier:@"popViewVideoBanner" adCode:[@"hotmob_uat_iphone_videoads_inapp_popup" stringByReplacingOccurrencesOfString:@"iphone" withString:@"iphone5"] showWhenResume:NO];
+    [HotmobManager getPopup:self delegate:self identifier:@"popViewVideoBanner" adCode:@"hotmob_iphone_sample_video_popup" showWhenResume:NO];
 }
 
 #pragma mark - HotmobManagerDelegate

@@ -58,7 +58,7 @@
         
         // Configure the cell...
         if (self.bannerView == nil) {
-            self.bannerView = [HotmobManager getBanner:self delegate:self identifier:@"videoBannerViewSample" adCode:@"hotmob_iphone_videoads_banner" size:CGRectMake(0, 0, self.view.frame.size.width, 0)];
+            self.bannerView = [HotmobManager getBanner:self delegate:self identifier:@"videoBannerViewSample" adCode:@"hotmob_iphone_sample_video_banner" size:CGRectMake(0, 0, self.view.frame.size.width, 0)];
         }
         
         [HotmobManager transitBanner:_bannerView toCell:cell];

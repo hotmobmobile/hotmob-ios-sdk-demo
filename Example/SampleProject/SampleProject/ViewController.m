@@ -44,7 +44,7 @@
     UIView *bannerView = [HotmobManager getBanner:self
                                          delegate:self
                                        identifier:@"MainPageFooterBanner"
-                                           adCode:@"hotmob_uat_iphone_image_inapp_banner"
+                                           adCode:@"hotmob_iphone_sample_dynamic"
                                              size:bannerRect];
     /*
      add the banner to current view
