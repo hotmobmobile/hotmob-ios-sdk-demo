@@ -16,6 +16,15 @@ extern NSString * const HotmobBannerSetEnableFadeinAnimation;
 extern NSString * const HotmobBannerSetFadeinDirection;
 extern NSString * const HotmobBannerSetAutoRefreshDelay;
 
+extern NSString * const HotmobBannerSetExternalMessagePrompt;
+extern NSString * const HotmobBannerSetDialMessagePrompt;
+extern NSString * const HotmobBannerSetSMSMessagePrompt;
+extern NSString * const HotmobBannerSetEmailMessagePrompt;
+extern NSString * const HotmobBannerSetiCalMessagePrompt;
+extern NSString * const HotmobBannerSetMessageConfirmPrompt;
+extern NSString * const HotmobBannerSetMessageCancelPrompt;
+
+
 enum
 {
     HotmobBannerFadeoutDirectionNone = 0,
@@ -238,4 +247,9 @@ typedef NSInteger HotmobBannerFadeinDirection;
  * Reload all banners in the array provided.
  **/
 + (void)reloadBannersWithArray:(NSArray *)array;
+
+/**
+ * Set the banner width (for mediation use)
+ **/
++ (void)setBannerWidth:(float)width;
 @end
