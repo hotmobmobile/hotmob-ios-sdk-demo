@@ -44,12 +44,12 @@ Visit http://www.hot-mob.com/ for more details.
 #### Popup
 To create the Hotmob Popup can refercence following step.
 
-1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
+1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol. (Optional)
 
   ```objectivec
   #import "HotmobManager.h"
   ...
-  @interface MyViewController : UIViewController <HotmobManagerDelegate> (Optional)
+  @interface MyViewController : UIViewController <HotmobManagerDelegate>
   ```
 2. When you call the popup in the `AppDelegate` or first time using in your application. Please using the following code to start the `HotmobManager`
 
