@@ -15,17 +15,17 @@
 		14E864321BCF66D800D7BEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E864301BCF66D800D7BEBA /* LaunchScreen.storyboard */; };
 		14E8643D1BCF66D800D7BEBA /* SampleProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8643C1BCF66D800D7BEBA /* SampleProjectTests.m */; };
 		14E864481BCF66D800D7BEBA /* SampleProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E864471BCF66D800D7BEBA /* SampleProjectUITests.m */; };
-		14E8645F1BCFA17800D7BEBA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8645E1BCFA17800D7BEBA /* BannerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		14E864661BCFA24900D7BEBA /* HotmobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E864641BCFA24900D7BEBA /* HotmobSDK.a */; settings = {ASSET_TAGS = (); }; };
-		14E864671BCFA24900D7BEBA /* HotmobSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14E864651BCFA24900D7BEBA /* HotmobSDK.bundle */; settings = {ASSET_TAGS = (); }; };
-		14E8646A1BD09BF900D7BEBA /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E864691BD09BF900D7BEBA /* PopupViewController.m */; settings = {ASSET_TAGS = (); }; };
-		14E8646D1BD0A29700D7BEBA /* VideoBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8646C1BD0A29700D7BEBA /* VideoBannerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		14E864701BD0AE9500D7BEBA /* multipleBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8646F1BD0AE9500D7BEBA /* multipleBannerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		14EEF89E1BDDBF2F00F0A7A4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EEF8951BDDBF2F00F0A7A4 /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
-		14EEF89F1BDDBF2F00F0A7A4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF89C1BDDBF2F00F0A7A4 /* README.txt */; settings = {ASSET_TAGS = (); }; };
-		14EEF8A01BDDBF2F00F0A7A4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF89D1BDDBF2F00F0A7A4 /* README.txt */; settings = {ASSET_TAGS = (); }; };
-		14EEF8A31BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF8A21BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m */; settings = {ASSET_TAGS = (); }; };
-		14EEF8A61BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF8A51BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		14E8645F1BCFA17800D7BEBA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8645E1BCFA17800D7BEBA /* BannerViewController.m */; };
+		14E864661BCFA24900D7BEBA /* HotmobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E864641BCFA24900D7BEBA /* HotmobSDK.a */; };
+		14E864671BCFA24900D7BEBA /* HotmobSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14E864651BCFA24900D7BEBA /* HotmobSDK.bundle */; };
+		14E8646A1BD09BF900D7BEBA /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E864691BD09BF900D7BEBA /* PopupViewController.m */; };
+		14E8646D1BD0A29700D7BEBA /* VideoBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8646C1BD0A29700D7BEBA /* VideoBannerViewController.m */; };
+		14E864701BD0AE9500D7BEBA /* multipleBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8646F1BD0AE9500D7BEBA /* multipleBannerViewController.m */; };
+		14EEF89E1BDDBF2F00F0A7A4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EEF8951BDDBF2F00F0A7A4 /* GoogleMobileAds.framework */; };
+		14EEF89F1BDDBF2F00F0A7A4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF89C1BDDBF2F00F0A7A4 /* README.txt */; };
+		14EEF8A01BDDBF2F00F0A7A4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF89D1BDDBF2F00F0A7A4 /* README.txt */; };
+		14EEF8A31BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF8A21BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m */; };
+		14EEF8A61BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF8A51BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
