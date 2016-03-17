@@ -41,6 +41,28 @@ Visit http://www.hot-mob.com/ for more details.
 ### Basic Usage
 ---
 
+HotmobSDK auto reload mechanism can handle the viewController base application to reload the banner by HotmobSDK.
+To enable the auto reload mechanism. please follow the guideline as below to modify your project.
+
+1. Import the "HotmobManager.h" to the prefix header of your project or import "HotmobManager.h" of any viewController in your project.
+  
+  ```objectivec
+  #import "HotmobManager.h"
+  ```
+  
+2. Impelement the code of all the viewController in your project. 
+  
+  ```objectivec
+  - (void)viewWillAppear:(BOOL)animated
+  {
+    [super viewWillAppear:animated];
+    //Notify HotmobManager the current viewController
+    //This method will reload all the banner related with this "self" viewController
+    //And then will hide other banner
+    [HotmobManager setCurrentViewController:self];
+  }
+  ```
+
 #### Popup
 To create the Hotmob Popup can refercence following step.
 
@@ -73,11 +95,11 @@ To create the Hotmob Banner can refercence following step.
   ...
   @interface MyViewController : UIViewController <HotmobManagerDelegate>
   ```
-2. Create the Banner view and add this banner to ViewController in `- (void)viewWillAppear:(BOOL)animated`
+2. Create the Banner view and add this banner to ViewController in `- (void)viewDidLoad`
 
   ```objectivec
-  - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+  - (void)viewDidLoad {
+    [super viewDidLoad];
     
     CGRect bannerRect = CGRectMake(0, 0, self.view.frame.size.width, 0);
     
@@ -94,6 +116,12 @@ To create the Hotmob Banner can refercence following step.
   ```objectivec
   #pragma mark - HotmobManagerDelegate
 - (void)didLoadBanner:(id)obj {
+      UIView *view = obj;
+      view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame), CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
+      self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - view.frame.size.height);
+}
+
+- (void)didHideBanner:(id)obj{
       UIView *view = obj;
       view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame), CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
       self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - view.frame.size.height);
@@ -154,7 +182,12 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
   {
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
   }
-
+  
+  - (void)didHideBanner:(id)obj
+  {
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+  }
+  
   - (void)openNoAdCallback:(id)obj
   {
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
