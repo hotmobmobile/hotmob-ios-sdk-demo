@@ -52,8 +52,6 @@ static NSString * const reuseImageBannerIdentifier = @"imageVannerCell";
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [HotmobManager setCurrentViewController:self];
-    [HotmobManager setHotmobBannerDelegate:self];
-    [self reloadBanner];
 }
 
 - (void)dealloc{
@@ -67,11 +65,6 @@ static NSString * const reuseImageBannerIdentifier = @"imageVannerCell";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)reloadBanner{
-    [HotmobManager refreshBanner:_bannerView];
-    [HotmobManager refreshBanner:_bannerView2];
 }
 
 /*
@@ -176,6 +169,14 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
 
 - (void)hotmobBanner:(id)obj isReadyChangeSoundSettings:(BOOL)isSoundEnable{
     NSLog(@"TestCollectionViewController - hotmobBanner:isReadyChangeSoundSettings:");
+}
+
+- (void)didHideBanner:(id)obj{
+    NSLog(@"TestCollectionViewController - didHideBanner");
+    [self.collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:3 inSection:0]]];
+    [HotmobManager calculateBannerPositionWithView:self.collectionView cellItems:self.collectionView.visibleCells forVideoAdsBannerCell:_bannerViewCell andBanner:_bannerView];
+    [self.collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:13 inSection:0]]];
+    [HotmobManager calculateBannerPositionWithView:self.collectionView cellItems:self.collectionView.visibleCells forVideoAdsBannerCell:_bannerViewCell2 andBanner:_bannerView2];
 }
 
 - (void)openNoAdCallback:(id)obj{

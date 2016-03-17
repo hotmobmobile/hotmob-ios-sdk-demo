@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "HotmobManager.h"
 
-@interface ViewController () <HotmobManagerDelegate>
+@interface ViewController () <HotmobManagerDelegate, CAPSPageMenuDelegate>
 @property (nonatomic) CAPSPageMenu *pageMenu;
 
 @end
@@ -58,15 +58,27 @@
                                  };
     
     _pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height) options:parameters];
+    [_pageMenu setDelegate:self];
     [self.view addSubview:_pageMenu.view];
 }
 
 - (void)initPopup{
     NSString *adcode = @"hotmob_iphone_sample_popup";
     
-    [HotmobManager setDebug:NO];
+    [HotmobManager setDebug:YES];
     
     [HotmobManager getPopup:self delegate:self identifier:@"launch" adCode:adcode showWhenResume:YES autoRefresh:YES];
+}
+
+#pragma mark - CAPSPageMenuDelegate
+- (void)willMoveToPage:(UIViewController *)controller index:(NSInteger)index{
+    NSLog(@"willMoveToPage %ld to %ld",(long)self.pageMenu.currentPageIndex , (long)index);
+    [controller performSelector:@selector(viewWillAppear:)];
+}
+
+- (void)didMoveToPage:(UIViewController *)controller index:(NSInteger)index{
+    NSLog(@"didMoveToPage %ld to %ld",(long)self.pageMenu.currentPageIndex , (long)index);
+    [controller performSelector:@selector(viewDidAppear:)];
 }
 
 #pragma mark - HotmobManagerDelegate
