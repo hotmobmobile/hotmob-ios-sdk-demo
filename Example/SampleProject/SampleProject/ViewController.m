@@ -27,29 +27,13 @@
     self.itemsArray = @[@"Banner", @"Popups", @"Video Ads Banner", @"Multiple Banners", @"Mediation Banner", @"Mediation Popup"];
     
     [self.tableView setTranslatesAutoresizingMaskIntoConstraints:YES];
+    
+    [self createBanner];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    /*
-     set the banner width
-     */
-    CGRect bannerRect = CGRectMake(0, 0, self.view.frame.size.width, 0);
-    
-    /*
-     create banner object 
-     adCode "hotmob_uat_iphone_image_inapp_banner", the identifier let hotmob  know the banner position
-     identifier "mainPageFooterBanner"     , the identifier let hotmob sdk to reuse banner object
-    */
-    UIView *bannerView = [HotmobManager getBanner:self
-                                         delegate:self
-                                       identifier:@"MainPageFooterBanner"
-                                           adCode:@"hotmob_iphone_sample_dynamic"
-                                             size:bannerRect];
-    /*
-     add the banner to current view
-     */
-    [self.view addSubview:bannerView];
+    [HotmobManager setCurrentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -112,6 +96,30 @@
             [self.navigationController pushViewController:controller animated:YES];
         }
     }
+}
+
+#pragma mark - Create Hotmob Banner method
+
+- (void) createBanner{
+    /*
+     set the banner width
+     */
+    CGRect bannerRect = CGRectMake(0, 0, self.view.frame.size.width, 0);
+    
+    /*
+     create banner object
+     adCode "hotmob_uat_iphone_image_inapp_banner", the identifier let hotmob  know the banner position
+     identifier "mainPageFooterBanner"     , the identifier let hotmob sdk to reuse banner object
+     */
+    UIView *bannerView = [HotmobManager getBanner:self
+                                         delegate:self
+                                       identifier:@"MainPageFooterBanner"
+                                           adCode:@"hotmob_iphone_sample_dynamic"
+                                             size:bannerRect];
+    /*
+     add the banner to current view
+     */
+    [self.view addSubview:bannerView];
 }
 
 #pragma mark - HotmobManagerDelegate

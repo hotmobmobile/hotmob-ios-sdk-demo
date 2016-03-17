@@ -290,6 +290,7 @@
 				TargetAttributes = {
 					14E8641E1BCF66D800D7BEBA = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8E6QYN4PKP;
 					};
 					14E864371BCF66D800D7BEBA = {
 						CreatedOnToolsVersion = 7.0;
@@ -505,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSDK",
@@ -526,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSDK",
