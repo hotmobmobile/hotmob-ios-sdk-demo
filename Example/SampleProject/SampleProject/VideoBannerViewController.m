@@ -27,6 +27,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [HotmobManager setCurrentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -108,6 +109,10 @@
 - (void)didShowBanner:(id)obj {
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
     [HotmobManager calculateBannerPositionWithView:self.tableView cellItems:self.tableView.visibleCells forVideoAdsBannerCell:_bannerViewCell andBanner:_bannerView];
+}
+
+- (void)didHideBanner:(id)obj {
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 - (void)openNoAdCallback:(id)obj {
