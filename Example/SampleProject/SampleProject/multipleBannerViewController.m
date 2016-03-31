@@ -26,7 +26,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    [HotmobManager setCurrentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -171,6 +171,15 @@
 
 #pragma mark - HotmobManagerDelegate
 - (void)didShowBanner:(id)obj
+{
+    // Get Banner position in a table view.
+    NSUInteger countId = [_bannerViewsArray indexOfObject:obj];
+    NSLog(@"countId: %ld", countId);
+    
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:countId inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)didHideBanner:(id)obj
 {
     // Get Banner position in a table view.
     NSUInteger countId = [_bannerViewsArray indexOfObject:obj];

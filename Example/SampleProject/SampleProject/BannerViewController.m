@@ -28,6 +28,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [HotmobManager setCurrentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,6 +101,10 @@
 #pragma mark - HotmobManagerDelegate
 - (void)didShowBanner:(id)obj
 {
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+- (void)didHideBanner:(id)obj{
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
 }
 

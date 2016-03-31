@@ -21,10 +21,10 @@
     [super viewDidLoad];
     CGRect bannerRect = CGRectMake(0, 0, CGRectGetWidth([[UIScreen mainScreen] bounds]), 0);
     self.bannerView = [HotmobManager getBanner:self
-                                        delegate:self
-                                      identifier:@"FooterBanner"
-                                          adCode:@"hm_chiu_dynamic"
-                                            size:bannerRect];
+                                      delegate:self
+                                    identifier:@"FooterBanner"
+                                        adCode:@"hm_chiu_dynamic"
+                                          size:bannerRect];
     [self.view addSubview:_bannerView];
     // Do any additional setup after loading the view from its nib.
 }
@@ -32,8 +32,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [HotmobManager setCurrentViewController:self];
-    [HotmobManager setHotmobBannerDelegate:self];
-    [self reloadBanner];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +52,17 @@
      Publisher should resize the layout to fit the banner view
      */
     NSLog(@"TestViewController - didShowBanner");
+    UIView *view = obj;
+    view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame), CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
+}
+
+- (void)didHideBanner:(id)obj{
+    /*
+     when banner hidden.
+     this delegate will be call
+     Publisher should resize the layout to hidden the banner view
+     */
+    NSLog(@"TestViewController - didHideBanner");
     UIView *view = obj;
     view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame), CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
 }

@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-     self.clearsSelectionOnViewWillAppear = YES;
+    self.clearsSelectionOnViewWillAppear = YES;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -29,8 +29,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [HotmobManager setCurrentViewController:self];
-    [HotmobManager setHotmobBannerDelegate:self];
-    [self reloadBanner];
 }
 
 - (void)dealloc
@@ -126,6 +124,11 @@
 - (void)didShowBanner:(id)obj
 {
     NSLog(@"TestTableViewController - didShowBanner");
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+- (void)didHideBanner:(id)obj{
+    NSLog(@"TestTableViewController - didHideBanner");
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
 }
 

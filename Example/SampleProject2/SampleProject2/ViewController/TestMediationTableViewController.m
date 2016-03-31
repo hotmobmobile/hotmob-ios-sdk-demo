@@ -27,7 +27,13 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [HotmobManager setCurrentViewController:self];
     [self createAdmobBanner];
+}
+
+- (void) viewDidDisappear:(BOOL)animated{
+    [self.bannerView performSelector:@selector(removeFromSuperview)];
+    self.bannerView = nil;
 }
 
 - (void)didReceiveMemoryWarning {

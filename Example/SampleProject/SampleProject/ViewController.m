@@ -27,29 +27,13 @@
     self.itemsArray = @[@"Banner", @"Popups", @"Video Ads Banner", @"Multiple Banners", @"Mediation Banner", @"Mediation Popup"];
     
     [self.tableView setTranslatesAutoresizingMaskIntoConstraints:YES];
+    
+    [self createBanner];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    /*
-     set the banner width
-     */
-    CGRect bannerRect = CGRectMake(0, 0, self.view.frame.size.width, 0);
-    
-    /*
-     create banner object 
-     adCode "hotmob_uat_iphone_image_inapp_banner", the identifier let hotmob  know the banner position
-     identifier "mainPageFooterBanner"     , the identifier let hotmob sdk to reuse banner object
-    */
-    UIView *bannerView = [HotmobManager getBanner:self
-                                         delegate:self
-                                       identifier:@"MainPageFooterBanner"
-                                           adCode:@"hotmob_iphone_sample_dynamic"
-                                             size:bannerRect];
-    /*
-     add the banner to current view
-     */
-    [self.view addSubview:bannerView];
+    [HotmobManager setCurrentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -114,10 +98,45 @@
     }
 }
 
+#pragma mark - Create Hotmob Banner method
+
+- (void) createBanner{
+    /*
+     set the banner width
+     */
+    CGRect bannerRect = CGRectMake(0, 0, self.view.frame.size.width, 0);
+    
+    /*
+     create banner object
+     adCode "hotmob_uat_iphone_image_inapp_banner", the identifier let hotmob  know the banner position
+     identifier "mainPageFooterBanner"     , the identifier let hotmob sdk to reuse banner object
+     */
+    UIView *bannerView = [HotmobManager getBanner:self
+                                         delegate:self
+                                       identifier:@"MainPageFooterBanner"
+                                           adCode:@"hotmob_iphone_sample_dynamic"
+                                             size:bannerRect];
+    /*
+     add the banner to current view
+     */
+    [self.view addSubview:bannerView];
+}
+
 #pragma mark - HotmobManagerDelegate
 - (void)didLoadBanner:(id)obj {
     /*
      when banner object return.
+     this delegate will be call
+     Publisher should resize the layout to fit the banner view
+     */
+    UIView *view = obj;
+    view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame), CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
+    self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - view.frame.size.height);
+}
+
+- (void)didHideBanner:(id)obj {
+    /*
+     when banner dismiss.
      this delegate will be call
      Publisher should resize the layout to fit the banner view
      */
