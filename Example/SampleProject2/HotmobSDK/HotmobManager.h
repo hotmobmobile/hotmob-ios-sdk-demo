@@ -5,6 +5,8 @@
 //  Created by Hotmob Ltd. on 23/7/15.
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
+// version 4.0.7
+// update at 20160628 11:38
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -23,7 +25,6 @@ extern NSString * const HotmobBannerSetEmailMessagePrompt;
 extern NSString * const HotmobBannerSetiCalMessagePrompt;
 extern NSString * const HotmobBannerSetMessageConfirmPrompt;
 extern NSString * const HotmobBannerSetMessageCancelPrompt;
-
 
 enum
 {
@@ -144,6 +145,16 @@ typedef NSInteger HotmobBannerFadeinDirection;
  * isSoundEnable Indicates whether the sound will be on or off for the Hotmob Banner action
  **/
 - (void)hotmobBanner:(id)obj isReadyChangeSoundSettings:(BOOL)isSoundEnable;
+
+/**
+ * Calls if Hotmob SDK need to change video player view status.
+ *
+ * @param
+ * obj The banner or popup object.
+ * isChangeToFullscreenMode Indicates whether the video player view wiil be change to fullscreen or not by user action
+ **/
+- (void)hotmobBanner:(id)obj isChangeToFullscreenMode:(BOOL)isChangeToFullscreenMode;
+
 @end
 
 @interface HotmobManager : NSObject
@@ -252,4 +263,14 @@ typedef NSInteger HotmobBannerFadeinDirection;
  * Set the banner width (for mediation use)
  **/
 + (void)setBannerWidth:(float)width;
+
+/**
+ * This method is ONLY apply to Manually case 
+ * If your application is using auto reload mechanism please ignore this method
+ * When the inappbrowser or instant video popup showing on the screen this bool will reture YES
+ * will reset to NO after the function was fire
+ * Now this method only for the case 
+ * 1. banner request before the popup release
+ **/
++(BOOL)shouldBlockBannerRequest;
 @end
