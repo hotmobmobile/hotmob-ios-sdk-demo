@@ -84,7 +84,18 @@ To create the Hotmob Popup can refercence following step.
     [HotmobManager getPopup:nil delegate:self identifier:@"launch" adCode:@"hotmob_uat_iphone_launch_popup" showWhenResume:YES autoRefresh:YES];
   ```
 4. integrate the following the delegate method to the class which is create the popup. For example the AppDelegate class.
+  ```objectivec
+  
+  - (void)didLoadFailed:(id)obj
+{
+    NSLog(@"AppDelegate didLoadFailed: %@", obj);
+}
 
+- (void)openNoAdCallback:(id)obj
+{
+    NSLog(@"AppDelegate openNoAdCallback: %@", obj);
+}
+  ```
   ---
 
 ####  Footer Banner
