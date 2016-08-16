@@ -155,13 +155,6 @@ typedef NSInteger HotmobBannerFadeinDirection;
  **/
 - (void)hotmobBanner:(id)obj isChangeToFullscreenMode:(BOOL)isChangeToFullscreenMode;
 
-/**
- * Calls when the advertisement was resized, And Affilcate should resize the container.
- *
- * @param obj The banner.
- **/
-- (void)didResizeBanner:(id)obj;
-
 @end
 
 @interface HotmobManager : NSObject
