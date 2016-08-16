@@ -66,7 +66,7 @@ To enable the auto reload mechanism. please follow the guideline as below to mod
 #### Popup
 To create the Hotmob Popup can refercence following step.
 
-1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol. (Optional)
+1. Import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol. (Optional)
 
   ```objectivec
   #import "HotmobManager.h"
@@ -83,7 +83,7 @@ To create the Hotmob Popup can refercence following step.
   ```objectivec
     [HotmobManager getPopup:nil delegate:self identifier:@"launch" adCode:@"hotmob_uat_iphone_launch_popup" showWhenResume:YES autoRefresh:YES];
   ```
-4. integrate the following the delegate method to the class which is create the popup. For example the AppDelegate class.
+4. Integrate the following the delegate method to the class which is create the popup. For example the AppDelegate class.
   ```objectivec
   
   - (void)didLoadFailed:(id)obj
@@ -101,7 +101,7 @@ To create the Hotmob Popup can refercence following step.
 ####  Footer Banner
 To create the Hotmob Banner can refercence following step.
 
-1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
+1. Import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
   ```objectivec
   #import "HotmobManager.h"
@@ -151,7 +151,7 @@ To create the Hotmob Banner can refercence following step.
 #### Banner in TableView
 To create the Hotmob banner view and pass banner into UITableView can refercence following step.
 
-1. import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
+1. Import the `"HotmobManager.h"` to target ViewController and declare the `HotMobBannerDelegate` protocol.
 
   ```objectivec
   #import "HotmobManager.h"
