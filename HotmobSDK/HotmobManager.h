@@ -5,8 +5,8 @@
 //  Created by Hotmob Ltd. on 23/7/15.
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
-// version 4.0.7
-// update at 20160628 11:38
+// version 4.0.8
+// update at 20160830 15:51
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -155,6 +155,13 @@ typedef NSInteger HotmobBannerFadeinDirection;
  **/
 - (void)hotmobBanner:(id)obj isChangeToFullscreenMode:(BOOL)isChangeToFullscreenMode;
 
+/**
+ * Calls when the advertisement was resized, And Affilcate should resize the container.
+ *
+ * @param obj The banner.
+ **/
+- (void)didResizeBanner:(id)obj;
+
 @end
 
 @interface HotmobManager : NSObject
@@ -263,6 +270,13 @@ typedef NSInteger HotmobBannerFadeinDirection;
  * Set the banner width (for mediation use)
  **/
 + (void)setBannerWidth:(float)width;
+
+/**
+ * Destory the Hotmob Banner view and the banner will out of the Hotmob Manager auto reload mechanism
+ * We are not suggest to use this method on auto reload case.
+ * In case affilicate want to refresh the banner with another adcode, we suggest to use the getBanner method.
+ **/
++ (void)destoryBanner:(UIView*)bannerView;
 
 /**
  * This method is ONLY apply to Manually case 
