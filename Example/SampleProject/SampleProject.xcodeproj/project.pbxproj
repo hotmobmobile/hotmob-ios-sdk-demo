@@ -16,8 +16,6 @@
 		14E8643D1BCF66D800D7BEBA /* SampleProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8643C1BCF66D800D7BEBA /* SampleProjectTests.m */; };
 		14E864481BCF66D800D7BEBA /* SampleProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E864471BCF66D800D7BEBA /* SampleProjectUITests.m */; };
 		14E8645F1BCFA17800D7BEBA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8645E1BCFA17800D7BEBA /* BannerViewController.m */; };
-		14E864661BCFA24900D7BEBA /* HotmobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E864641BCFA24900D7BEBA /* HotmobSDK.a */; };
-		14E864671BCFA24900D7BEBA /* HotmobSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14E864651BCFA24900D7BEBA /* HotmobSDK.bundle */; };
 		14E8646A1BD09BF900D7BEBA /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E864691BD09BF900D7BEBA /* PopupViewController.m */; };
 		14E8646D1BD0A29700D7BEBA /* VideoBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8646C1BD0A29700D7BEBA /* VideoBannerViewController.m */; };
 		14E864701BD0AE9500D7BEBA /* multipleBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E8646F1BD0AE9500D7BEBA /* multipleBannerViewController.m */; };
@@ -26,6 +24,8 @@
 		14EEF8A01BDDBF2F00F0A7A4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14EEF89D1BDDBF2F00F0A7A4 /* README.txt */; };
 		14EEF8A31BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF8A21BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m */; };
 		14EEF8A61BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF8A51BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m */; };
+		C844D8041D7E638C00EDF4AD /* HotmobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C844D8021D7E638C00EDF4AD /* HotmobSDK.a */; };
+		C844D8051D7E638C00EDF4AD /* HotmobSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C844D8031D7E638C00EDF4AD /* HotmobSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +64,6 @@
 		14E864491BCF66D800D7BEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E8645D1BCFA17800D7BEBA /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		14E8645E1BCFA17800D7BEBA /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
-		14E864631BCFA24900D7BEBA /* HotmobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotmobManager.h; sourceTree = "<group>"; };
-		14E864641BCFA24900D7BEBA /* HotmobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = HotmobSDK.a; sourceTree = "<group>"; };
-		14E864651BCFA24900D7BEBA /* HotmobSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HotmobSDK.bundle; sourceTree = "<group>"; };
 		14E864681BD09BF900D7BEBA /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
 		14E864691BD09BF900D7BEBA /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
 		14E8646B1BD0A29700D7BEBA /* VideoBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBannerViewController.h; sourceTree = "<group>"; };
@@ -85,6 +82,9 @@
 		14EEF8A21BDDBF6A00F0A7A4 /* HotmobDemoGoogleBannerMediationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotmobDemoGoogleBannerMediationViewController.m; sourceTree = "<group>"; };
 		14EEF8A41BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotmobDemoGooglePopupMediationViewController.h; sourceTree = "<group>"; };
 		14EEF8A51BDDC42E00F0A7A4 /* HotmobDemoGooglePopupMediationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotmobDemoGooglePopupMediationViewController.m; sourceTree = "<group>"; };
+		C844D8011D7E638C00EDF4AD /* HotmobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotmobManager.h; path = ../../../HotmobSDK/HotmobManager.h; sourceTree = "<group>"; };
+		C844D8021D7E638C00EDF4AD /* HotmobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = HotmobSDK.a; path = ../../../HotmobSDK/HotmobSDK.a; sourceTree = "<group>"; };
+		C844D8031D7E638C00EDF4AD /* HotmobSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HotmobSDK.bundle; path = ../../../HotmobSDK/HotmobSDK.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14EEF89E1BDDBF2F00F0A7A4 /* GoogleMobileAds.framework in Frameworks */,
-				14E864661BCFA24900D7BEBA /* HotmobSDK.a in Frameworks */,
+				C844D8041D7E638C00EDF4AD /* HotmobSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,9 +193,9 @@
 		14E864621BCFA24900D7BEBA /* HotmobSDK */ = {
 			isa = PBXGroup;
 			children = (
-				14E864631BCFA24900D7BEBA /* HotmobManager.h */,
-				14E864641BCFA24900D7BEBA /* HotmobSDK.a */,
-				14E864651BCFA24900D7BEBA /* HotmobSDK.bundle */,
+				C844D8011D7E638C00EDF4AD /* HotmobManager.h */,
+				C844D8021D7E638C00EDF4AD /* HotmobSDK.a */,
+				C844D8031D7E638C00EDF4AD /* HotmobSDK.bundle */,
 			);
 			path = HotmobSDK;
 			sourceTree = "<group>";
@@ -327,9 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E864321BCF66D800D7BEBA /* LaunchScreen.storyboard in Resources */,
+				C844D8051D7E638C00EDF4AD /* HotmobSDK.bundle in Resources */,
 				14E8642F1BCF66D800D7BEBA /* Assets.xcassets in Resources */,
 				14E8642D1BCF66D800D7BEBA /* Main.storyboard in Resources */,
-				14E864671BCFA24900D7BEBA /* HotmobSDK.bundle in Resources */,
 				14EEF8A01BDDBF2F00F0A7A4 /* README.txt in Resources */,
 				14EEF89F1BDDBF2F00F0A7A4 /* README.txt in Resources */,
 			);

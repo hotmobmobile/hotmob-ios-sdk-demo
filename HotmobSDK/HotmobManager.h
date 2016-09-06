@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
 // version 4.0.8
-// update at 20160829 15:51
+// update at 20160830 15:51
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
