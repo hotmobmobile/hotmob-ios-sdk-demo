@@ -41,26 +41,25 @@ Visit http://www.hot-mob.com/ for more details.
 ### Basic Usage
 ---
 
-HotmobSDK auto reload mechanism can handle the viewController base application to reload the banner by HotmobSDK.
-To enable the auto reload mechanism. please follow the guideline as below to modify your project.
+#### initial
 
-1. Import the "HotmobManager.h" to the prefix header of your project or import "HotmobManager.h" of any viewController in your project.
-  
-  ```objectivec
+To integrate HotmobSDK should init HotmobManager in the AppDelegate class. 
+
+1. Import the "HotmobManager.h" to the prefix header of your project or import "HotmobManager.h" in your ApDelagate class. also should declare the `HotMobBannerDelegate` protocol. (Optional).
+
+ ```objectivec
   #import "HotmobManager.h"
+  
+  ...
+  
+  @interface AppDelegate () <HotmobManagerDelegate>
   ```
-  
-2. Impelement the code of all the viewController in your project. 
-  
-  ```objectivec
-  - (void)viewWillAppear:(BOOL)animated
-  {
-    [super viewWillAppear:animated];
-    //Notify HotmobManager the current viewController
-    //This method will reload all the banner related with this "self" viewController
-    //And then will hide other banner
-    [HotmobManager setCurrentViewController:self];
-  }
+2. Please using the following code to start the `HotmobManager`
+
+```objectivec
+    [HotmobManager setDebug:NO];
+    
+    [HotmobManager setAudioHandleMode:HotmobAudioHandleByHotmob];
   ```
 
 #### Popup
@@ -125,7 +124,20 @@ To create the Hotmob Banner can refercence following step.
     [self.view addSubview:bannerView];
   }
   ```
-3. Resize the UI element and the banner, when the banner is readly
+3. Impelement the code of all the viewController in your project. 
+  
+  ```objectivec
+  - (void)viewWillAppear:(BOOL)animated
+  {
+    [super viewWillAppear:animated];
+    //Notify HotmobManager the current viewController
+    //This method will reload all the banner related with this "self" viewController
+    //And then will hide other banner
+    [HotmobManager setCurrentViewController:self];
+  }
+  ```
+  
+4. Resize the UI element and the banner, when the banner is readly
   ```objectivec
   #pragma mark - HotmobManagerDelegate
 - (void)didLoadBanner:(id)obj {
@@ -158,7 +170,20 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
   ...
   @interface MyViewController : UIViewController <HotmobManagerDelegate>
   ```
-2. Identifier which row of UITableView you Want to show the banner in `-(UITableViewCell *)tableView: cellForRowAtIndexPath:`
+2. Impelement the code of all the viewController in your project. 
+  
+  ```objectivec
+  - (void)viewWillAppear:(BOOL)animated
+  {
+    [super viewWillAppear:animated];
+    //Notify HotmobManager the current viewController
+    //This method will reload all the banner related with this "self" viewController
+    //And then will hide other banner
+    [HotmobManager setCurrentViewController:self];
+  }
+  ```
+ 
+3. Identifier which row of UITableView you Want to show the banner in `-(UITableViewCell *)tableView: cellForRowAtIndexPath:`
 
   ```objectivec
   static NSString *cellIdentifier = @"bannerCell";
@@ -179,7 +204,7 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
         
         return cell;
   ```
-3. Set height of banner cell in `- (CGFloat)tableView: heightForRowAtIndexPath:`
+4. Set height of banner cell in `- (CGFloat)tableView: heightForRowAtIndexPath:`
 
   ```objectivec
   if (indexPath.row == 11) {
@@ -188,7 +213,7 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
      return 44;
   }
   ```
-4. Impelement the delegate methom and resize the banner cell
+5. Impelement the delegate methom and resize the banner cell
 
   ```objectivec
   - (void)didShowBanner:(id)obj
@@ -206,7 +231,7 @@ To create the Hotmob banner view and pass banner into UITableView can refercence
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
   }
   ```
-5. Additional Coding for Native Video Ad (optional)
+6. Additional Coding for Native Video Ad (optional)
 
   To support auto pause and play when the banner scoll-off or scoll-on screen.
 
