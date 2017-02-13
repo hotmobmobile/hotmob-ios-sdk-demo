@@ -5,8 +5,7 @@
 //  Created by Hotmob Ltd. on 23/7/15.
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
-// version 4.0.8
-// update at 20160830 15:51
+// version 4.1.0
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -41,6 +40,15 @@ enum
     HotmobBannerFadeinDirectionFromBottom = 2,
 };
 typedef NSInteger HotmobBannerFadeinDirection;
+
+enum
+{
+    HotmobAudioHandleByNone = 0,
+    HotmobAudioHandleByAffiliate = 1,
+    HotmobAudioHandleByHotmob = 2
+};
+typedef NSInteger HotmobAudioHandlingMode;
+
 
 @class HotmobBanner;
 
@@ -162,6 +170,15 @@ typedef NSInteger HotmobBannerFadeinDirection;
  **/
 - (void)didResizeBanner:(id)obj;
 
+/**
+ * Calls when the advertisement will resiz, And Affilcate should ready for the banner will change it size or position.
+ *
+ * @param obj The banner.
+ * @param rect - the new banner size. ** The origin in CGRect can be ignored.
+ **/
+- (void)willResizeBanner:(id)obj toRect:(CGRect)rect;
+
+
 @end
 
 @interface HotmobManager : NSObject
@@ -173,6 +190,11 @@ typedef NSInteger HotmobBannerFadeinDirection;
  Set whether enabling debug mode or not.
  **/
 + (void)setDebug:(BOOL)isDebug;
+
+/**
+ Set audio handle mode
+ **/
++ (void) setAudioHandleMode:(HotmobAudioHandlingMode)_mode;
 
 /**
  Get the HotmobBanner object, and enable auto refresh at default.

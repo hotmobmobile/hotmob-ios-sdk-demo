@@ -24,6 +24,7 @@
      **This must be inplement bacause this function is start the hotmob SDK service right now.
      */
     [HotmobManager setDebug:NO];
+    [HotmobManager setAudioHandleMode:HotmobAudioHandleByHotmob];
     
     /*
      create the pop when launch the application
