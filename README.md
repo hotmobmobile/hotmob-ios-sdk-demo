@@ -46,7 +46,6 @@ Visit http://www.hot-mob.com/ for more details.
 To integrate HotmobSDK should init HotmobManager in the AppDelegate class. 
 
 1. Import the "HotmobManager.h" to the prefix header of your project or import "HotmobManager.h" in your ApDelagate class. also should declare the `HotMobBannerDelegate` protocol. (Optional).
-
  ```objectivec
   #import "HotmobManager.h"
   
@@ -54,13 +53,21 @@ To integrate HotmobSDK should init HotmobManager in the AppDelegate class.
   
   @interface AppDelegate () <HotmobManagerDelegate>
   ```
-2. Please using the following code to start the `HotmobManager`
-
-```objectivec
+2. Please using the following code to start the `HotmobManager`.
+  ```objectivec
     [HotmobManager setDebug:NO];
     
     [HotmobManager setAudioHandleMode:HotmobAudioHandleByHotmob];
   ```
+3. Please implement the setCurrentViewController is all the viewController in your application.
+  ```objectivec
+  - (void)viewWillAppear:(BOOL)animated
+  {
+      [super viewWillAppear:animated];
+      [HotmobManager setCurrentViewController:self];
+  }
+  ```
+  ---
 
 #### Popup
 To create the Hotmob Popup can refercence following step.
