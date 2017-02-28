@@ -59,7 +59,7 @@ To integrate HotmobSDK should init HotmobManager in the AppDelegate class.
     
     [HotmobManager setAudioHandleMode:HotmobAudioHandleByHotmob];
   ```
-3. Please implement the setCurrentViewController is all the viewController in your application.
+3. Please implement the setCurrentViewController in all the viewController.
   ```objectivec
   - (void)viewWillAppear:(BOOL)animated
   {
