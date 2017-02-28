@@ -67,6 +67,7 @@ To integrate HotmobSDK should init HotmobManager in the AppDelegate class.
       [HotmobManager setCurrentViewController:self];
   }
   ```
+  
   ---
 
 #### Popup
