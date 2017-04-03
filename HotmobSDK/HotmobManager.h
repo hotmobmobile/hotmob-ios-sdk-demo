@@ -5,7 +5,8 @@
 //  Created by Hotmob Ltd. on 23/7/15.
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
-// version 4.1.0
+// version 4.1.1
+// update : Backward support on iOS 6.x and 7.x
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>

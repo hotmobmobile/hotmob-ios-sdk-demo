@@ -22,8 +22,8 @@
 		14F4FA031C56292F00D8D94E /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F4FA011C56292F00D8D94E /* TestViewController.m */; };
 		14F4FA041C56292F00D8D94E /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F4FA021C56292F00D8D94E /* TestViewController.xib */; };
 		14F4FA0C1C562DAD00D8D94E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F4FA0B1C562DAC00D8D94E /* GoogleMobileAds.framework */; };
-		C844D8091D7E639E00EDF4AD /* HotmobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C844D8071D7E639E00EDF4AD /* HotmobSDK.a */; };
-		C844D80A1D7E639E00EDF4AD /* HotmobSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C844D8081D7E639E00EDF4AD /* HotmobSDK.bundle */; };
+		C84293E31E92056800B1860B /* HotmobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C84293E11E92056800B1860B /* HotmobSDK.a */; };
+		C84293E41E92056800B1860B /* HotmobSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C84293E21E92056800B1860B /* HotmobSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +51,9 @@
 		14F4FA011C56292F00D8D94E /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = ViewController/TestViewController.m; sourceTree = "<group>"; };
 		14F4FA021C56292F00D8D94E /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestViewController.xib; path = ViewController/TestViewController.xib; sourceTree = "<group>"; };
 		14F4FA0B1C562DAC00D8D94E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = GoogleMobileAdsSDK/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		C844D8061D7E639E00EDF4AD /* HotmobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotmobManager.h; sourceTree = "<group>"; };
-		C844D8071D7E639E00EDF4AD /* HotmobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = HotmobSDK.a; sourceTree = "<group>"; };
-		C844D8081D7E639E00EDF4AD /* HotmobSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HotmobSDK.bundle; sourceTree = "<group>"; };
+		C84293E01E92056800B1860B /* HotmobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotmobManager.h; path = ../../../HotmobSDK/HotmobManager.h; sourceTree = "<group>"; };
+		C84293E11E92056800B1860B /* HotmobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = HotmobSDK.a; path = ../../../HotmobSDK/HotmobSDK.a; sourceTree = "<group>"; };
+		C84293E21E92056800B1860B /* HotmobSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HotmobSDK.bundle; path = ../../../HotmobSDK/HotmobSDK.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F4FA0C1C562DAD00D8D94E /* GoogleMobileAds.framework in Frameworks */,
-				C844D8091D7E639E00EDF4AD /* HotmobSDK.a in Frameworks */,
+				C84293E31E92056800B1860B /* HotmobSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +152,9 @@
 		14F4FA051C562B9D00D8D94E /* HotmobSDK */ = {
 			isa = PBXGroup;
 			children = (
-				C844D8061D7E639E00EDF4AD /* HotmobManager.h */,
-				C844D8071D7E639E00EDF4AD /* HotmobSDK.a */,
-				C844D8081D7E639E00EDF4AD /* HotmobSDK.bundle */,
+				C84293E01E92056800B1860B /* HotmobManager.h */,
+				C84293E11E92056800B1860B /* HotmobSDK.a */,
+				C84293E21E92056800B1860B /* HotmobSDK.bundle */,
 			);
 			name = HotmobSDK;
 			sourceTree = "<group>";
@@ -190,6 +190,7 @@
 				TargetAttributes = {
 					14F4F9D51C56267400D8D94E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8E6QYN4PKP;
 					};
 				};
 			};
@@ -222,7 +223,7 @@
 				14F4F9E61C56267400D8D94E /* Assets.xcassets in Resources */,
 				14F4FA041C56292F00D8D94E /* TestViewController.xib in Resources */,
 				14F4F9E41C56267400D8D94E /* Main.storyboard in Resources */,
-				C844D80A1D7E639E00EDF4AD /* HotmobSDK.bundle in Resources */,
+				C84293E41E92056800B1860B /* HotmobSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
