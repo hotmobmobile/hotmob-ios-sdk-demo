@@ -1,4 +1,4 @@
-###[Hotmob](http://www.hot-mob.com/)
+### [Hotmob](http://www.hot-mob.com/)
 Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong Kong, where monetizes the mobile taffic of the top ranked publishers into revenue and meanwhile connects advertisers to target audience effectively.
 
 Visit http://www.hot-mob.com/ for more details.
