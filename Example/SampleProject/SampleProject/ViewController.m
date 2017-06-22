@@ -123,7 +123,7 @@
 }
 
 #pragma mark - HotmobManagerDelegate
-- (void)didLoadBanner:(id)obj {
+- (void)willShowBanner:(id)obj {
     /*
      when banner object return.
      this delegate will be call

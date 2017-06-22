@@ -5,8 +5,7 @@
 //  Created by Hotmob Ltd. on 23/7/15.
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
-// version 4.1.1
-// update : Backward support on iOS 6.x and 7.x
+// version 4.2.0 3FE3F
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -156,6 +155,7 @@ typedef NSInteger HotmobAudioHandlingMode;
 - (void)hotmobBanner:(id)obj isReadyChangeSoundSettings:(BOOL)isSoundEnable;
 
 /**
+ * Deprecated
  * Calls if Hotmob SDK need to change video player view status.
  *
  * @param
