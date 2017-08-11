@@ -118,4 +118,9 @@
 - (void)openNoAdCallback:(id)obj {
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:11 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
 }
+
+- (void)hotmobBanner:(id)obj isReadyChangeSoundSettings:(BOOL)isSoundEnable{
+    NSLog(@"%@  isReadyChangeSoundSettings: %@", NSStringFromClass(self.class), isSoundEnable?@"Yes":@"No");
+}
+
 @end
