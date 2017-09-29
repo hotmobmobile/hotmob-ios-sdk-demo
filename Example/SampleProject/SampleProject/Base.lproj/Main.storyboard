@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VgQ-M7-iAp">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VgQ-M7-iAp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -10,7 +14,7 @@
             <objects>
                 <navigationController id="VgQ-M7-iAp" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Oq2-Z1-asx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -30,19 +34,19 @@
                         <viewControllerLayoutGuide type="bottom" id="KsV-SK-BEo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w9l-NL-iI9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5kS-6I-C9Q">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="sB3-LH-qkA" id="hqp-TU-gCQ"/>
                                     <outlet property="delegate" destination="sB3-LH-qkA" id="Y04-on-JfI"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5kS-6I-C9Q" firstAttribute="leading" secondItem="w9l-NL-iI9" secondAttribute="leading" id="GJe-bD-S7a"/>
                             <constraint firstAttribute="trailing" secondItem="5kS-6I-C9Q" secondAttribute="trailing" id="IeT-ud-iPS"/>
@@ -73,11 +77,11 @@
                         <viewControllerLayoutGuide type="bottom" id="t1X-FF-abg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GeX-0K-I9e">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVP-qY-5RM">
-                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w63-TR-jvt">
                                         <rect key="frame" x="76" y="146" width="88" height="30"/>
@@ -94,7 +98,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="w63-TR-jvt" firstAttribute="centerX" secondItem="zVP-qY-5RM" secondAttribute="centerX" id="DuD-R1-1AP"/>
                                     <constraint firstItem="w63-TR-jvt" firstAttribute="top" secondItem="wwB-Gz-9ax" secondAttribute="bottom" constant="62" id="H9W-Bm-qy2"/>
@@ -105,7 +109,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zVP-qY-5RM" firstAttribute="centerX" secondItem="GeX-0K-I9e" secondAttribute="centerX" id="C3i-3o-gK1"/>
                             <constraint firstItem="zVP-qY-5RM" firstAttribute="centerY" secondItem="GeX-0K-I9e" secondAttribute="centerY" id="MBS-J8-eOI"/>
@@ -126,9 +130,9 @@
                         <viewControllerLayoutGuide type="bottom" id="dfV-jS-R0E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IIZ-si-ote">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="bix-ca-9eA"/>
                 </viewController>
@@ -145,19 +149,19 @@
                         <viewControllerLayoutGuide type="bottom" id="u8f-hy-YYH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="38K-Wu-8kK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xIR-qB-2WC">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="5AW-tF-0bZ" id="pwf-m3-2HA"/>
                                     <outlet property="delegate" destination="5AW-tF-0bZ" id="TlR-82-uIB"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xIR-qB-2WC" firstAttribute="bottom" secondItem="u8f-hy-YYH" secondAttribute="top" id="K3D-BJ-6sm"/>
                             <constraint firstItem="xIR-qB-2WC" firstAttribute="top" secondItem="38K-Wu-8kK" secondAttribute="top" id="gf0-iC-giH"/>
@@ -183,19 +187,19 @@
                         <viewControllerLayoutGuide type="bottom" id="HDs-Da-YXE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="buC-XB-5tZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KFF-EJ-e4l">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Qty-Bg-r30" id="Pbz-tS-wvM"/>
                                     <outlet property="delegate" destination="Qty-Bg-r30" id="Uk3-3o-ova"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KFF-EJ-e4l" firstAttribute="bottom" secondItem="HDs-Da-YXE" secondAttribute="top" id="N2l-SX-au8"/>
                             <constraint firstItem="KFF-EJ-e4l" firstAttribute="top" secondItem="buC-XB-5tZ" secondAttribute="top" id="fHh-aX-Hn9"/>
@@ -221,19 +225,19 @@
                         <viewControllerLayoutGuide type="bottom" id="jFv-oE-2F5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f0j-v0-vn0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lET-1M-xb4">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Icm-of-LbV" id="eEo-XB-tEO"/>
                                     <outlet property="delegate" destination="Icm-of-LbV" id="iKf-I3-LyS"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lET-1M-xb4" secondAttribute="trailing" id="1Vf-tn-zhE"/>
                             <constraint firstItem="lET-1M-xb4" firstAttribute="bottom" secondItem="jFv-oE-2F5" secondAttribute="top" id="GDO-iO-AoB"/>
