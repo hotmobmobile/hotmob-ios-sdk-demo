@@ -5,8 +5,8 @@
 //  Created by Hotmob Ltd. on 23/7/15.
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
-// version 4.2.2 K2B95
-// update at 2017/09/29
+// version 4.3.2 8XKBL
+// update at 2017/11/08
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -311,4 +311,6 @@ typedef NSInteger HotmobAudioHandlingMode;
  * 1. banner request before the popup release
  **/
 +(BOOL)shouldBlockBannerRequest;
+
+ * Data Collection interface for affiliate
 @end
