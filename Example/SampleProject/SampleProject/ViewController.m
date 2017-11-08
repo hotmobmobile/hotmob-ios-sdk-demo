@@ -130,8 +130,15 @@
      Publisher should resize the layout to fit the banner view
      */
     UIView *view = obj;
-    view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame), CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
-    self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - view.frame.size.height);
+    int offset = 0;
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {
+        UIEdgeInsets newSafeArea = self.view.safeAreaInsets;
+        offset = newSafeArea.bottom;
+    }
+#endif
+    view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame) - offset, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
+    self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - view.frame.size.height - offset);
 }
 
 - (void)didHideBanner:(id)obj {
@@ -141,8 +148,15 @@
      Publisher should resize the layout to fit the banner view
      */
     UIView *view = obj;
-    view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame), CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
-    self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - view.frame.size.height);
+    int offset = 0;
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {
+        UIEdgeInsets newSafeArea = self.view.safeAreaInsets;
+        offset = newSafeArea.bottom;
+    }
+#endif
+    view.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(view.frame) - offset, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
+    self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - view.frame.size.height - offset);
 }
 
 - (void)openNoAdCallback:(id)obj {
