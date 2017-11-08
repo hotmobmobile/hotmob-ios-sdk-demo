@@ -312,8 +312,5 @@ typedef NSInteger HotmobAudioHandlingMode;
  **/
 +(BOOL)shouldBlockBannerRequest;
 
-/**
  * Data Collection interface for affiliate
- **/
-+ (void)setInformationForUser:(NSDictionary*)_info;
 @end
