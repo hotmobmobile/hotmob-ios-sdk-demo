@@ -311,6 +311,4 @@ typedef NSInteger HotmobAudioHandlingMode;
  * 1. banner request before the popup release
  **/
 +(BOOL)shouldBlockBannerRequest;
-
- * Data Collection interface for affiliate
 @end
