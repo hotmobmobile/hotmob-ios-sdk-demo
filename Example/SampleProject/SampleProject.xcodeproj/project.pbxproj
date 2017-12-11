@@ -85,6 +85,8 @@
 		C844D8011D7E638C00EDF4AD /* HotmobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotmobManager.h; path = ../../../HotmobSDK/HotmobManager.h; sourceTree = "<group>"; };
 		C844D8021D7E638C00EDF4AD /* HotmobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = HotmobSDK.a; path = ../../../HotmobSDK/HotmobSDK.a; sourceTree = "<group>"; };
 		C844D8031D7E638C00EDF4AD /* HotmobSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HotmobSDK.bundle; path = ../../../HotmobSDK/HotmobSDK.bundle; sourceTree = "<group>"; };
+		C84C22BA1FDE26BF00863E26 /* HMDataCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HMDataCollection.h; path = ../../../HotmobSDK/HMDataCollection.h; sourceTree = "<group>"; };
+		C84C22BB1FDE26BF00863E26 /* HMDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HMDataSet.h; path = ../../../HotmobSDK/HMDataSet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,8 @@
 		14E864621BCFA24900D7BEBA /* HotmobSDK */ = {
 			isa = PBXGroup;
 			children = (
+				C84C22BA1FDE26BF00863E26 /* HMDataCollection.h */,
+				C84C22BB1FDE26BF00863E26 /* HMDataSet.h */,
 				C844D8011D7E638C00EDF4AD /* HotmobManager.h */,
 				C844D8021D7E638C00EDF4AD /* HotmobSDK.a */,
 				C844D8031D7E638C00EDF4AD /* HotmobSDK.bundle */,

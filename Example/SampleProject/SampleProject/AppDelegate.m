@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HotmobManager.h"
+#import "HMDataCollection.h"
 
 @interface AppDelegate () <HotmobManagerDelegate>
 
@@ -23,6 +24,7 @@
      start the debug mode
      **This must be inplement bacause this function is start the hotmob SDK service right now.
      */
+    
     [HotmobManager setDebug:NO];
     [HotmobManager setAudioHandleMode:HotmobAudioHandleByHotmob];
     
@@ -34,11 +36,14 @@
      */
     
     NSString *adcode = @"hotmob_iphone_sample_popup";
+    
     if (!IS_IPHONE_4_OR_LESS) {
         adcode = [adcode stringByReplacingOccurrencesOfString:@"iphone" withString:@"iphone5"];
     }
     
     [HotmobManager getPopup:nil delegate:self identifier:@"launch" adCode:adcode showWhenResume:YES autoRefresh:YES];
+    
+    [HMDataCollection captureEvent:@"test_string" withValue:@"world"];
     
     return YES;
 }
