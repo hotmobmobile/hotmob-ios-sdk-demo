@@ -5,8 +5,8 @@
 //  Created by Hotmob Ltd. on 23/7/15.
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
-// version 4.3.1 AOKRC
-// update at 2017/11/20
+// version 4.4.0 7SKCA
+// update at 2017/12/11
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
