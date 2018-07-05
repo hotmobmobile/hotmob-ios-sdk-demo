@@ -5,8 +5,8 @@
 //  Created by Hotmob Ltd. on 23/7/15.
 //  Copyright (c) 2015 Hotmob Ltd. All rights reserved.
 //
-// version 4.5.2 QVBBX
-// update at 2018/05/14
+// version 4.6.0 RA07G
+// update at 2018/07/05
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -50,6 +50,12 @@ enum
 };
 typedef NSInteger HotmobAudioHandlingMode;
 
+enum
+{
+    HotmobVideoTypeNormal = 0,
+    HotmobVideoTypeJapan = 1,
+};
+typedef NSInteger HotmobVideoType;
 
 @class HotmobBanner;
 
@@ -156,7 +162,6 @@ typedef NSInteger HotmobAudioHandlingMode;
 - (void)hotmobBanner:(id)obj isReadyChangeSoundSettings:(BOOL)isSoundEnable;
 
 /**
- * Deprecated
  * Calls if Hotmob SDK need to change video player view status.
  *
  * @param
@@ -197,6 +202,26 @@ typedef NSInteger HotmobAudioHandlingMode;
  Set audio handle mode
  **/
 + (void) setAudioHandleMode:(HotmobAudioHandlingMode)_mode;
+
+/**
+ Get the HotmobBanner object, and enable auto refresh at default, japanType.
+ */
++ (UIView *)getJapanVideoBanner:(UIViewController *)rootViewController delegate:(id<HotmobManagerDelegate>)delegate identifier:(NSString *)identifier adCode:(NSString *)adCode size:(CGRect)rect;
+
+/**
+ Get the HotmobBanner object, japanType.
+ */
++ (UIView *)getJapanVideoBanner:(UIViewController *)rootViewController delegate:(id<HotmobManagerDelegate>)delegate identifier:(NSString *)identifier adCode:(NSString *)adCode size:(CGRect)rect autoRefresh:(BOOL)shouldAutoRefresh;
+/**
+ Get the HotmobPopup object, and enable auto refresh at default, japanTyep.
+ */
++ (void)getJapanVideoPopup:(UIViewController *)rootViewController delegate:(id<HotmobManagerDelegate>)delegate identifier:identifier adCode:(NSString *)adCode showWhenResume:(BOOL)shouldShowWhenResume;
+/**
+ Get the HotmobPopup object, japanType.
+ */
++ (void)getJapanVideoPopup:(UIViewController *)rootViewController delegate:(id<HotmobManagerDelegate>)delegate identifier:identifier adCode:(NSString *)adCode showWhenResume:(BOOL)shouldShowWhenResume autoRefresh:(BOOL)shouldAutoRefresh;
+
+
 
 /**
  Get the HotmobBanner object, and enable auto refresh at default.
@@ -264,6 +289,11 @@ typedef NSInteger HotmobAudioHandlingMode;
 + (void)calculateBannerPositionWithView:(UIScrollView *)view cellItems:(NSArray *)cellItems forVideoAdsBannerCell:(UIView *)bannerCell andBanner:(UIView *)banner;
 
 /**
+ Check the JapanBanner view position in tableview and do the actions for video ads. (For only one items)
+ */
++ (void)calculateJapanBannerPositionWithView:(UIScrollView *)view cellItems:(NSArray *)cellItems forVideoAdsBannerCell:(UIView *)bannerCell andBanner:(UIView *)banner;
+
+/**
  Transit the banner into given UITableViewCell or UICollectionViewCell
  */
 + (void)transitBanner:(UIView*)bannerView toCell:(id)cell;
@@ -310,7 +340,7 @@ typedef NSInteger HotmobAudioHandlingMode;
  * Now this method only for the case 
  * 1. banner request before the popup release
  **/
-+(BOOL)shouldBlockBannerRequest;
++ (BOOL)shouldBlockBannerRequest;
 
 /**
  * Data Collection interface for affiliate
