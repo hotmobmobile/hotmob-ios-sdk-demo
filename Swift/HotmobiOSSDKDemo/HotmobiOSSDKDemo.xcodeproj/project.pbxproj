@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		981477DA2276EDAE00880765 /* HMMainInterstititalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981477D92276EDAE00880765 /* HMMainInterstititalViewModel.swift */; };
+		981477DC2276EDEB00880765 /* MainInterstitialJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 981477DB2276EDEB00880765 /* MainInterstitialJson.js */; };
+		981477DE2276F14C00880765 /* HMVideoInterstititalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981477DD2276F14C00880765 /* HMVideoInterstititalViewModel.swift */; };
+		981477E02276F16200880765 /* VideoInterstitialJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 981477DF2276F16200880765 /* VideoInterstitialJson.js */; };
+		98184542223F412900C5AF19 /* HMUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98184541223F412900C5AF19 /* HMUtilities.swift */; };
+		98184544223F432B00C5AF19 /* HMMainVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98184543223F432B00C5AF19 /* HMMainVideoViewModel.swift */; };
+		98184546223F439600C5AF19 /* VideoMainJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 98184545223F439600C5AF19 /* VideoMainJson.js */; };
+		981C0BFD22D5920D007D1FD2 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */; };
+		981C0BFE22D5920D007D1FD2 /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */; };
+		981C0C0A22D6D91F007D1FD2 /* DeepLinkPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */; };
+		981C0C0B22D6D91F007D1FD2 /* DeepLinkPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */; };
+		98255DDE2255F01A009F41D1 /* HMInternalLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255DDC2255F01A009F41D1 /* HMInternalLinkViewController.swift */; };
+		98255DDF2255F01A009F41D1 /* HMInternalLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255DDD2255F01A009F41D1 /* HMInternalLinkViewController.xib */; };
+		9838B359223B8E97000892F5 /* HMVideoInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9838B357223B8E97000892F5 /* HMVideoInterstitialViewController.swift */; };
+		9838B35A223B8E97000892F5 /* HMVideoInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9838B358223B8E97000892F5 /* HMVideoInterstitialViewController.xib */; };
+		9838B35D223B8EBD000892F5 /* HMHTMLInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9838B35B223B8EBD000892F5 /* HMHTMLInterstitialViewController.swift */; };
+		9838B35E223B8EBD000892F5 /* HMHTMLInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9838B35C223B8EBD000892F5 /* HMHTMLInterstitialViewController.xib */; };
+		983A1A67221A58EC0002CFDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A1A66221A58EC0002CFDC /* AppDelegate.swift */; };
+		983A1A69221A58EC0002CFDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A1A68221A58EC0002CFDC /* ViewController.swift */; };
+		983A1A6C221A58EC0002CFDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983A1A6A221A58EC0002CFDC /* Main.storyboard */; };
+		983A1A6E221A58ED0002CFDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983A1A6D221A58ED0002CFDC /* Assets.xcassets */; };
+		983A1A71221A58ED0002CFDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983A1A6F221A58ED0002CFDC /* LaunchScreen.storyboard */; };
+		983A1A7C221A58ED0002CFDC /* HotmobiOSSDKDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A1A7B221A58ED0002CFDC /* HotmobiOSSDKDemoTests.swift */; };
+		983A1A87221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A1A86221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.swift */; };
+		987567AB2225451800CCD27C /* HMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567A92225451800CCD27C /* HMMainViewController.swift */; };
+		987567AC2225451800CCD27C /* HMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987567AA2225451800CCD27C /* HMMainViewController.xib */; };
+		987567D8222CCAD300CCD27C /* HMReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567D7222CCAD300CCD27C /* HMReuseView.swift */; };
+		987567DA222CCBF100CCD27C /* HMHorizontalItemScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567D9222CCBF100CCD27C /* HMHorizontalItemScrollView.swift */; };
+		987567E1222CCD3D00CCD27C /* HMUITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567E0222CCD3D00CCD27C /* HMUITapGestureRecognizer.swift */; };
+		987567E7222CCF1200CCD27C /* HMBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567E6222CCF1200CCD27C /* HMBaseViewModel.swift */; };
+		987567EA222CCFB200CCD27C /* HMMainUnitBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567E8222CCFB200CCD27C /* HMMainUnitBaseTableViewCell.swift */; };
+		987567F3222CD08900CCD27C /* HMMainUnitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987567F2222CD08900CCD27C /* HMMainUnitView.xib */; };
+		987567F5222CD0AA00CCD27C /* HMMainUnitTypeAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567F4222CD0AA00CCD27C /* HMMainUnitTypeAView.swift */; };
+		987567F7222CD0F000CCD27C /* HMMainUnitTypeATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567F6222CD0F000CCD27C /* HMMainUnitTypeATableViewCell.swift */; };
+		987567F9222CD1FB00CCD27C /* HMMainUnitBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567F8222CD1FB00CCD27C /* HMMainUnitBaseCollectionViewCell.swift */; };
+		987567FB222CD21300CCD27C /* HMMainUnitTypeACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567FA222CD21300CCD27C /* HMMainUnitTypeACollectionViewCell.swift */; };
+		987567FD222CE89800CCD27C /* HMMainItemUnitTypeAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987567FC222CE89800CCD27C /* HMMainItemUnitTypeAViewModel.swift */; };
+		987567FF222CE9F400CCD27C /* MainJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 987567FE222CE9F400CCD27C /* MainJson.js */; };
+		98756804222CEEBE00CCD27C /* HMMainItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98756802222CEEBE00CCD27C /* HMMainItemTableCell.swift */; };
+		98756805222CEEBE00CCD27C /* HMMainItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98756803222CEEBE00CCD27C /* HMMainItemTableCell.xib */; };
+		98756808222CF15A00CCD27C /* HMResourcesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98756807222CF15A00CCD27C /* HMResourcesLoader.swift */; };
+		9875680A222D051100CCD27C /* HMMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98756809222D051100CCD27C /* HMMainViewModel.swift */; };
+		9875680C222D056B00CCD27C /* HMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9875680B222D056B00CCD27C /* HMBaseViewController.swift */; };
+		9875680E222D147E00CCD27C /* HMMainItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9875680D222D147E00CCD27C /* HMMainItemViewModel.swift */; };
+		98756810222D151F00CCD27C /* HMHomeMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9875680F222D151F00CCD27C /* HMHomeMenuModel.swift */; };
+		98756814222D370C00CCD27C /* HMMainItemUnitTypeBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98756813222D370C00CCD27C /* HMMainItemUnitTypeBViewModel.swift */; };
+		98756816222D385B00CCD27C /* HMMainUnitTypeBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98756815222D385B00CCD27C /* HMMainUnitTypeBView.swift */; };
+		98756818222D38B100CCD27C /* HMMainUnitTypeBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98756817222D38B100CCD27C /* HMMainUnitTypeBTableViewCell.swift */; };
+		9875681A222D6FEB00CCD27C /* HMMainUnitTypeBCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98756819222D6FEB00CCD27C /* HMMainUnitTypeBCollectionViewCell.swift */; };
+		9884C3BA2230BBF900E11736 /* HMRearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3B82230BBF900E11736 /* HMRearViewController.swift */; };
+		9884C3BB2230BBF900E11736 /* HMRearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9884C3B92230BBF900E11736 /* HMRearViewController.xib */; };
+		9884C3C62230C89900E11736 /* HMRearItemReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3C52230C89900E11736 /* HMRearItemReuseView.swift */; };
+		9884C3C82230C8CF00E11736 /* HMRearItemReuseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9884C3C72230C8CF00E11736 /* HMRearItemReuseView.xib */; };
+		9884C3CB2230CAAD00E11736 /* HMRearItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3C92230CAAD00E11736 /* HMRearItemTableViewCell.swift */; };
+		9884C3CC2230CAAD00E11736 /* HMRearItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9884C3CA2230CAAD00E11736 /* HMRearItemTableViewCell.xib */; };
+		9884C3CE2230CB9D00E11736 /* RearJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 9884C3CD2230CB9D00E11736 /* RearJson.js */; };
+		9884C3D12230CCAE00E11736 /* HMRearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3D02230CCAE00E11736 /* HMRearViewModel.swift */; };
+		9884C3D42230CCCE00E11736 /* HMRearItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3D32230CCCE00E11736 /* HMRearItemModel.swift */; };
+		9884C3D62230CCDA00E11736 /* HMRearItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3D52230CCDA00E11736 /* HMRearItemViewModel.swift */; };
+		9884C3DA2230E2C900E11736 /* HMRearCatItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3D92230E2C900E11736 /* HMRearCatItemModel.swift */; };
+		9884C3DC2230E2D400E11736 /* HMRearCatItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3DB2230E2D400E11736 /* HMRearCatItemViewModel.swift */; };
+		9884C3E02230FF3E00E11736 /* HMMainVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884C3DE2230FF3E00E11736 /* HMMainVideoViewController.swift */; };
+		9884C3E12230FF3E00E11736 /* HMMainVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9884C3DF2230FF3E00E11736 /* HMMainVideoViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		983A1A78221A58ED0002CFDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983A1A5B221A58EC0002CFDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 983A1A62221A58EC0002CFDC;
+			remoteInfo = HotmobiOSSDKDemo;
+		};
+		983A1A83221A58ED0002CFDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983A1A5B221A58EC0002CFDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 983A1A62221A58EC0002CFDC;
+			remoteInfo = HotmobiOSSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		981477D92276EDAE00880765 /* HMMainInterstititalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainInterstititalViewModel.swift; sourceTree = "<group>"; };
+		981477DB2276EDEB00880765 /* MainInterstitialJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = MainInterstitialJson.js; sourceTree = "<group>"; };
+		981477DD2276F14C00880765 /* HMVideoInterstititalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMVideoInterstititalViewModel.swift; sourceTree = "<group>"; };
+		981477DF2276F16200880765 /* VideoInterstitialJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = VideoInterstitialJson.js; sourceTree = "<group>"; };
+		98184541223F412900C5AF19 /* HMUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMUtilities.swift; sourceTree = "<group>"; };
+		98184543223F432B00C5AF19 /* HMMainVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainVideoViewModel.swift; sourceTree = "<group>"; };
+		98184545223F439600C5AF19 /* VideoMainJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = VideoMainJson.js; sourceTree = "<group>"; };
+		981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkPopupViewController.swift; sourceTree = "<group>"; };
+		981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeepLinkPopupViewController.xib; sourceTree = "<group>"; };
+		98255DDC2255F01A009F41D1 /* HMInternalLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMInternalLinkViewController.swift; sourceTree = "<group>"; };
+		98255DDD2255F01A009F41D1 /* HMInternalLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMInternalLinkViewController.xib; sourceTree = "<group>"; };
+		9838B357223B8E97000892F5 /* HMVideoInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMVideoInterstitialViewController.swift; sourceTree = "<group>"; };
+		9838B358223B8E97000892F5 /* HMVideoInterstitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMVideoInterstitialViewController.xib; sourceTree = "<group>"; };
+		9838B35B223B8EBD000892F5 /* HMHTMLInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMHTMLInterstitialViewController.swift; sourceTree = "<group>"; };
+		9838B35C223B8EBD000892F5 /* HMHTMLInterstitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMHTMLInterstitialViewController.xib; sourceTree = "<group>"; };
+		983A1A63221A58EC0002CFDC /* HotmobiOSSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotmobiOSSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		983A1A66221A58EC0002CFDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		983A1A68221A58EC0002CFDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		983A1A6B221A58EC0002CFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		983A1A6D221A58ED0002CFDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		983A1A70221A58ED0002CFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		983A1A72221A58ED0002CFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983A1A77221A58ED0002CFDC /* HotmobiOSSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotmobiOSSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		983A1A7B221A58ED0002CFDC /* HotmobiOSSDKDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotmobiOSSDKDemoTests.swift; sourceTree = "<group>"; };
+		983A1A7D221A58ED0002CFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983A1A82221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotmobiOSSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		983A1A86221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotmobiOSSDKDemoUITests.swift; sourceTree = "<group>"; };
+		983A1A88221A58ED0002CFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983A1AA6221A641E0002CFDC /* HotmobiOSSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HotmobiOSSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		987567A92225451800CCD27C /* HMMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainViewController.swift; sourceTree = "<group>"; };
+		987567AA2225451800CCD27C /* HMMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMMainViewController.xib; sourceTree = "<group>"; };
+		987567D7222CCAD300CCD27C /* HMReuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMReuseView.swift; sourceTree = "<group>"; };
+		987567D9222CCBF100CCD27C /* HMHorizontalItemScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMHorizontalItemScrollView.swift; sourceTree = "<group>"; };
+		987567E0222CCD3D00CCD27C /* HMUITapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMUITapGestureRecognizer.swift; sourceTree = "<group>"; };
+		987567E6222CCF1200CCD27C /* HMBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMBaseViewModel.swift; sourceTree = "<group>"; };
+		987567E8222CCFB200CCD27C /* HMMainUnitBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainUnitBaseTableViewCell.swift; sourceTree = "<group>"; };
+		987567F2222CD08900CCD27C /* HMMainUnitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMMainUnitView.xib; sourceTree = "<group>"; };
+		987567F4222CD0AA00CCD27C /* HMMainUnitTypeAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainUnitTypeAView.swift; sourceTree = "<group>"; };
+		987567F6222CD0F000CCD27C /* HMMainUnitTypeATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainUnitTypeATableViewCell.swift; sourceTree = "<group>"; };
+		987567F8222CD1FB00CCD27C /* HMMainUnitBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainUnitBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		987567FA222CD21300CCD27C /* HMMainUnitTypeACollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainUnitTypeACollectionViewCell.swift; sourceTree = "<group>"; };
+		987567FC222CE89800CCD27C /* HMMainItemUnitTypeAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainItemUnitTypeAViewModel.swift; sourceTree = "<group>"; };
+		987567FE222CE9F400CCD27C /* MainJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = MainJson.js; sourceTree = "<group>"; };
+		98756802222CEEBE00CCD27C /* HMMainItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainItemTableCell.swift; sourceTree = "<group>"; };
+		98756803222CEEBE00CCD27C /* HMMainItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMMainItemTableCell.xib; sourceTree = "<group>"; };
+		98756807222CF15A00CCD27C /* HMResourcesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMResourcesLoader.swift; sourceTree = "<group>"; };
+		98756809222D051100CCD27C /* HMMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainViewModel.swift; sourceTree = "<group>"; };
+		9875680B222D056B00CCD27C /* HMBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMBaseViewController.swift; sourceTree = "<group>"; };
+		9875680D222D147E00CCD27C /* HMMainItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainItemViewModel.swift; sourceTree = "<group>"; };
+		9875680F222D151F00CCD27C /* HMHomeMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMHomeMenuModel.swift; sourceTree = "<group>"; };
+		98756813222D370C00CCD27C /* HMMainItemUnitTypeBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainItemUnitTypeBViewModel.swift; sourceTree = "<group>"; };
+		98756815222D385B00CCD27C /* HMMainUnitTypeBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainUnitTypeBView.swift; sourceTree = "<group>"; };
+		98756817222D38B100CCD27C /* HMMainUnitTypeBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainUnitTypeBTableViewCell.swift; sourceTree = "<group>"; };
+		98756819222D6FEB00CCD27C /* HMMainUnitTypeBCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainUnitTypeBCollectionViewCell.swift; sourceTree = "<group>"; };
+		9884C3B82230BBF900E11736 /* HMRearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearViewController.swift; sourceTree = "<group>"; };
+		9884C3B92230BBF900E11736 /* HMRearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMRearViewController.xib; sourceTree = "<group>"; };
+		9884C3C52230C89900E11736 /* HMRearItemReuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearItemReuseView.swift; sourceTree = "<group>"; };
+		9884C3C72230C8CF00E11736 /* HMRearItemReuseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMRearItemReuseView.xib; sourceTree = "<group>"; };
+		9884C3C92230CAAD00E11736 /* HMRearItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearItemTableViewCell.swift; sourceTree = "<group>"; };
+		9884C3CA2230CAAD00E11736 /* HMRearItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMRearItemTableViewCell.xib; sourceTree = "<group>"; };
+		9884C3CD2230CB9D00E11736 /* RearJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RearJson.js; sourceTree = "<group>"; };
+		9884C3D02230CCAE00E11736 /* HMRearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearViewModel.swift; sourceTree = "<group>"; };
+		9884C3D32230CCCE00E11736 /* HMRearItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearItemModel.swift; sourceTree = "<group>"; };
+		9884C3D52230CCDA00E11736 /* HMRearItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearItemViewModel.swift; sourceTree = "<group>"; };
+		9884C3D92230E2C900E11736 /* HMRearCatItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearCatItemModel.swift; sourceTree = "<group>"; };
+		9884C3DB2230E2D400E11736 /* HMRearCatItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearCatItemViewModel.swift; sourceTree = "<group>"; };
+		9884C3DE2230FF3E00E11736 /* HMMainVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainVideoViewController.swift; sourceTree = "<group>"; };
+		9884C3DF2230FF3E00E11736 /* HMMainVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMMainVideoViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		983A1A60221A58EC0002CFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983A1A74221A58ED0002CFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983A1A7F221A58ED0002CFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9818453F223F409100C5AF19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		98184540223F409A00C5AF19 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98184543223F432B00C5AF19 /* HMMainVideoViewModel.swift */,
+				981477DD2276F14C00880765 /* HMVideoInterstititalViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		981C0BFA22D591E5007D1FD2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */,
+				981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */,
+				981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */,
+				981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		983A1A5A221A58EC0002CFDC = {
+			isa = PBXGroup;
+			children = (
+				983A1A65221A58EC0002CFDC /* HotmobiOSSDKDemo */,
+				983A1A7A221A58ED0002CFDC /* HotmobiOSSDKDemoTests */,
+				983A1A85221A58ED0002CFDC /* HotmobiOSSDKDemoUITests */,
+				983A1A64221A58EC0002CFDC /* Products */,
+				983A1AA1221A62E80002CFDC /* Frameworks */,
+				EFDEDE5800B318F81D68398A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		983A1A64221A58EC0002CFDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				983A1A63221A58EC0002CFDC /* HotmobiOSSDKDemo.app */,
+				983A1A77221A58ED0002CFDC /* HotmobiOSSDKDemoTests.xctest */,
+				983A1A82221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		983A1A65221A58EC0002CFDC /* HotmobiOSSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				983A1A66221A58EC0002CFDC /* AppDelegate.swift */,
+				983A1A68221A58EC0002CFDC /* ViewController.swift */,
+				987567D222293A1300CCD27C /* Classes */,
+				983A1A6A221A58EC0002CFDC /* Main.storyboard */,
+				983A1A6D221A58ED0002CFDC /* Assets.xcassets */,
+				9884C3CD2230CB9D00E11736 /* RearJson.js */,
+				987567FE222CE9F400CCD27C /* MainJson.js */,
+				981477DB2276EDEB00880765 /* MainInterstitialJson.js */,
+				98184545223F439600C5AF19 /* VideoMainJson.js */,
+				981477DF2276F16200880765 /* VideoInterstitialJson.js */,
+				983A1A6F221A58ED0002CFDC /* LaunchScreen.storyboard */,
+				983A1A72221A58ED0002CFDC /* Info.plist */,
+			);
+			path = HotmobiOSSDKDemo;
+			sourceTree = "<group>";
+		};
+		983A1A7A221A58ED0002CFDC /* HotmobiOSSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				983A1A7B221A58ED0002CFDC /* HotmobiOSSDKDemoTests.swift */,
+				983A1A7D221A58ED0002CFDC /* Info.plist */,
+			);
+			path = HotmobiOSSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		983A1A85221A58ED0002CFDC /* HotmobiOSSDKDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				983A1A86221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.swift */,
+				983A1A88221A58ED0002CFDC /* Info.plist */,
+			);
+			path = HotmobiOSSDKDemoUITests;
+			sourceTree = "<group>";
+		};
+		983A1AA1221A62E80002CFDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				983A1AA6221A641E0002CFDC /* HotmobiOSSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		987567A6222537BA00CCD27C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				987567D32229416200CCD27C /* Model */,
+				987567D42229416A00CCD27C /* ViewModel */,
+				987567D52229417A00CCD27C /* View */,
+				987567A92225451800CCD27C /* HMMainViewController.swift */,
+				987567AA2225451800CCD27C /* HMMainViewController.xib */,
+				9838B35B223B8EBD000892F5 /* HMHTMLInterstitialViewController.swift */,
+				9838B35C223B8EBD000892F5 /* HMHTMLInterstitialViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		987567D222293A1300CCD27C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9884C3B72230BBD300E11736 /* Rear */,
+				987567A6222537BA00CCD27C /* Main */,
+				9884C3DD2230FF1600E11736 /* Video */,
+				987567D6222CCA5F00CCD27C /* Core */,
+				98255DDC2255F01A009F41D1 /* HMInternalLinkViewController.swift */,
+				98255DDD2255F01A009F41D1 /* HMInternalLinkViewController.xib */,
+				981C0BFA22D591E5007D1FD2 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		987567D32229416200CCD27C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9875680F222D151F00CCD27C /* HMHomeMenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		987567D42229416A00CCD27C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98756809222D051100CCD27C /* HMMainViewModel.swift */,
+				9875680D222D147E00CCD27C /* HMMainItemViewModel.swift */,
+				987567FC222CE89800CCD27C /* HMMainItemUnitTypeAViewModel.swift */,
+				98756813222D370C00CCD27C /* HMMainItemUnitTypeBViewModel.swift */,
+				981477D92276EDAE00880765 /* HMMainInterstititalViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		987567D52229417A00CCD27C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				987567DF222CCCCD00CCD27C /* Reuse */,
+				987567F8222CD1FB00CCD27C /* HMMainUnitBaseCollectionViewCell.swift */,
+				987567FA222CD21300CCD27C /* HMMainUnitTypeACollectionViewCell.swift */,
+				98756819222D6FEB00CCD27C /* HMMainUnitTypeBCollectionViewCell.swift */,
+				98756802222CEEBE00CCD27C /* HMMainItemTableCell.swift */,
+				98756803222CEEBE00CCD27C /* HMMainItemTableCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		987567D6222CCA5F00CCD27C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				987567D7222CCAD300CCD27C /* HMReuseView.swift */,
+				987567D9222CCBF100CCD27C /* HMHorizontalItemScrollView.swift */,
+				987567E0222CCD3D00CCD27C /* HMUITapGestureRecognizer.swift */,
+				987567E6222CCF1200CCD27C /* HMBaseViewModel.swift */,
+				98756807222CF15A00CCD27C /* HMResourcesLoader.swift */,
+				9875680B222D056B00CCD27C /* HMBaseViewController.swift */,
+				98184541223F412900C5AF19 /* HMUtilities.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		987567DF222CCCCD00CCD27C /* Reuse */ = {
+			isa = PBXGroup;
+			children = (
+				987567F2222CD08900CCD27C /* HMMainUnitView.xib */,
+				987567F4222CD0AA00CCD27C /* HMMainUnitTypeAView.swift */,
+				98756815222D385B00CCD27C /* HMMainUnitTypeBView.swift */,
+				987567F6222CD0F000CCD27C /* HMMainUnitTypeATableViewCell.swift */,
+				98756817222D38B100CCD27C /* HMMainUnitTypeBTableViewCell.swift */,
+				987567E8222CCFB200CCD27C /* HMMainUnitBaseTableViewCell.swift */,
+			);
+			path = Reuse;
+			sourceTree = "<group>";
+		};
+		9884C3B72230BBD300E11736 /* Rear */ = {
+			isa = PBXGroup;
+			children = (
+				9884C3D22230CCB100E11736 /* Model */,
+				9884C3CF2230CC9000E11736 /* ViewModel */,
+				9884C3BC2230BCBC00E11736 /* View */,
+				9884C3B82230BBF900E11736 /* HMRearViewController.swift */,
+				9884C3B92230BBF900E11736 /* HMRearViewController.xib */,
+			);
+			path = Rear;
+			sourceTree = "<group>";
+		};
+		9884C3BC2230BCBC00E11736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9884C3C52230C89900E11736 /* HMRearItemReuseView.swift */,
+				9884C3C72230C8CF00E11736 /* HMRearItemReuseView.xib */,
+				9884C3C92230CAAD00E11736 /* HMRearItemTableViewCell.swift */,
+				9884C3CA2230CAAD00E11736 /* HMRearItemTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9884C3CF2230CC9000E11736 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9884C3D02230CCAE00E11736 /* HMRearViewModel.swift */,
+				9884C3D52230CCDA00E11736 /* HMRearItemViewModel.swift */,
+				9884C3DB2230E2D400E11736 /* HMRearCatItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9884C3D22230CCB100E11736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9884C3D32230CCCE00E11736 /* HMRearItemModel.swift */,
+				9884C3D92230E2C900E11736 /* HMRearCatItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9884C3DD2230FF1600E11736 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				98184540223F409A00C5AF19 /* ViewModel */,
+				9818453F223F409100C5AF19 /* View */,
+				9884C3DE2230FF3E00E11736 /* HMMainVideoViewController.swift */,
+				9884C3DF2230FF3E00E11736 /* HMMainVideoViewController.xib */,
+				9838B357223B8E97000892F5 /* HMVideoInterstitialViewController.swift */,
+				9838B358223B8E97000892F5 /* HMVideoInterstitialViewController.xib */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		EFDEDE5800B318F81D68398A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		983A1AAB221AA7CE0002CFDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		983A1A62221A58EC0002CFDC /* HotmobiOSSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983A1A8B221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemo" */;
+			buildPhases = (
+				983A1AAB221AA7CE0002CFDC /* Headers */,
+				983A1A5F221A58EC0002CFDC /* Sources */,
+				983A1A60221A58EC0002CFDC /* Frameworks */,
+				983A1A61221A58EC0002CFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotmobiOSSDKDemo;
+			productName = HotmobiOSSDKDemo;
+			productReference = 983A1A63221A58EC0002CFDC /* HotmobiOSSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		983A1A76221A58ED0002CFDC /* HotmobiOSSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983A1A8E221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemoTests" */;
+			buildPhases = (
+				983A1A73221A58ED0002CFDC /* Sources */,
+				983A1A74221A58ED0002CFDC /* Frameworks */,
+				983A1A75221A58ED0002CFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				983A1A79221A58ED0002CFDC /* PBXTargetDependency */,
+			);
+			name = HotmobiOSSDKDemoTests;
+			productName = HotmobiOSSDKDemoTests;
+			productReference = 983A1A77221A58ED0002CFDC /* HotmobiOSSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		983A1A81221A58ED0002CFDC /* HotmobiOSSDKDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983A1A91221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemoUITests" */;
+			buildPhases = (
+				983A1A7E221A58ED0002CFDC /* Sources */,
+				983A1A7F221A58ED0002CFDC /* Frameworks */,
+				983A1A80221A58ED0002CFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				983A1A84221A58ED0002CFDC /* PBXTargetDependency */,
+			);
+			name = HotmobiOSSDKDemoUITests;
+			productName = HotmobiOSSDKDemoUITests;
+			productReference = 983A1A82221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		983A1A5B221A58EC0002CFDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Paul Cheung";
+				TargetAttributes = {
+					983A1A62221A58EC0002CFDC = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+					983A1A76221A58ED0002CFDC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 983A1A62221A58EC0002CFDC;
+					};
+					983A1A81221A58ED0002CFDC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 983A1A62221A58EC0002CFDC;
+					};
+				};
+			};
+			buildConfigurationList = 983A1A5E221A58EC0002CFDC /* Build configuration list for PBXProject "HotmobiOSSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 983A1A5A221A58EC0002CFDC;
+			productRefGroup = 983A1A64221A58EC0002CFDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				983A1A62221A58EC0002CFDC /* HotmobiOSSDKDemo */,
+				983A1A76221A58ED0002CFDC /* HotmobiOSSDKDemoTests */,
+				983A1A81221A58ED0002CFDC /* HotmobiOSSDKDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		983A1A61221A58EC0002CFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98255DDF2255F01A009F41D1 /* HMInternalLinkViewController.xib in Resources */,
+				981477DC2276EDEB00880765 /* MainInterstitialJson.js in Resources */,
+				983A1A71221A58ED0002CFDC /* LaunchScreen.storyboard in Resources */,
+				98184546223F439600C5AF19 /* VideoMainJson.js in Resources */,
+				9884C3CC2230CAAD00E11736 /* HMRearItemTableViewCell.xib in Resources */,
+				983A1A6E221A58ED0002CFDC /* Assets.xcassets in Resources */,
+				9884C3C82230C8CF00E11736 /* HMRearItemReuseView.xib in Resources */,
+				987567AC2225451800CCD27C /* HMMainViewController.xib in Resources */,
+				9884C3CE2230CB9D00E11736 /* RearJson.js in Resources */,
+				9884C3E12230FF3E00E11736 /* HMMainVideoViewController.xib in Resources */,
+				98756805222CEEBE00CCD27C /* HMMainItemTableCell.xib in Resources */,
+				983A1A6C221A58EC0002CFDC /* Main.storyboard in Resources */,
+				987567F3222CD08900CCD27C /* HMMainUnitView.xib in Resources */,
+				9838B35E223B8EBD000892F5 /* HMHTMLInterstitialViewController.xib in Resources */,
+				981477E02276F16200880765 /* VideoInterstitialJson.js in Resources */,
+				981C0C0B22D6D91F007D1FD2 /* DeepLinkPopupViewController.xib in Resources */,
+				981C0BFE22D5920D007D1FD2 /* OtherViewController.xib in Resources */,
+				987567FF222CE9F400CCD27C /* MainJson.js in Resources */,
+				9838B35A223B8E97000892F5 /* HMVideoInterstitialViewController.xib in Resources */,
+				9884C3BB2230BBF900E11736 /* HMRearViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983A1A75221A58ED0002CFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983A1A80221A58ED0002CFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		983A1A5F221A58EC0002CFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987567F5222CD0AA00CCD27C /* HMMainUnitTypeAView.swift in Sources */,
+				981477DA2276EDAE00880765 /* HMMainInterstititalViewModel.swift in Sources */,
+				9884C3D12230CCAE00E11736 /* HMRearViewModel.swift in Sources */,
+				9884C3CB2230CAAD00E11736 /* HMRearItemTableViewCell.swift in Sources */,
+				987567FD222CE89800CCD27C /* HMMainItemUnitTypeAViewModel.swift in Sources */,
+				987567E1222CCD3D00CCD27C /* HMUITapGestureRecognizer.swift in Sources */,
+				9884C3D62230CCDA00E11736 /* HMRearItemViewModel.swift in Sources */,
+				987567D8222CCAD300CCD27C /* HMReuseView.swift in Sources */,
+				9884C3C62230C89900E11736 /* HMRearItemReuseView.swift in Sources */,
+				9875680C222D056B00CCD27C /* HMBaseViewController.swift in Sources */,
+				9838B359223B8E97000892F5 /* HMVideoInterstitialViewController.swift in Sources */,
+				987567DA222CCBF100CCD27C /* HMHorizontalItemScrollView.swift in Sources */,
+				9884C3E02230FF3E00E11736 /* HMMainVideoViewController.swift in Sources */,
+				98756804222CEEBE00CCD27C /* HMMainItemTableCell.swift in Sources */,
+				9875681A222D6FEB00CCD27C /* HMMainUnitTypeBCollectionViewCell.swift in Sources */,
+				9884C3D42230CCCE00E11736 /* HMRearItemModel.swift in Sources */,
+				987567FB222CD21300CCD27C /* HMMainUnitTypeACollectionViewCell.swift in Sources */,
+				987567EA222CCFB200CCD27C /* HMMainUnitBaseTableViewCell.swift in Sources */,
+				987567F7222CD0F000CCD27C /* HMMainUnitTypeATableViewCell.swift in Sources */,
+				9884C3BA2230BBF900E11736 /* HMRearViewController.swift in Sources */,
+				98756808222CF15A00CCD27C /* HMResourcesLoader.swift in Sources */,
+				981477DE2276F14C00880765 /* HMVideoInterstititalViewModel.swift in Sources */,
+				983A1A69221A58EC0002CFDC /* ViewController.swift in Sources */,
+				98255DDE2255F01A009F41D1 /* HMInternalLinkViewController.swift in Sources */,
+				981C0C0A22D6D91F007D1FD2 /* DeepLinkPopupViewController.swift in Sources */,
+				98756810222D151F00CCD27C /* HMHomeMenuModel.swift in Sources */,
+				98184544223F432B00C5AF19 /* HMMainVideoViewModel.swift in Sources */,
+				987567AB2225451800CCD27C /* HMMainViewController.swift in Sources */,
+				98756814222D370C00CCD27C /* HMMainItemUnitTypeBViewModel.swift in Sources */,
+				9884C3DA2230E2C900E11736 /* HMRearCatItemModel.swift in Sources */,
+				981C0BFD22D5920D007D1FD2 /* OtherViewController.swift in Sources */,
+				9875680E222D147E00CCD27C /* HMMainItemViewModel.swift in Sources */,
+				9838B35D223B8EBD000892F5 /* HMHTMLInterstitialViewController.swift in Sources */,
+				987567E7222CCF1200CCD27C /* HMBaseViewModel.swift in Sources */,
+				987567F9222CD1FB00CCD27C /* HMMainUnitBaseCollectionViewCell.swift in Sources */,
+				98756818222D38B100CCD27C /* HMMainUnitTypeBTableViewCell.swift in Sources */,
+				98184542223F412900C5AF19 /* HMUtilities.swift in Sources */,
+				983A1A67221A58EC0002CFDC /* AppDelegate.swift in Sources */,
+				9875680A222D051100CCD27C /* HMMainViewModel.swift in Sources */,
+				98756816222D385B00CCD27C /* HMMainUnitTypeBView.swift in Sources */,
+				9884C3DC2230E2D400E11736 /* HMRearCatItemViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983A1A73221A58ED0002CFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983A1A7C221A58ED0002CFDC /* HotmobiOSSDKDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983A1A7E221A58ED0002CFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983A1A87221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		983A1A79221A58ED0002CFDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 983A1A62221A58EC0002CFDC /* HotmobiOSSDKDemo */;
+			targetProxy = 983A1A78221A58ED0002CFDC /* PBXContainerItemProxy */;
+		};
+		983A1A84221A58ED0002CFDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 983A1A62221A58EC0002CFDC /* HotmobiOSSDKDemo */;
+			targetProxy = 983A1A83221A58ED0002CFDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		983A1A6A221A58EC0002CFDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				983A1A6B221A58EC0002CFDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		983A1A6F221A58ED0002CFDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				983A1A70221A58ED0002CFDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		983A1A89221A58ED0002CFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		983A1A8A221A58ED0002CFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		983A1A8C221A58ED0002CFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
+				INFOPLIST_FILE = HotmobiOSSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		983A1A8D221A58ED0002CFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
+				INFOPLIST_FILE = HotmobiOSSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		983A1A8F221A58ED0002CFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotmobiOSSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotmobiOSSDKDemo.app/HotmobiOSSDKDemo";
+			};
+			name = Debug;
+		};
+		983A1A90221A58ED0002CFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotmobiOSSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotmobiOSSDKDemo.app/HotmobiOSSDKDemo";
+			};
+			name = Release;
+		};
+		983A1A92221A58ED0002CFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotmobiOSSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HotmobiOSSDKDemo;
+			};
+			name = Debug;
+		};
+		983A1A93221A58ED0002CFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotmobiOSSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HotmobiOSSDKDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		983A1A5E221A58EC0002CFDC /* Build configuration list for PBXProject "HotmobiOSSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983A1A89221A58ED0002CFDC /* Debug */,
+				983A1A8A221A58ED0002CFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983A1A8B221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983A1A8C221A58ED0002CFDC /* Debug */,
+				983A1A8D221A58ED0002CFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983A1A8E221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983A1A8F221A58ED0002CFDC /* Debug */,
+				983A1A90221A58ED0002CFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983A1A91221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983A1A92221A58ED0002CFDC /* Debug */,
+				983A1A93221A58ED0002CFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 983A1A5B221A58EC0002CFDC /* Project object */;
+}
