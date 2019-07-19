@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zqb-Rm-Rnf" customClass="HMMainUnitTypeAView" customModule="HotmobiOSSDKDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbK-cA-aav">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PbK-cA-aav" firstAttribute="leading" secondItem="s39-js-zm0" secondAttribute="leading" id="UfL-v7-WPn"/>
+                <constraint firstItem="PbK-cA-aav" firstAttribute="centerX" secondItem="zqb-Rm-Rnf" secondAttribute="centerX" id="bqy-hR-OIY"/>
+                <constraint firstItem="PbK-cA-aav" firstAttribute="centerY" secondItem="zqb-Rm-Rnf" secondAttribute="centerY" id="dIJ-F8-wLF"/>
+                <constraint firstItem="s39-js-zm0" firstAttribute="trailing" secondItem="PbK-cA-aav" secondAttribute="trailing" id="hZI-W2-8oE"/>
+                <constraint firstItem="s39-js-zm0" firstAttribute="bottom" secondItem="PbK-cA-aav" secondAttribute="bottom" id="kPr-fI-MVY"/>
+                <constraint firstItem="PbK-cA-aav" firstAttribute="top" secondItem="s39-js-zm0" secondAttribute="top" id="pdC-Br-6dv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="s39-js-zm0"/>
+            <connections>
+                <outlet property="lblTitle" destination="PbK-cA-aav" id="cvB-9a-4iV"/>
+            </connections>
+            <point key="canvasLocation" x="-726.39999999999998" y="-425.48725637181411"/>
+        </view>
+        <view contentMode="scaleToFill" id="djv-GC-Wx7" customClass="HMMainUnitTypeBView" customModule="HotmobiOSSDKDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pl1-sX-CyW">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Jo2-Ln-gjm" firstAttribute="trailing" secondItem="pl1-sX-CyW" secondAttribute="trailing" id="A5t-cH-bKn"/>
+                <constraint firstItem="pl1-sX-CyW" firstAttribute="leading" secondItem="Jo2-Ln-gjm" secondAttribute="leading" id="Cb4-iR-9SR"/>
+                <constraint firstItem="pl1-sX-CyW" firstAttribute="top" secondItem="Jo2-Ln-gjm" secondAttribute="top" id="PMp-Wi-Vlw"/>
+                <constraint firstItem="Jo2-Ln-gjm" firstAttribute="bottom" secondItem="pl1-sX-CyW" secondAttribute="bottom" id="UlV-Jx-Nvf"/>
+                <constraint firstItem="pl1-sX-CyW" firstAttribute="centerY" secondItem="djv-GC-Wx7" secondAttribute="centerY" id="Vhe-xU-k4R"/>
+                <constraint firstItem="pl1-sX-CyW" firstAttribute="centerX" secondItem="djv-GC-Wx7" secondAttribute="centerX" id="W5r-17-OKk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Jo2-Ln-gjm"/>
+            <connections>
+                <outlet property="lblTitle" destination="pl1-sX-CyW" id="dzX-2n-9B8"/>
+            </connections>
+            <point key="canvasLocation" x="-822" y="-339"/>
+        </view>
+    </objects>
+</document>

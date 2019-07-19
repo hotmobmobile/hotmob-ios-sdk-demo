@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '11.0'
+# source 'https://gitlab.com/hotmob-sdk/ios-sdk.git'
+
+
+target 'HotmobiOSSDKDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HotmobiOSSDKDemo
+  pod 'HotmobiOSSDK'
+  pod 'Alamofire'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxDataSources', '~> 3.0'
+  pod 'ObjectMapper', '~> 3.4'
+  pod 'SwiftyJSON'
+  pod 'SWRevealViewController', '2.3.0'
+  pod 'RxWebKit'
+
+  target 'HotmobiOSSDKDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HotmobiOSSDKDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
