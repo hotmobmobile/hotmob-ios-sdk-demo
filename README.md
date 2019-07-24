@@ -6,14 +6,11 @@ Visit http://www.hot-mob.com/ for more details.
 ### Requirements
 ---
 * Swift 4+
-* iOS 9.0+
+* iOS 11.0+
 * Xcode 10.2+
 
 ### Installation
 ---
-This framework is a beta version written in swift.
-If you are usign static library and have problem, please check folder named  `ObjectivecC` README file.
-
 CocoaPods
 
 You can use [CocoaPods](http://cocoapods.org/) to install `HotmobiOSSDK` by adding it to your `Podfile`:
@@ -76,6 +73,12 @@ func openInternalCallback(url: String){
     
 func didResizeBanner(_ banner: UIView) {
 }
+
+func videoAdMute() {
+}
+
+func videoAdUnmute() {
+}
 ```
 
 #### Banner
@@ -128,6 +131,12 @@ func openInternalCallback(url: String){
     
 func didResizeBanner(_ banner: UIView) {
     self.adContainerView.frame.size.height = banner.frame.size.height
+}
+
+func videoAdMute() {
+}
+
+func videoAdUnmute() {
 }
 ```
 
@@ -198,6 +207,15 @@ func openInternalCallback(url: String){
 }
     
 func didResizeBanner(_ banner: UIView) {
+    let indexPath: IndexPath = IndexPath(row: 5, section: 0)
+    self.mainTableView.reloadRows(at: [indexPath], with: .fade)
+    HotmobiOSSDK.calculateBannerPositionWithView(scrollView: self.mainTableView, cellItems: self.mainTableView.visibleCells, bannerCell: self.bannerCell!, banner: self.bannerView!, con: con!)
+}
+
+func videoAdMute() {
+}
+
+func videoAdUnmute() {
 }
 ```
 5. Additional Coding for Native Video Ad (optional)
