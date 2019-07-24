@@ -6,7 +6,7 @@ Visit http://www.hot-mob.com/ for more details.
 ### Requirements
 ---
 * Swift 4+
-* iOS 9.0+
+* iOS 11.0+
 * Xcode 10.2+
 
 ### Installation
