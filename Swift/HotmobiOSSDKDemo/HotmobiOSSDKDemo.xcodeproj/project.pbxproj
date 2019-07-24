@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11DBF1F047B86B392F1AB171 /* Pods_HotmobiOSSDKDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF6F07EB0B018377128BE6 /* Pods_HotmobiOSSDKDemoTests.framework */; };
+		5546999489CEC5FBDE1602DC /* Pods_HotmobiOSSDKDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BEF179E458BBDC9ABD0A15 /* Pods_HotmobiOSSDKDemoUITests.framework */; };
+		6888144840479E5EAAEA3761 /* Pods_HotmobiOSSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B78571FE0FC93E63AB3B8 /* Pods_HotmobiOSSDKDemo.framework */; };
 		981477DA2276EDAE00880765 /* HMMainInterstititalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981477D92276EDAE00880765 /* HMMainInterstititalViewModel.swift */; };
 		981477DC2276EDEB00880765 /* MainInterstitialJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 981477DB2276EDEB00880765 /* MainInterstitialJson.js */; };
 		981477DE2276F14C00880765 /* HMVideoInterstititalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981477DD2276F14C00880765 /* HMVideoInterstititalViewModel.swift */; };
@@ -90,6 +93,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E529A810B31E59C2AA4A4CD /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F360595AAA777E4CA9A8E67 /* Pods-HotmobiOSSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		80FF6F07EB0B018377128BE6 /* Pods_HotmobiOSSDKDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		981477D92276EDAE00880765 /* HMMainInterstititalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainInterstititalViewModel.swift; sourceTree = "<group>"; };
 		981477DB2276EDEB00880765 /* MainInterstitialJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = MainInterstitialJson.js; sourceTree = "<group>"; };
 		981477DD2276F14C00880765 /* HMVideoInterstititalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMVideoInterstititalViewModel.swift; sourceTree = "<group>"; };
@@ -160,6 +166,12 @@
 		9884C3DB2230E2D400E11736 /* HMRearCatItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearCatItemViewModel.swift; sourceTree = "<group>"; };
 		9884C3DE2230FF3E00E11736 /* HMMainVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainVideoViewController.swift; sourceTree = "<group>"; };
 		9884C3DF2230FF3E00E11736 /* HMMainVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMMainVideoViewController.xib; sourceTree = "<group>"; };
+		B29D0351D002AD31F9BAD509 /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C99CCEB5ADDA4496A4DE4141 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D0BEF179E458BBDC9ABD0A15 /* Pods_HotmobiOSSDKDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEFFB491FF6EFD2964FF880E /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoTests.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDF6524943519E2885458CD0 /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F58B78571FE0FC93E63AB3B8 /* Pods_HotmobiOSSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6888144840479E5EAAEA3761 /* Pods_HotmobiOSSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DBF1F047B86B392F1AB171 /* Pods_HotmobiOSSDKDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5546999489CEC5FBDE1602DC /* Pods_HotmobiOSSDKDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +292,9 @@
 			isa = PBXGroup;
 			children = (
 				983A1AA6221A641E0002CFDC /* HotmobiOSSDK.framework */,
+				F58B78571FE0FC93E63AB3B8 /* Pods_HotmobiOSSDKDemo.framework */,
+				80FF6F07EB0B018377128BE6 /* Pods_HotmobiOSSDKDemoTests.framework */,
+				D0BEF179E458BBDC9ABD0A15 /* Pods_HotmobiOSSDKDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -427,6 +445,12 @@
 		EFDEDE5800B318F81D68398A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				C99CCEB5ADDA4496A4DE4141 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */,
+				6F360595AAA777E4CA9A8E67 /* Pods-HotmobiOSSDKDemo.release.xcconfig */,
+				5E529A810B31E59C2AA4A4CD /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */,
+				DEFFB491FF6EFD2964FF880E /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */,
+				EDF6524943519E2885458CD0 /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */,
+				B29D0351D002AD31F9BAD509 /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -448,10 +472,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 983A1A8B221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemo" */;
 			buildPhases = (
+				1B5317E6E0CD839ED89EC23E /* [CP] Check Pods Manifest.lock */,
 				983A1AAB221AA7CE0002CFDC /* Headers */,
 				983A1A5F221A58EC0002CFDC /* Sources */,
 				983A1A60221A58EC0002CFDC /* Frameworks */,
 				983A1A61221A58EC0002CFDC /* Resources */,
+				66F035265C2D05CAEE88DAB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,6 +492,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 983A1A8E221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemoTests" */;
 			buildPhases = (
+				80F3E76F31F976332CA285F6 /* [CP] Check Pods Manifest.lock */,
 				983A1A73221A58ED0002CFDC /* Sources */,
 				983A1A74221A58ED0002CFDC /* Frameworks */,
 				983A1A75221A58ED0002CFDC /* Resources */,
@@ -484,6 +511,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 983A1A91221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemoUITests" */;
 			buildPhases = (
+				412ED81E38EC00599ED2E1F8 /* [CP] Check Pods Manifest.lock */,
 				983A1A7E221A58ED0002CFDC /* Sources */,
 				983A1A7F221A58ED0002CFDC /* Frameworks */,
 				983A1A80221A58ED0002CFDC /* Resources */,
@@ -595,6 +623,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B5317E6E0CD839ED89EC23E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotmobiOSSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		412ED81E38EC00599ED2E1F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotmobiOSSDKDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66F035265C2D05CAEE88DAB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80F3E76F31F976332CA285F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotmobiOSSDKDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		983A1A5F221A58EC0002CFDC /* Sources */ = {
@@ -814,6 +928,7 @@
 		};
 		983A1A8C221A58ED0002CFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99CCEB5ADDA4496A4DE4141 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -833,6 +948,7 @@
 		};
 		983A1A8D221A58ED0002CFDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F360595AAA777E4CA9A8E67 /* Pods-HotmobiOSSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -852,6 +968,7 @@
 		};
 		983A1A8F221A58ED0002CFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E529A810B31E59C2AA4A4CD /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -872,6 +989,7 @@
 		};
 		983A1A90221A58ED0002CFDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEFFB491FF6EFD2964FF880E /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -892,6 +1010,7 @@
 		};
 		983A1A92221A58ED0002CFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF6524943519E2885458CD0 /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -911,6 +1030,7 @@
 		};
 		983A1A93221A58ED0002CFDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B29D0351D002AD31F9BAD509 /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

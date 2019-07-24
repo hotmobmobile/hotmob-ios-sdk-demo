@@ -306,5 +306,13 @@ extension HMMainViewController: HotmobControllerDelegate{
         self.adContainerheightConstraint.constant = banner.frame.size.height
         self.scrollView.contentSize.height = banner.frame.size.height + self.lblBGView.frame.size.height
     }
+    
+    func videoAdMute() {
+        
+    }
+    
+    func videoAdUnmute() {
+        
+    }
 }
 

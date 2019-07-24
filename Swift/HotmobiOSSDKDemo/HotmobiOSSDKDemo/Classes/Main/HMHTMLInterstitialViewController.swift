@@ -187,4 +187,12 @@ extension HMHTMLInterstitialViewController: HotmobControllerDelegate{
     func didResizeBanner(_ banner: UIView) {
         
     }
+    
+    func videoAdMute() {
+        
+    }
+    
+    func videoAdUnmute() {
+        
+    }
 }
