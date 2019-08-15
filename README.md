@@ -1,15 +1,15 @@
-### [Hotmob](http://www.hot-mob.com/)
+## [Hotmob](http://www.hot-mob.com/)
 Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong Kong, where monetizes the mobile taffic of the top ranked publishers into revenue and meanwhile connects advertisers to target audience effectively.
 
 Visit http://www.hot-mob.com/ for more details.
 
-### Requirements
+## Requirements
 ---
 * Swift 4+
 * iOS 11.0+
 * Xcode 10.2+
 
-### Installation
+## Installation
 ---
 CocoaPods
 
@@ -19,10 +19,10 @@ You can use [CocoaPods](http://cocoapods.org/) to install `HotmobiOSSDK` by addi
 pod 'HotmobiOSSDK'
 ```
 
-### Usage
+## Usage
 ---
 
-#### Initialization
+### Initialization
 To integrate SDK should init `HotmobiOSSDK` in `AppDelegate.swift` class. Please using the following code to start the `HotmobiOSSDK`.
 ```
 import HotmobiOSSDK
@@ -34,22 +34,22 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-#### Popup
+### Popup
 To Create the Hotmob Popup can refercence following step:
 1.  Import the `HotmobiOSSDK` to the target AppDelegate and declare the `HotmobControllerDelegate` protocol.
-```
+```swift
 import HotmobiOSSDK
 ...
 class AppDelegate: UIResponder, UIApplicationDelegate, HotmobControllerDelegate {
 ```
 2.  When you call the popup in the AppDelegate or first time using in your application. Please using the following code to start the HotmobManager
 
-```
+```swift
 HotmobiOSSDK.startSDK()
 HotmobiOSSDK.getHotmobPopup(adCode: "hotmob_ios_popup_inapp", delegate: self)
 ```
 3. Implement the delegate method.
-```
+```swift
 func didLoadBanner(_ banner: UIView){
 }
     
@@ -81,17 +81,17 @@ func videoAdUnmute() {
 }
 ```
 
-#### Banner
+### Banner
 To Create the Hotmob Banner can refercence following step:
 1.  Import the `HotmobiOSSDK` to the target ViewController and declare the `HotmobControllerDelegate` protocol.
-```
+```swift
 import HotmobiOSSDK
 ...
 class ViewController: UIViewController, HotmobControllerDelegate {
 ```
 
 2. Create the banner view and add the banner to ViewController in `func viewDidLoad()`.
-```
+```swift
 override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -104,7 +104,7 @@ override func viewDidLoad() {
 ```
 
 3. Implement the delegate method.
-```
+```swift
 func didLoadBanner(_ banner: UIView){
 }
     
@@ -140,17 +140,17 @@ func videoAdUnmute() {
 }
 ```
 
-#### Banner in TableView
+### Banner in TableView
 To Create the Hotmob Banner can refercence following step:
 1.  Import the `HotmobiOSSDK` to the target ViewController and declare the `HotmobControllerDelegate` protocol.
-```
+```swift
 import HotmobiOSSDK
 ...
 class ViewController: UIViewController, HotmobControllerDelegate {
 ```
 
 2. Identifier which row of UITableView you Want to show the banner in `func tableView(_:cellForRowAt:)`
-```
+```swift
 let cell = tableView.dequeueReusableCell(withIdentifier: self.ItemCellID)
 cell?.backgroundColor = .black
 self.bannerView?.removeFromSuperview()
@@ -167,7 +167,7 @@ return cell!
 ```
 
 3. Set height of banner cell in `func tableView(_:heightForRowAt:)`
-```
+```swift
 if indexPath.row == 5{
     if (self.bannerView != nil) {
           return (self.bannerView?.frame.size.height)!
@@ -179,7 +179,7 @@ return 50
 ```
 
 4. Implement the delegate method.
-```
+```swift
 func didLoadBanner(_ banner: UIView){
 }
     
@@ -220,7 +220,7 @@ func videoAdUnmute() {
 ```
 5. Additional Coding for Native Video Ad (optional)
 To support banner visible <50% pause and visible >50% play when the banner scoll-off or scoll-on screen. 
-```
+```swift
 func scrollViewDidScroll(_ scrollView: UIScrollView) {
     if (self.bannerCell != nil) && (self.bannerView != nil){
         HotmobiOSSDK.calculateBannerPositionWithView(scrollView: self.mainTableView, cellItems: self.mainTableView.visibleCells, bannerCell: self.bannerCell!, banner: self.bannerView!, con: con!)
@@ -228,7 +228,21 @@ func scrollViewDidScroll(_ scrollView: UIScrollView) {
 }
 ```
 
+### Banner Reload
+Hotmob SDK is expected to detect the change of ViewController and reload Banner on each ViewController automatically.
+
+If the logic fails to reload Banner correctly, manual reload can be use.
+```swift
+// Add one more param to start SDK without auto-detection of ViewController change
+HotmobiOSSDK.startSDK(autoDetectViewControllerChange: false)
+
+// Add the following line to set ViewController manually to reload Banner
+// This line should be run exactly once for all ViewController's launch or resume
+HotmobiOSSDK.setCurrentViewController(viewController: viewController)
+```
+
+
 ---
-### Contact
+## Contact
 ---
 Website: [http://www.hot-mob.com](http://www.hot-mob.com/)
