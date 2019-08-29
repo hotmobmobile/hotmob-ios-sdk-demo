@@ -35,6 +35,7 @@ Visit http://www.hot-mob.com/ for more details.
 ---
 | HotmobSDK Version     | Minimum iOS Target    | Notes |
 | --------              |---------              |-------|
+| 4.6.3                 | iOS 6                 |   Support iOS 13 |
 | 4.5.x                 | iOS 6                 |   Bug fixes |
 | 4.4.x                 | iOS 6                 |   Video ad layout update |
 | 4.3.x                 | iOS 6                 |   Updated to support iPhoneX |
