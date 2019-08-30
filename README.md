@@ -236,8 +236,12 @@ If the logic fails to reload Banner correctly, manual reload can be use.
 // Add one more param to start SDK without auto-detection of ViewController change
 HotmobiOSSDK.startSDK(autoDetectViewControllerChange: false)
 
+// When creating Banner, you need to add your ViewController
+let con = HotmobiOSSDK.getHotmobBannerController(adCode, needAutoReload: true, delegate: self, identifier: identifier, viewController: viewController)
+
 // Add the following line to set ViewController manually to reload Banner
 // This line should be run exactly once for all ViewController's launch or resume
+// Suggested to put in viewWillAppear()
 HotmobiOSSDK.setCurrentViewController(viewController: viewController)
 ```
 
