@@ -95,8 +95,6 @@ class HMRearViewController: HMBaseViewController, UITableViewDelegate {
                 case "Other":
                     if row == 0 {
                         vc = OtherViewController()
-                    }else if row == 1{
-                        vc = DeepLinkPopupViewController()
                     }
                     break
                 default:

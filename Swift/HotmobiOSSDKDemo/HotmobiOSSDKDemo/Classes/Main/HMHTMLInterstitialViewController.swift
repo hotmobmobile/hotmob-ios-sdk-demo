@@ -15,6 +15,8 @@ import HotmobiOSSDK
 
 class HMHTMLInterstitialViewController: HMBaseViewController, UITableViewDelegate, HMUIViewTapDelegate{
     
+    var popup: HotmobController? = nil
+    
     @IBOutlet weak var mainTableView: UITableView!
     private let HMMainItemTableCellNibName = "HMMainItemTableCell"
     private let ScrollSectionBCellID = "ScrollSectionBCellID"
@@ -105,9 +107,10 @@ class HMHTMLInterstitialViewController: HMBaseViewController, UITableViewDelegat
     }
     
     func addAdView(_ adCode: String){
-        let popupAdCode = adCode
-        HotmobiOSSDK.getHotmobPopup(adCode: popupAdCode, delegate: self)
-
+//        let popupAdCode = adCode
+//        HotmobiOSSDK.getHotmobPopup(adCode: popupAdCode, delegate: self)
+        self.popup = HotmobController(type: .Interstitial, identifier: "Popup", adCode: adCode, delegate: self)
+        self.popup?.loadAd()
     }
     
 }
@@ -161,38 +164,40 @@ extension HMHTMLInterstitialViewController: UICollectionViewDelegateFlowLayout{
 }
 
 extension HMHTMLInterstitialViewController: HotmobControllerDelegate{
-    func didLoadBanner(_ banner: UIView) {
+    func adDidStartLoading(_ ad: HotmobController) {
+        
     }
     
-    func willDisplayBanner(_ banner: UIView) {
+    func adDidLoad(_ ad: HotmobController) {
+        
     }
     
-    func didDisplayBanner(_ banner: UIView) {
+    func noAd(_ ad: HotmobController) {
     }
     
-    func willHideBanner(_ banner: UIView) {
+    func adDidShow(_ ad: HotmobController) {
     }
     
-    func didHideBanner(_ banner: UIView) {
+    func adDidHide(_ ad: HotmobController) {
     }
     
-    func didLoadFailed() {
+    func adDidClick(_ ad: HotmobController) {
+        
     }
     
-    func openInternalCallback(url: String) {
+    func videoAdDidMute(_ ad: HotmobController) {
+        
+    }
+    
+    func videoAdDidUnmute(_ ad: HotmobController) {
+        
+    }
+    
+    func adDidResize(_ ad: HotmobController) {
+    }
+    
+    func deepLinkDidClick(_ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
-    }
-    
-    func didResizeBanner(_ banner: UIView) {
-        
-    }
-    
-    func videoAdMute() {
-        
-    }
-    
-    func videoAdUnmute() {
-        
     }
 }

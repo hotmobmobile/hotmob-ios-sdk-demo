@@ -14,8 +14,6 @@ import HotmobiOSSDK
 class HMBaseViewController: UIViewController {
 
     let disposeBag = DisposeBag()
-    
-    var bannerView: UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +23,11 @@ class HMBaseViewController: UIViewController {
 
     }
     
-    deinit{
-        print("deinit HMBaseViewController")
-        self.bannerView = nil
-    }
-    
     func setupRightBarButtonItem() {
         
         let customButton: UIButton = UIButton(type: .custom)
         customButton.frame = CGRect(x: 3, y: 9, width: 72, height: 22)
-        if HotmobiOSSDK.returntCurrentLocale() == "HK"{
+        if HotmobiOSSDK.returnCurrentLocale() == "HK"{
             customButton.setTitle("HK", for: .normal)
         }else{
             customButton.setTitle("JP", for: .normal)
@@ -49,7 +42,7 @@ class HMBaseViewController: UIViewController {
     }
     
     @objc func changeLocale(){
-        if HotmobiOSSDK.returntCurrentLocale() == "HK"{
+        if HotmobiOSSDK.returnCurrentLocale() == "HK"{
             HotmobiOSSDK.setCurrentLocale(loc: "JP")
             let item = self.navigationItem.rightBarButtonItem!
             let button = item.customView as! UIButton

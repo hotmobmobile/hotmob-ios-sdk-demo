@@ -19,8 +19,6 @@
 		98184546223F439600C5AF19 /* VideoMainJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 98184545223F439600C5AF19 /* VideoMainJson.js */; };
 		981C0BFD22D5920D007D1FD2 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */; };
 		981C0BFE22D5920D007D1FD2 /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */; };
-		981C0C0A22D6D91F007D1FD2 /* DeepLinkPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */; };
-		981C0C0B22D6D91F007D1FD2 /* DeepLinkPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */; };
 		98255DDE2255F01A009F41D1 /* HMInternalLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255DDC2255F01A009F41D1 /* HMInternalLinkViewController.swift */; };
 		98255DDF2255F01A009F41D1 /* HMInternalLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255DDD2255F01A009F41D1 /* HMInternalLinkViewController.xib */; };
 		9838B359223B8E97000892F5 /* HMVideoInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9838B357223B8E97000892F5 /* HMVideoInterstitialViewController.swift */; };
@@ -105,8 +103,6 @@
 		98184545223F439600C5AF19 /* VideoMainJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = VideoMainJson.js; sourceTree = "<group>"; };
 		981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
-		981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkPopupViewController.swift; sourceTree = "<group>"; };
-		981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeepLinkPopupViewController.xib; sourceTree = "<group>"; };
 		98255DDC2255F01A009F41D1 /* HMInternalLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMInternalLinkViewController.swift; sourceTree = "<group>"; };
 		98255DDD2255F01A009F41D1 /* HMInternalLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMInternalLinkViewController.xib; sourceTree = "<group>"; };
 		9838B357223B8E97000892F5 /* HMVideoInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMVideoInterstitialViewController.swift; sourceTree = "<group>"; };
@@ -223,8 +219,6 @@
 			children = (
 				981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */,
 				981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */,
-				981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */,
-				981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -600,7 +594,6 @@
 				987567F3222CD08900CCD27C /* HMMainUnitView.xib in Resources */,
 				9838B35E223B8EBD000892F5 /* HMHTMLInterstitialViewController.xib in Resources */,
 				981477E02276F16200880765 /* VideoInterstitialJson.js in Resources */,
-				981C0C0B22D6D91F007D1FD2 /* DeepLinkPopupViewController.xib in Resources */,
 				981C0BFE22D5920D007D1FD2 /* OtherViewController.xib in Resources */,
 				987567FF222CE9F400CCD27C /* MainJson.js in Resources */,
 				9838B35A223B8E97000892F5 /* HMVideoInterstitialViewController.xib in Resources */,
@@ -739,7 +732,6 @@
 				981477DE2276F14C00880765 /* HMVideoInterstititalViewModel.swift in Sources */,
 				983A1A69221A58EC0002CFDC /* ViewController.swift in Sources */,
 				98255DDE2255F01A009F41D1 /* HMInternalLinkViewController.swift in Sources */,
-				981C0C0A22D6D91F007D1FD2 /* DeepLinkPopupViewController.swift in Sources */,
 				98756810222D151F00CCD27C /* HMHomeMenuModel.swift in Sources */,
 				98184544223F432B00C5AF19 /* HMMainVideoViewModel.swift in Sources */,
 				987567AB2225451800CCD27C /* HMMainViewController.swift in Sources */,

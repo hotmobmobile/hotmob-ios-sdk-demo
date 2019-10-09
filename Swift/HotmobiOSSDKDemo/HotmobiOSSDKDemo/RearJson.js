@@ -59,11 +59,6 @@
                                "id": "1",
                                "title": "Other",
                                "display": true
-                               },
-                               {
-                               "id": "2",
-                               "title": "Interstitial",
-                               "display": true
                                }
                                ]
                   }
