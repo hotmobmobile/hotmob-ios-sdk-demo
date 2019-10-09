@@ -15,6 +15,8 @@ import HotmobiOSSDK
 
 class HMMainVideoViewController: HMBaseViewController, UITableViewDelegate, HMUIViewTapDelegate  {
     
+    var banner: HotmobController? = nil
+    
     @IBOutlet weak var adContainerView: UIView!
     
     @IBOutlet weak var mainTableView: UITableView!
@@ -112,10 +114,12 @@ class HMMainVideoViewController: HMBaseViewController, UITableViewDelegate, HMUI
     }
     
     func addAdView(_ adCode: String){
-        self.bannerView?.removeFromSuperview()
-        let con = HotmobiOSSDK.getHotmobBannerController(adCode, needAutoReload: true, delegate: self, identifier: "banner")
-        self.bannerView = con.returnDisplayView()
-        self.adContainerView.addSubview(self.bannerView!)
+//        self.bannerView?.removeFromSuperview()
+//        let con = HotmobiOSSDK.getHotmobBannerController(adCode, needAutoReload: true, delegate: self, identifier: "banner")
+//        self.bannerView = con.returnDisplayView()
+//        self.adContainerView.addSubview(self.bannerView!)
+        self.banner = HotmobController(type: .Banner, identifier: "VideoBanner", adCode: adCode, delegate: self)
+        self.adContainerView.addSubview(banner!.displayView())
     }
 }
 
@@ -173,42 +177,45 @@ extension HMMainVideoViewController: UICollectionViewDelegateFlowLayout{
 }
 
 extension HMMainVideoViewController: HotmobControllerDelegate{
-    func didLoadBanner(_ banner: UIView) {
+    func adDidStartLoading(_ ad: HotmobController) {
+        
     }
     
-    func willDisplayBanner(_ banner: UIView) {
+    func adDidLoad(_ ad: HotmobController) {
+        
     }
     
-    func didDisplayBanner(_ banner: UIView) {
-        self.adContainerView.frame.size.height = banner.frame.size.height
+    func noAd(_ ad: HotmobController) {
+        
     }
     
-    func willHideBanner(_ banner: UIView) {
+    func adDidShow(_ ad: HotmobController) {
+        self.adContainerView.frame.size.height = ad.displayView().frame.size.height
     }
     
-    func didHideBanner(_ banner: UIView) {
-        self.adContainerView.frame.size.height = 0
+    func adDidHide(_ ad: HotmobController) {
+        self.adContainerView.frame.size.height = ad.displayView().frame.size.height
     }
     
-    func didLoadFailed() {
+    func adDidClick(_ ad: HotmobController) {
+        
     }
     
-    func openInternalCallback(url: String) {
+    func videoAdDidMute(_ ad: HotmobController) {
+        
+    }
+    
+    func videoAdDidUnmute(_ ad: HotmobController) {
+        
+    }
+    
+    func adDidResize(_ ad: HotmobController) {
+        
+    }
+    
+    func deepLinkDidClick(_ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
-        
-    }
-    
-    func didResizeBanner(_ banner: UIView) {
-        
-    }
-    
-    func videoAdMute() {
-        
-    }
-    
-    func videoAdUnmute() {
-        
     }
 }
 

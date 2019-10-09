@@ -1,26 +1,29 @@
 PODS:
-  - Alamofire (4.8.2)
-  - Differentiator (3.1.0)
-  - HotmobiOSSDK (5.0.5):
+  - Alamofire (4.9.0)
+  - Differentiator (4.0.1)
+  - HotmobiOSSDK (5.1.1):
     - Alamofire
     - ObjectMapper (~> 3.4)
-    - RxCocoa (~> 4.0)
-    - RxDataSources (~> 3.0)
-    - RxSwift (~> 4.0)
-    - RxWebKit
+    - RxCocoa (~> 5.0)
+    - RxDataSources (~> 4.0)
+    - RxSwift (~> 5.0)
+    - RxWebKit (~> 1.0)
     - SwiftyJSON
     - SWRevealViewController (= 2.3.0)
   - ObjectMapper (3.5.1)
-  - RxCocoa (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxDataSources (3.1.0):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.5.0)
-  - RxWebKit (0.3.7):
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - RxWebKit (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - SwiftyJSON (5.0.0)
   - SWRevealViewController (2.3.0)
 
@@ -28,9 +31,9 @@ DEPENDENCIES:
   - Alamofire
   - HotmobiOSSDK
   - ObjectMapper (~> 3.4)
-  - RxCocoa (~> 4.0)
-  - RxDataSources (~> 3.0)
-  - RxSwift (~> 4.0)
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
   - RxWebKit
   - SwiftyJSON
   - SWRevealViewController (= 2.3.0)
@@ -43,23 +46,25 @@ SPEC REPOS:
     - ObjectMapper
     - RxCocoa
     - RxDataSources
+    - RxRelay
     - RxSwift
     - RxWebKit
     - SwiftyJSON
     - SWRevealViewController
 
 SPEC CHECKSUMS:
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  HotmobiOSSDK: 7395c43cb64d67f2e20deabe943949cba48ff6ef
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  HotmobiOSSDK: 3cfdf5dedc6b1f1bf7058560101f0f77db96d3ee
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
-  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
-  RxWebKit: e39e220919e5e24546c837f5f60689036a1e5920
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxWebKit: 9ff7ea0780a093450defc7ff13e218678ebe6e4a
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: 79ef0588c6b45a4490dff923287eae2375b12b7f
+PODFILE CHECKSUM: a62ff2b5f0e2ef9ddd90d58c1fbf8f99cf292832
 
 COCOAPODS: 1.7.4

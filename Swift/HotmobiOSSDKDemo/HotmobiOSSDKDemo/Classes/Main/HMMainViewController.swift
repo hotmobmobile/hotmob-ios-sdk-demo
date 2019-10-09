@@ -19,7 +19,6 @@ import HotmobiOSSDK
 
 class HMMainViewController: HMBaseViewController, UITableViewDelegate, HMUIViewTapDelegate  {
     
-//    var bannerView: UIView?
     @IBOutlet weak var lblAdCode: UILabel!
     @IBOutlet weak var adContainerView: UIView!
     @IBOutlet weak var lblBGView: UIView!
@@ -39,6 +38,7 @@ class HMMainViewController: HMBaseViewController, UITableViewDelegate, HMUIViewT
     
     @IBOutlet weak var adContainerheightConstraint: NSLayoutConstraint!
 
+    var banner: HotmobController? = nil
 
     var mainViewModel: HMMainViewModel? = HMMainViewModel()
     
@@ -199,10 +199,12 @@ class HMMainViewController: HMBaseViewController, UITableViewDelegate, HMUIViewT
     }
     
     func addAdView(_ adCode: String){
-        self.bannerView?.removeFromSuperview()
-        let con = HotmobiOSSDK.getHotmobBannerController(adCode, needAutoReload: true, delegate: self, identifier: "banner")
-        self.bannerView = con.returnDisplayView()
-        self.adContainerView.addSubview(self.bannerView!)
+//        self.bannerView?.removeFromSuperview()
+//        let con = HotmobiOSSDK.getHotmobBannerController(adCode, needAutoReload: true, delegate: self, identifier: "banner")
+//        self.bannerView = con.returnDisplayView()
+//        self.adContainerView.addSubview(self.bannerView!)
+        self.banner = HotmobController(type: .Banner, identifier: "Banner", adCode: adCode, delegate: self)
+        self.adContainerView.addSubview(banner!.displayView())
         
         self.lblAdCode.text = adCode
     }
@@ -271,48 +273,50 @@ extension HMMainViewController: UIScrollViewDelegate{
 }
 
 extension HMMainViewController: HotmobControllerDelegate{
-    func didLoadBanner(_ banner: UIView) {
+    func adDidStartLoading(_ ad: HotmobController) {
+        
     }
     
-    func willDisplayBanner(_ banner: UIView) {
+    func adDidLoad(_ ad: HotmobController) {
+        
     }
     
-    func didDisplayBanner(_ banner: UIView) {
-        self.adContainerheightConstraint.constant = banner.frame.size.height
-        self.scrollView.contentSize.height = banner.frame.size.height + self.lblBGView.frame.size.height
+    func noAd(_ ad: HotmobController) {
+        self.adContainerheightConstraint.constant = 0
+        self.scrollView.contentSize.height = self.lblBGView.frame.size.height
     }
     
-    func willHideBanner(_ banner: UIView) {
+    func adDidShow(_ ad: HotmobController) {
+        self.adContainerheightConstraint.constant = ad.displayView().frame.size.height
+        self.scrollView.contentSize.height = ad.displayView().frame.size.height + self.lblBGView.frame.size.height
     }
     
-    func didHideBanner(_ banner: UIView) {
+    func adDidHide(_ ad: HotmobController) {
         print("\(self.classForCoder) --- didHideBanner")
         self.adContainerheightConstraint.constant = 0
         self.scrollView.contentSize.height = self.lblBGView.frame.size.height
     }
     
-    func didLoadFailed() {
-//        self.lblAdCode.text = "No Ad / No Ad Code"
-        self.adContainerheightConstraint.constant = 0
-        self.scrollView.contentSize.height = self.lblBGView.frame.size.height
+    func adDidClick(_ ad: HotmobController) {
+        
     }
     
-    func openInternalCallback(url: String) {
+    func videoAdDidMute(_ ad: HotmobController) {
+        
+    }
+    
+    func videoAdDidUnmute(_ ad: HotmobController) {
+        
+    }
+    
+    func adDidResize(_ ad: HotmobController) {
+        self.adContainerheightConstraint.constant = ad.displayView().frame.size.height
+        self.scrollView.contentSize.height = ad.displayView().frame.size.height + self.lblBGView.frame.size.height
+    }
+    
+    func deepLinkDidClick(_ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
-    }
-    
-    func didResizeBanner(_ banner: UIView) {
-        self.adContainerheightConstraint.constant = banner.frame.size.height
-        self.scrollView.contentSize.height = banner.frame.size.height + self.lblBGView.frame.size.height
-    }
-    
-    func videoAdMute() {
-        
-    }
-    
-    func videoAdUnmute() {
-        
     }
 }
 

@@ -10,9 +10,9 @@ target 'HotmobiOSSDKDemo' do
   # Pods for HotmobiOSSDKDemo
   pod 'HotmobiOSSDK'
   pod 'Alamofire'
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
-  pod 'RxDataSources', '~> 3.0'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
   pod 'ObjectMapper', '~> 3.4'
   pod 'SwiftyJSON'
   pod 'SWRevealViewController', '2.3.0'
