@@ -172,6 +172,12 @@
                                "title": "Cognitive Ad",
                                "display": true,
                                "adCode": "hotmob_ios_banner_cognitivead"
+                               },
+                               {
+                               "id": "11",
+                               "title": "Google Ad",
+                               "display": true,
+                               "adCode": "hotmob_ios_google_ad"
                                }
                                ]
                   }

@@ -103,9 +103,9 @@
                                },
                                {
                                "id": "16",
-                               "title": "No Ad",
+                               "title": "Google Ad",
                                "display": true,
-                               "adCode": "No_AD"
+                               "adCode": "hotmob_ios_google_interstitial"
                                }
                                ]
                   }
