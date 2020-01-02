@@ -9,6 +9,7 @@
 import UIKit
 import SWRevealViewController
 import HotmobiOSSDK
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDelegate {
@@ -19,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
         // Override point for customization after application launch.
         
         HotmobiOSSDK.startSDK()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         let mainVC = HMMainViewController()
 
