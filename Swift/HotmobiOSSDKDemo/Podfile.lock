@@ -1,31 +1,31 @@
 PODS:
   - Alamofire (4.9.0)
   - Differentiator (4.0.1)
-  - Google-Mobile-Ads-SDK (7.53.1):
+  - Google-Mobile-Ads-SDK (7.55.1):
     - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.1.7):
+  - GoogleAppMeasurement (6.2.2):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
     - nanopb (= 0.3.9011)
-  - GoogleUtilities/AppDelegateSwizzler (6.4.0):
+  - GoogleUtilities/AppDelegateSwizzler (6.5.1):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.4.0)
-  - GoogleUtilities/Logger (6.4.0):
+  - GoogleUtilities/Environment (6.5.1)
+  - GoogleUtilities/Logger (6.5.1):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.4.0):
+  - GoogleUtilities/MethodSwizzler (6.5.1):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.4.0):
+  - GoogleUtilities/Network (6.5.1):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.4.0)"
-  - GoogleUtilities/Reachability (6.4.0):
+  - "GoogleUtilities/NSData+zlib (6.5.1)"
+  - GoogleUtilities/Reachability (6.5.1):
     - GoogleUtilities/Logger
-  - HotmobiOSSDK (5.2.0):
+  - HotmobiOSSDK (5.2.1):
     - Alamofire
     - Google-Mobile-Ads-SDK
     - ObjectMapper (~> 3.4)
@@ -69,7 +69,7 @@ DEPENDENCIES:
   - SWRevealViewController (= 2.3.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - Differentiator
     - Google-Mobile-Ads-SDK
@@ -89,10 +89,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  Google-Mobile-Ads-SDK: fac081606dbd438d8db57198b83ba8b5f875a601
-  GoogleAppMeasurement: db118eb61a97dd8c4f7014e368d3c335cbbcf80a
-  GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
-  HotmobiOSSDK: f2f558df6a8632e7f309a63c00f83bff39faa4cf
+  Google-Mobile-Ads-SDK: f206aff290f26fde422495c6cd187e50efbed57e
+  GoogleAppMeasurement: d0560d915abf15e692e8538ba1d58442217b6aff
+  GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
+  HotmobiOSSDK: c89c107624be7bee98ffc72bf1f9971e3368fd73
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
@@ -105,4 +105,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: a62ff2b5f0e2ef9ddd90d58c1fbf8f99cf292832
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.8.4
