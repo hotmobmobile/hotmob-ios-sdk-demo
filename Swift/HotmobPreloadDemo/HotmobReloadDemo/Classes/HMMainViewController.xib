@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMMainViewController" customModule="HotmobReloadDemo">
+            <connections>
+                <outlet property="adContainerView" destination="ffy-wo-dQz" id="2ga-fm-3fN"/>
+                <outlet property="adContainerView2" destination="h1K-xB-ira" id="ttU-Mv-h3K"/>
+                <outlet property="btnGoDetails" destination="0tP-Rn-uuC" id="dT4-I1-g9C"/>
+                <outlet property="btnSkipInterstitial" destination="5cm-Dx-oUg" id="rAM-L2-ef5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88r-0W-60D">
+                    <rect key="frame" x="187.5" y="10" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffy-wo-dQz">
+                    <rect key="frame" x="0.0" y="160" width="375" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h1K-xB-ira">
+                    <rect key="frame" x="0.0" y="310" width="375" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tP-Rn-uuC">
+                    <rect key="frame" x="126.5" y="35" width="122" height="30"/>
+                    <state key="normal" title="Go To Detail Page"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cm-Dx-oUg">
+                    <rect key="frame" x="116" y="422" width="142" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Skip Interstitial Once"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="88r-0W-60D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="HWN-Uy-Lps"/>
+                <constraint firstItem="0tP-Rn-uuC" firstAttribute="top" secondItem="88r-0W-60D" secondAttribute="bottom" constant="25" id="MQN-qK-1en"/>
+                <constraint firstItem="88r-0W-60D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SUK-n4-BBq"/>
+                <constraint firstItem="0tP-Rn-uuC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VTs-K4-GOh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="142" y="154"/>
+        </view>
+    </objects>
+</document>
