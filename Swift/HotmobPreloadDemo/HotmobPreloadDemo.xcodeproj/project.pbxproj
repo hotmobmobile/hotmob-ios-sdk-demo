@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2776EAC515CD567DE8DD1420 /* Pods_HotmobPreloadDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCDC1B5F0C43ACE89652055 /* Pods_HotmobPreloadDemoUITests.framework */; };
+		306B2CA36298311A1ACE502F /* Pods_HotmobPreloadDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A0A0D4EBBAC823430A359A /* Pods_HotmobPreloadDemo.framework */; };
+		3F64D9A42435DE2900702B79 /* HMSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64D9A22435DE2900702B79 /* HMSplashViewController.swift */; };
+		3F64D9A52435DE2900702B79 /* HMSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F64D9A32435DE2900702B79 /* HMSplashViewController.xib */; };
+		6E55DE1A70C46978D77E6265 /* Pods_HotmobPreloadDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B6B85FFBBF955540A0F68B /* Pods_HotmobPreloadDemoTests.framework */; };
+		980CE82A225C55160085F12F /* HMDetialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CE828225C55160085F12F /* HMDetialsViewController.swift */; };
+		980CE82B225C55160085F12F /* HMDetialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980CE829225C55160085F12F /* HMDetialsViewController.xib */; };
+		98255DED225AF371009F41D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255DEC225AF371009F41D1 /* AppDelegate.swift */; };
+		98255DEF225AF371009F41D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255DEE225AF371009F41D1 /* ViewController.swift */; };
+		98255DF2225AF371009F41D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98255DF0225AF371009F41D1 /* Main.storyboard */; };
+		98255DF7225AF373009F41D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98255DF5225AF373009F41D1 /* LaunchScreen.storyboard */; };
+		98255E02225AF373009F41D1 /* HotmobReloadDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E01225AF373009F41D1 /* HotmobReloadDemoTests.swift */; };
+		98255E0D225AF373009F41D1 /* HotmobReloadDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E0C225AF373009F41D1 /* HotmobReloadDemoUITests.swift */; };
+		98255E20225AFD44009F41D1 /* HMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E1F225AFD44009F41D1 /* HMBaseViewController.swift */; };
+		98255E23225AFD57009F41D1 /* HMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E21225AFD57009F41D1 /* HMMainViewController.swift */; };
+		98255E24225AFD57009F41D1 /* HMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255E22225AFD57009F41D1 /* HMMainViewController.xib */; };
+		98255E3E225B05B9009F41D1 /* HMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E3C225B05B9009F41D1 /* HMTabBarViewController.swift */; };
+		98255E46225B0819009F41D1 /* HMTabAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E44225B0819009F41D1 /* HMTabAViewController.swift */; };
+		98255E47225B0819009F41D1 /* HMTabAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255E45225B0819009F41D1 /* HMTabAViewController.xib */; };
+		98255E4A225B0829009F41D1 /* HMTabBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E48225B0829009F41D1 /* HMTabBViewController.swift */; };
+		98255E4B225B0829009F41D1 /* HMTabBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255E49225B0829009F41D1 /* HMTabBViewController.xib */; };
+		98255E52225B0857009F41D1 /* HMTabDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E50225B0857009F41D1 /* HMTabDViewController.swift */; };
+		98255E53225B0857009F41D1 /* HMTabDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255E51225B0857009F41D1 /* HMTabDViewController.xib */; };
+		98255E5A225B36D4009F41D1 /* HMRearItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E59225B36D4009F41D1 /* HMRearItemModel.swift */; };
+		98255E5C225B36E5009F41D1 /* HMRearItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E5B225B36E5009F41D1 /* HMRearItemViewModel.swift */; };
+		98255E5E225B36F3009F41D1 /* HMRearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E5D225B36F3009F41D1 /* HMRearViewModel.swift */; };
+		98255E60225B3718009F41D1 /* HMRearCatItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E5F225B3718009F41D1 /* HMRearCatItemModel.swift */; };
+		98255E62225B3742009F41D1 /* HMRearCatItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E61225B3742009F41D1 /* HMRearCatItemViewModel.swift */; };
+		98255E64225B3768009F41D1 /* HMBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E63225B3768009F41D1 /* HMBaseViewModel.swift */; };
+		98255E66225B3791009F41D1 /* HMResourcesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E65225B3791009F41D1 /* HMResourcesLoader.swift */; };
+		98255E69225B37CF009F41D1 /* HMReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E68225B37CF009F41D1 /* HMReuseView.swift */; };
+		98255E6B225B37E9009F41D1 /* HMUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E6A225B37E9009F41D1 /* HMUtilities.swift */; };
+		98255E70225B3850009F41D1 /* HMRearItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E6C225B3850009F41D1 /* HMRearItemTableViewCell.swift */; };
+		98255E71225B3850009F41D1 /* HMRearItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255E6D225B3850009F41D1 /* HMRearItemTableViewCell.xib */; };
+		98255E72225B3850009F41D1 /* HMRearItemReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E6E225B3850009F41D1 /* HMRearItemReuseView.swift */; };
+		98255E73225B3850009F41D1 /* HMRearItemReuseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255E6F225B3850009F41D1 /* HMRearItemReuseView.xib */; };
+		98255E76225B3BA0009F41D1 /* HMRearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255E74225B3BA0009F41D1 /* HMRearViewController.swift */; };
+		98255E77225B3BA0009F41D1 /* HMRearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255E75225B3BA0009F41D1 /* HMRearViewController.xib */; };
+		98255E79225B3F4D009F41D1 /* RearJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 98255E78225B3F4D009F41D1 /* RearJson.js */; };
+		98255E90225B5A8E009F41D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98255E8F225B5A8E009F41D1 /* Assets.xcassets */; };
+		984CDFE922A8C00300851CC6 /* HMRootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984CDFE722A8C00300851CC6 /* HMRootPageViewController.swift */; };
+		984CDFEA22A8C00300851CC6 /* HMRootPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984CDFE822A8C00300851CC6 /* HMRootPageViewController.xib */; };
+		984CDFEE22A8C02E00851CC6 /* HMPageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984CDFEC22A8C02E00851CC6 /* HMPageOneViewController.swift */; };
+		984CDFEF22A8C02E00851CC6 /* HMPageOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984CDFED22A8C02E00851CC6 /* HMPageOneViewController.xib */; };
+		984CDFF222A8C04100851CC6 /* HMPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984CDFF022A8C04100851CC6 /* HMPageTwoViewController.swift */; };
+		984CDFF322A8C04100851CC6 /* HMPageTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984CDFF122A8C04100851CC6 /* HMPageTwoViewController.xib */; };
+		984CDFF622A8C05200851CC6 /* HMPageThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984CDFF422A8C05200851CC6 /* HMPageThreeViewController.swift */; };
+		984CDFF722A8C05200851CC6 /* HMPageThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984CDFF522A8C05200851CC6 /* HMPageThreeViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98255DFE225AF373009F41D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98255DE1225AF371009F41D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98255DE8225AF371009F41D1;
+			remoteInfo = HotmobReloadDemo;
+		};
+		98255E09225AF373009F41D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98255DE1225AF371009F41D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98255DE8225AF371009F41D1;
+			remoteInfo = HotmobReloadDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B6B85FFBBF955540A0F68B /* Pods_HotmobPreloadDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobPreloadDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		054DE8449724C43B7F32C47C /* Pods-HotmobPreloadDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemoUITests/Pods-HotmobPreloadDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0808FC8BEC1F8175C454FA57 /* Pods-HotmobPreloadDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemoUITests/Pods-HotmobPreloadDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		27A0A0D4EBBAC823430A359A /* Pods_HotmobPreloadDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobPreloadDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		342F77A0AABF8B384649F9C4 /* Pods-HotmobReloadDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemoUITests/Pods-HotmobReloadDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F64D9A22435DE2900702B79 /* HMSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSplashViewController.swift; sourceTree = "<group>"; };
+		3F64D9A32435DE2900702B79 /* HMSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMSplashViewController.xib; sourceTree = "<group>"; };
+		5BBD665E8895919E670A0372 /* Pods-HotmobReloadDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemoTests/Pods-HotmobReloadDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DD31677B013B5527880E9BE /* Pods-HotmobPreloadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		684DF8DB493232204003FDB4 /* Pods-HotmobPreloadDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemoTests/Pods-HotmobPreloadDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		760EA74ED1241C932D46C979 /* Pods-HotmobReloadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemo/Pods-HotmobReloadDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7843B40DC744EDE06FCE4D49 /* Pods-HotmobReloadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemo/Pods-HotmobReloadDemo.release.xcconfig"; sourceTree = "<group>"; };
+		980CE828225C55160085F12F /* HMDetialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMDetialsViewController.swift; sourceTree = "<group>"; };
+		980CE829225C55160085F12F /* HMDetialsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMDetialsViewController.xib; sourceTree = "<group>"; };
+		98255DE9225AF371009F41D1 /* HotmobPreloadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotmobPreloadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98255DEC225AF371009F41D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98255DEE225AF371009F41D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98255DF1225AF371009F41D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98255DF6225AF373009F41D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98255DF8225AF373009F41D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98255DFD225AF373009F41D1 /* HotmobPreloadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotmobPreloadDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98255E01225AF373009F41D1 /* HotmobReloadDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotmobReloadDemoTests.swift; sourceTree = "<group>"; };
+		98255E03225AF373009F41D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98255E08225AF373009F41D1 /* HotmobPreloadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotmobPreloadDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98255E0C225AF373009F41D1 /* HotmobReloadDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotmobReloadDemoUITests.swift; sourceTree = "<group>"; };
+		98255E0E225AF373009F41D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98255E1F225AFD44009F41D1 /* HMBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMBaseViewController.swift; sourceTree = "<group>"; };
+		98255E21225AFD57009F41D1 /* HMMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainViewController.swift; sourceTree = "<group>"; };
+		98255E22225AFD57009F41D1 /* HMMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMMainViewController.xib; sourceTree = "<group>"; };
+		98255E35225B027F009F41D1 /* HotmobiOSSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HotmobiOSSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98255E3C225B05B9009F41D1 /* HMTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMTabBarViewController.swift; sourceTree = "<group>"; };
+		98255E44225B0819009F41D1 /* HMTabAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMTabAViewController.swift; sourceTree = "<group>"; };
+		98255E45225B0819009F41D1 /* HMTabAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMTabAViewController.xib; sourceTree = "<group>"; };
+		98255E48225B0829009F41D1 /* HMTabBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMTabBViewController.swift; sourceTree = "<group>"; };
+		98255E49225B0829009F41D1 /* HMTabBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMTabBViewController.xib; sourceTree = "<group>"; };
+		98255E50225B0857009F41D1 /* HMTabDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMTabDViewController.swift; sourceTree = "<group>"; };
+		98255E51225B0857009F41D1 /* HMTabDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMTabDViewController.xib; sourceTree = "<group>"; };
+		98255E59225B36D4009F41D1 /* HMRearItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearItemModel.swift; sourceTree = "<group>"; };
+		98255E5B225B36E5009F41D1 /* HMRearItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearItemViewModel.swift; sourceTree = "<group>"; };
+		98255E5D225B36F3009F41D1 /* HMRearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearViewModel.swift; sourceTree = "<group>"; };
+		98255E5F225B3718009F41D1 /* HMRearCatItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearCatItemModel.swift; sourceTree = "<group>"; };
+		98255E61225B3742009F41D1 /* HMRearCatItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearCatItemViewModel.swift; sourceTree = "<group>"; };
+		98255E63225B3768009F41D1 /* HMBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMBaseViewModel.swift; sourceTree = "<group>"; };
+		98255E65225B3791009F41D1 /* HMResourcesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMResourcesLoader.swift; sourceTree = "<group>"; };
+		98255E68225B37CF009F41D1 /* HMReuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMReuseView.swift; sourceTree = "<group>"; };
+		98255E6A225B37E9009F41D1 /* HMUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMUtilities.swift; sourceTree = "<group>"; };
+		98255E6C225B3850009F41D1 /* HMRearItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMRearItemTableViewCell.swift; sourceTree = "<group>"; };
+		98255E6D225B3850009F41D1 /* HMRearItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMRearItemTableViewCell.xib; sourceTree = "<group>"; };
+		98255E6E225B3850009F41D1 /* HMRearItemReuseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMRearItemReuseView.swift; sourceTree = "<group>"; };
+		98255E6F225B3850009F41D1 /* HMRearItemReuseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMRearItemReuseView.xib; sourceTree = "<group>"; };
+		98255E74225B3BA0009F41D1 /* HMRearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearViewController.swift; sourceTree = "<group>"; };
+		98255E75225B3BA0009F41D1 /* HMRearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMRearViewController.xib; sourceTree = "<group>"; };
+		98255E78225B3F4D009F41D1 /* RearJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RearJson.js; sourceTree = "<group>"; };
+		98255E8F225B5A8E009F41D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		984CDFE722A8C00300851CC6 /* HMRootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRootPageViewController.swift; sourceTree = "<group>"; };
+		984CDFE822A8C00300851CC6 /* HMRootPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMRootPageViewController.xib; sourceTree = "<group>"; };
+		984CDFEC22A8C02E00851CC6 /* HMPageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMPageOneViewController.swift; sourceTree = "<group>"; };
+		984CDFED22A8C02E00851CC6 /* HMPageOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMPageOneViewController.xib; sourceTree = "<group>"; };
+		984CDFF022A8C04100851CC6 /* HMPageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMPageTwoViewController.swift; sourceTree = "<group>"; };
+		984CDFF122A8C04100851CC6 /* HMPageTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMPageTwoViewController.xib; sourceTree = "<group>"; };
+		984CDFF422A8C05200851CC6 /* HMPageThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMPageThreeViewController.swift; sourceTree = "<group>"; };
+		984CDFF522A8C05200851CC6 /* HMPageThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMPageThreeViewController.xib; sourceTree = "<group>"; };
+		BFCDC1B5F0C43ACE89652055 /* Pods_HotmobPreloadDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobPreloadDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31BD24563FC76C34DACAD57 /* Pods-HotmobPreloadDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemoTests/Pods-HotmobPreloadDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4C44B8EAB957E27C7686AA3 /* Pods-HotmobReloadDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemoTests/Pods-HotmobReloadDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E43DD822787C14E6D727A16F /* Pods-HotmobReloadDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemoUITests/Pods-HotmobReloadDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8FD0E8AF10BF9ED89741D6E /* Pods-HotmobPreloadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98255DE6225AF371009F41D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306B2CA36298311A1ACE502F /* Pods_HotmobPreloadDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98255DFA225AF373009F41D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E55DE1A70C46978D77E6265 /* Pods_HotmobPreloadDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98255E05225AF373009F41D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2776EAC515CD567DE8DD1420 /* Pods_HotmobPreloadDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1CE70A89E47BB3760708B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				760EA74ED1241C932D46C979 /* Pods-HotmobReloadDemo.debug.xcconfig */,
+				7843B40DC744EDE06FCE4D49 /* Pods-HotmobReloadDemo.release.xcconfig */,
+				C4C44B8EAB957E27C7686AA3 /* Pods-HotmobReloadDemoTests.debug.xcconfig */,
+				5BBD665E8895919E670A0372 /* Pods-HotmobReloadDemoTests.release.xcconfig */,
+				E43DD822787C14E6D727A16F /* Pods-HotmobReloadDemoUITests.debug.xcconfig */,
+				342F77A0AABF8B384649F9C4 /* Pods-HotmobReloadDemoUITests.release.xcconfig */,
+				5DD31677B013B5527880E9BE /* Pods-HotmobPreloadDemo.debug.xcconfig */,
+				F8FD0E8AF10BF9ED89741D6E /* Pods-HotmobPreloadDemo.release.xcconfig */,
+				684DF8DB493232204003FDB4 /* Pods-HotmobPreloadDemoTests.debug.xcconfig */,
+				C31BD24563FC76C34DACAD57 /* Pods-HotmobPreloadDemoTests.release.xcconfig */,
+				0808FC8BEC1F8175C454FA57 /* Pods-HotmobPreloadDemoUITests.debug.xcconfig */,
+				054DE8449724C43B7F32C47C /* Pods-HotmobPreloadDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98255DE0225AF371009F41D1 = {
+			isa = PBXGroup;
+			children = (
+				98255DEB225AF371009F41D1 /* HotmobReloadDemo */,
+				98255E00225AF373009F41D1 /* HotmobReloadDemoTests */,
+				98255E0B225AF373009F41D1 /* HotmobReloadDemoUITests */,
+				98255DEA225AF371009F41D1 /* Products */,
+				0A1CE70A89E47BB3760708B2 /* Pods */,
+				A63AE4421544EC6DF7EC6ED4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98255DEA225AF371009F41D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98255DE9225AF371009F41D1 /* HotmobPreloadDemo.app */,
+				98255DFD225AF373009F41D1 /* HotmobPreloadDemoTests.xctest */,
+				98255E08225AF373009F41D1 /* HotmobPreloadDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98255DEB225AF371009F41D1 /* HotmobReloadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				98255DEC225AF371009F41D1 /* AppDelegate.swift */,
+				98255DEE225AF371009F41D1 /* ViewController.swift */,
+				98255E1A225AF639009F41D1 /* Classes */,
+				98255DF0225AF371009F41D1 /* Main.storyboard */,
+				98255E8F225B5A8E009F41D1 /* Assets.xcassets */,
+				98255E78225B3F4D009F41D1 /* RearJson.js */,
+				98255DF5225AF373009F41D1 /* LaunchScreen.storyboard */,
+				98255DF8225AF373009F41D1 /* Info.plist */,
+			);
+			path = HotmobReloadDemo;
+			sourceTree = "<group>";
+		};
+		98255E00225AF373009F41D1 /* HotmobReloadDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				98255E01225AF373009F41D1 /* HotmobReloadDemoTests.swift */,
+				98255E03225AF373009F41D1 /* Info.plist */,
+			);
+			path = HotmobReloadDemoTests;
+			sourceTree = "<group>";
+		};
+		98255E0B225AF373009F41D1 /* HotmobReloadDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98255E0C225AF373009F41D1 /* HotmobReloadDemoUITests.swift */,
+				98255E0E225AF373009F41D1 /* Info.plist */,
+			);
+			path = HotmobReloadDemoUITests;
+			sourceTree = "<group>";
+		};
+		98255E1A225AF639009F41D1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				98255E21225AFD57009F41D1 /* HMMainViewController.swift */,
+				98255E22225AFD57009F41D1 /* HMMainViewController.xib */,
+				980CE828225C55160085F12F /* HMDetialsViewController.swift */,
+				980CE829225C55160085F12F /* HMDetialsViewController.xib */,
+				98255E55225B368A009F41D1 /* Rear */,
+				98255E1D225AF65C009F41D1 /* TabBar */,
+				98255E1E225AFD08009F41D1 /* Core */,
+				3F64D9A22435DE2900702B79 /* HMSplashViewController.swift */,
+				3F64D9A32435DE2900702B79 /* HMSplashViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		98255E1D225AF65C009F41D1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				98255E3C225B05B9009F41D1 /* HMTabBarViewController.swift */,
+				98255E54225B0883009F41D1 /* Controller */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		98255E1E225AFD08009F41D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				98255E68225B37CF009F41D1 /* HMReuseView.swift */,
+				98255E1F225AFD44009F41D1 /* HMBaseViewController.swift */,
+				98255E63225B3768009F41D1 /* HMBaseViewModel.swift */,
+				98255E65225B3791009F41D1 /* HMResourcesLoader.swift */,
+				98255E6A225B37E9009F41D1 /* HMUtilities.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		98255E54225B0883009F41D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				98255E44225B0819009F41D1 /* HMTabAViewController.swift */,
+				98255E45225B0819009F41D1 /* HMTabAViewController.xib */,
+				98255E48225B0829009F41D1 /* HMTabBViewController.swift */,
+				98255E49225B0829009F41D1 /* HMTabBViewController.xib */,
+				98255E50225B0857009F41D1 /* HMTabDViewController.swift */,
+				98255E51225B0857009F41D1 /* HMTabDViewController.xib */,
+				984CDFEB22A8C00900851CC6 /* PageViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		98255E55225B368A009F41D1 /* Rear */ = {
+			isa = PBXGroup;
+			children = (
+				98255E58225B36A0009F41D1 /* Model */,
+				98255E57225B369B009F41D1 /* ViewModel */,
+				98255E56225B3695009F41D1 /* View */,
+				98255E74225B3BA0009F41D1 /* HMRearViewController.swift */,
+				98255E75225B3BA0009F41D1 /* HMRearViewController.xib */,
+			);
+			path = Rear;
+			sourceTree = "<group>";
+		};
+		98255E56225B3695009F41D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98255E6C225B3850009F41D1 /* HMRearItemTableViewCell.swift */,
+				98255E6D225B3850009F41D1 /* HMRearItemTableViewCell.xib */,
+				98255E6E225B3850009F41D1 /* HMRearItemReuseView.swift */,
+				98255E6F225B3850009F41D1 /* HMRearItemReuseView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		98255E57225B369B009F41D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98255E5D225B36F3009F41D1 /* HMRearViewModel.swift */,
+				98255E5B225B36E5009F41D1 /* HMRearItemViewModel.swift */,
+				98255E61225B3742009F41D1 /* HMRearCatItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98255E58225B36A0009F41D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98255E59225B36D4009F41D1 /* HMRearItemModel.swift */,
+				98255E5F225B3718009F41D1 /* HMRearCatItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		984CDFEB22A8C00900851CC6 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				984CDFE722A8C00300851CC6 /* HMRootPageViewController.swift */,
+				984CDFE822A8C00300851CC6 /* HMRootPageViewController.xib */,
+				984CDFEC22A8C02E00851CC6 /* HMPageOneViewController.swift */,
+				984CDFED22A8C02E00851CC6 /* HMPageOneViewController.xib */,
+				984CDFF022A8C04100851CC6 /* HMPageTwoViewController.swift */,
+				984CDFF122A8C04100851CC6 /* HMPageTwoViewController.xib */,
+				984CDFF422A8C05200851CC6 /* HMPageThreeViewController.swift */,
+				984CDFF522A8C05200851CC6 /* HMPageThreeViewController.xib */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		A63AE4421544EC6DF7EC6ED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98255E35225B027F009F41D1 /* HotmobiOSSDK.framework */,
+				27A0A0D4EBBAC823430A359A /* Pods_HotmobPreloadDemo.framework */,
+				00B6B85FFBBF955540A0F68B /* Pods_HotmobPreloadDemoTests.framework */,
+				BFCDC1B5F0C43ACE89652055 /* Pods_HotmobPreloadDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98255DE8225AF371009F41D1 /* HotmobPreloadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98255E11225AF373009F41D1 /* Build configuration list for PBXNativeTarget "HotmobPreloadDemo" */;
+			buildPhases = (
+				790363ADF679134353B9EE19 /* [CP] Check Pods Manifest.lock */,
+				98255DE5225AF371009F41D1 /* Sources */,
+				98255DE6225AF371009F41D1 /* Frameworks */,
+				98255DE7225AF371009F41D1 /* Resources */,
+				87B48D4E395E31DFFB5501C0 /* [CP] Embed Pods Frameworks */,
+				F5C32A1F7E31C03F7528792F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotmobPreloadDemo;
+			productName = HotmobReloadDemo;
+			productReference = 98255DE9225AF371009F41D1 /* HotmobPreloadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98255DFC225AF373009F41D1 /* HotmobPreloadDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98255E14225AF373009F41D1 /* Build configuration list for PBXNativeTarget "HotmobPreloadDemoTests" */;
+			buildPhases = (
+				DFCD9812AC210961D19F8088 /* [CP] Check Pods Manifest.lock */,
+				98255DF9225AF373009F41D1 /* Sources */,
+				98255DFA225AF373009F41D1 /* Frameworks */,
+				98255DFB225AF373009F41D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98255DFF225AF373009F41D1 /* PBXTargetDependency */,
+			);
+			name = HotmobPreloadDemoTests;
+			productName = HotmobReloadDemoTests;
+			productReference = 98255DFD225AF373009F41D1 /* HotmobPreloadDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98255E07225AF373009F41D1 /* HotmobPreloadDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98255E17225AF373009F41D1 /* Build configuration list for PBXNativeTarget "HotmobPreloadDemoUITests" */;
+			buildPhases = (
+				11920B804B81769B8263E23B /* [CP] Check Pods Manifest.lock */,
+				98255E04225AF373009F41D1 /* Sources */,
+				98255E05225AF373009F41D1 /* Frameworks */,
+				98255E06225AF373009F41D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98255E0A225AF373009F41D1 /* PBXTargetDependency */,
+			);
+			name = HotmobPreloadDemoUITests;
+			productName = HotmobReloadDemoUITests;
+			productReference = 98255E08225AF373009F41D1 /* HotmobPreloadDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98255DE1225AF371009F41D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Paul Cheung";
+				TargetAttributes = {
+					98255DE8225AF371009F41D1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					98255DFC225AF373009F41D1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 98255DE8225AF371009F41D1;
+					};
+					98255E07225AF373009F41D1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 98255DE8225AF371009F41D1;
+					};
+				};
+			};
+			buildConfigurationList = 98255DE4225AF371009F41D1 /* Build configuration list for PBXProject "HotmobPreloadDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98255DE0225AF371009F41D1;
+			productRefGroup = 98255DEA225AF371009F41D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98255DE8225AF371009F41D1 /* HotmobPreloadDemo */,
+				98255DFC225AF373009F41D1 /* HotmobPreloadDemoTests */,
+				98255E07225AF373009F41D1 /* HotmobPreloadDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98255DE7225AF371009F41D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980CE82B225C55160085F12F /* HMDetialsViewController.xib in Resources */,
+				98255E53225B0857009F41D1 /* HMTabDViewController.xib in Resources */,
+				98255DF7225AF373009F41D1 /* LaunchScreen.storyboard in Resources */,
+				98255E90225B5A8E009F41D1 /* Assets.xcassets in Resources */,
+				98255E47225B0819009F41D1 /* HMTabAViewController.xib in Resources */,
+				984CDFEA22A8C00300851CC6 /* HMRootPageViewController.xib in Resources */,
+				98255E24225AFD57009F41D1 /* HMMainViewController.xib in Resources */,
+				98255E79225B3F4D009F41D1 /* RearJson.js in Resources */,
+				984CDFF322A8C04100851CC6 /* HMPageTwoViewController.xib in Resources */,
+				98255E77225B3BA0009F41D1 /* HMRearViewController.xib in Resources */,
+				98255E71225B3850009F41D1 /* HMRearItemTableViewCell.xib in Resources */,
+				98255E73225B3850009F41D1 /* HMRearItemReuseView.xib in Resources */,
+				984CDFF722A8C05200851CC6 /* HMPageThreeViewController.xib in Resources */,
+				98255E4B225B0829009F41D1 /* HMTabBViewController.xib in Resources */,
+				3F64D9A52435DE2900702B79 /* HMSplashViewController.xib in Resources */,
+				98255DF2225AF371009F41D1 /* Main.storyboard in Resources */,
+				984CDFEF22A8C02E00851CC6 /* HMPageOneViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98255DFB225AF373009F41D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98255E06225AF373009F41D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11920B804B81769B8263E23B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotmobPreloadDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		790363ADF679134353B9EE19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotmobPreloadDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B48D4E395E31DFFB5501C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFCD9812AC210961D19F8088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotmobPreloadDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C32A1F7E31C03F7528792F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98255DE5225AF371009F41D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98255E62225B3742009F41D1 /* HMRearCatItemViewModel.swift in Sources */,
+				98255DEF225AF371009F41D1 /* ViewController.swift in Sources */,
+				98255E20225AFD44009F41D1 /* HMBaseViewController.swift in Sources */,
+				984CDFF222A8C04100851CC6 /* HMPageTwoViewController.swift in Sources */,
+				98255E4A225B0829009F41D1 /* HMTabBViewController.swift in Sources */,
+				98255E5A225B36D4009F41D1 /* HMRearItemModel.swift in Sources */,
+				98255E6B225B37E9009F41D1 /* HMUtilities.swift in Sources */,
+				98255E5C225B36E5009F41D1 /* HMRearItemViewModel.swift in Sources */,
+				98255E69225B37CF009F41D1 /* HMReuseView.swift in Sources */,
+				98255E3E225B05B9009F41D1 /* HMTabBarViewController.swift in Sources */,
+				98255E76225B3BA0009F41D1 /* HMRearViewController.swift in Sources */,
+				980CE82A225C55160085F12F /* HMDetialsViewController.swift in Sources */,
+				984CDFF622A8C05200851CC6 /* HMPageThreeViewController.swift in Sources */,
+				984CDFE922A8C00300851CC6 /* HMRootPageViewController.swift in Sources */,
+				98255E66225B3791009F41D1 /* HMResourcesLoader.swift in Sources */,
+				98255E72225B3850009F41D1 /* HMRearItemReuseView.swift in Sources */,
+				98255E60225B3718009F41D1 /* HMRearCatItemModel.swift in Sources */,
+				98255E70225B3850009F41D1 /* HMRearItemTableViewCell.swift in Sources */,
+				98255E23225AFD57009F41D1 /* HMMainViewController.swift in Sources */,
+				98255E46225B0819009F41D1 /* HMTabAViewController.swift in Sources */,
+				98255E64225B3768009F41D1 /* HMBaseViewModel.swift in Sources */,
+				984CDFEE22A8C02E00851CC6 /* HMPageOneViewController.swift in Sources */,
+				3F64D9A42435DE2900702B79 /* HMSplashViewController.swift in Sources */,
+				98255E5E225B36F3009F41D1 /* HMRearViewModel.swift in Sources */,
+				98255E52225B0857009F41D1 /* HMTabDViewController.swift in Sources */,
+				98255DED225AF371009F41D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98255DF9225AF373009F41D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98255E02225AF373009F41D1 /* HotmobReloadDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98255E04225AF373009F41D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98255E0D225AF373009F41D1 /* HotmobReloadDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98255DFF225AF373009F41D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98255DE8225AF371009F41D1 /* HotmobPreloadDemo */;
+			targetProxy = 98255DFE225AF373009F41D1 /* PBXContainerItemProxy */;
+		};
+		98255E0A225AF373009F41D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98255DE8225AF371009F41D1 /* HotmobPreloadDemo */;
+			targetProxy = 98255E09225AF373009F41D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98255DF0225AF371009F41D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98255DF1225AF371009F41D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98255DF5225AF373009F41D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98255DF6225AF373009F41D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98255E0F225AF373009F41D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98255E10225AF373009F41D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98255E12225AF373009F41D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD31677B013B5527880E9BE /* Pods-HotmobPreloadDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
+				INFOPLIST_FILE = HotmobReloadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobPreloadDemo";
+				PRODUCT_NAME = HotmobPreloadDemo;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		98255E13225AF373009F41D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8FD0E8AF10BF9ED89741D6E /* Pods-HotmobPreloadDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
+				INFOPLIST_FILE = HotmobReloadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobPreloadDemo";
+				PRODUCT_NAME = HotmobPreloadDemo;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		98255E15225AF373009F41D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684DF8DB493232204003FDB4 /* Pods-HotmobPreloadDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotmobReloadDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobReloadDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotmobPreloadDemo.app/HotmobPreloadDemo";
+			};
+			name = Debug;
+		};
+		98255E16225AF373009F41D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31BD24563FC76C34DACAD57 /* Pods-HotmobPreloadDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotmobReloadDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobReloadDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotmobPreloadDemo.app/HotmobPreloadDemo";
+			};
+			name = Release;
+		};
+		98255E18225AF373009F41D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0808FC8BEC1F8175C454FA57 /* Pods-HotmobPreloadDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotmobReloadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobReloadDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HotmobReloadDemo;
+			};
+			name = Debug;
+		};
+		98255E19225AF373009F41D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054DE8449724C43B7F32C47C /* Pods-HotmobPreloadDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotmobReloadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobReloadDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HotmobReloadDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98255DE4225AF371009F41D1 /* Build configuration list for PBXProject "HotmobPreloadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98255E0F225AF373009F41D1 /* Debug */,
+				98255E10225AF373009F41D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98255E11225AF373009F41D1 /* Build configuration list for PBXNativeTarget "HotmobPreloadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98255E12225AF373009F41D1 /* Debug */,
+				98255E13225AF373009F41D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98255E14225AF373009F41D1 /* Build configuration list for PBXNativeTarget "HotmobPreloadDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98255E15225AF373009F41D1 /* Debug */,
+				98255E16225AF373009F41D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98255E17225AF373009F41D1 /* Build configuration list for PBXNativeTarget "HotmobPreloadDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98255E18225AF373009F41D1 /* Debug */,
+				98255E19225AF373009F41D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98255DE1225AF371009F41D1 /* Project object */;
+}
