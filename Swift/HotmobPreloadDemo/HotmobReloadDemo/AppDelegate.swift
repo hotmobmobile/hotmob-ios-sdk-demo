@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         HotmobiOSSDK.enableDebugMode()
         HotmobiOSSDK.startSDK()
-        HotmobReloadManager.sharedInstance.doNotHandleLaunchAppInterstitial()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         self.window?.rootViewController = HMSplashViewController()
