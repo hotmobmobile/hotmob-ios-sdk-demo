@@ -1,46 +1,48 @@
 PODS:
   - Alamofire (4.9.0)
   - Differentiator (4.0.1)
-  - Google-Mobile-Ads-SDK (7.58.0):
+  - Google-Mobile-Ads-SDK (7.60.0):
     - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.4.1):
+  - GoogleAppMeasurement (6.5.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (= 0.3.9011)
-  - GoogleUtilities/AppDelegateSwizzler (6.5.2):
+    - nanopb (~> 1.30905.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.6.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.5.2)
-  - GoogleUtilities/Logger (6.5.2):
+  - GoogleUtilities/Environment (6.6.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.6.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.5.2):
+  - GoogleUtilities/MethodSwizzler (6.6.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.5.2):
+  - GoogleUtilities/Network (6.6.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.5.2)"
-  - GoogleUtilities/Reachability (6.5.2):
+  - "GoogleUtilities/NSData+zlib (6.6.0)"
+  - GoogleUtilities/Reachability (6.6.0):
     - GoogleUtilities/Logger
-  - HotmobiOSSDK (5.3.0):
+  - HotmobiOSSDK (5.3.1):
     - Alamofire
-    - Google-Mobile-Ads-SDK
+    - Google-Mobile-Ads-SDK (~> 7.55)
     - ObjectMapper (~> 3.4)
-    - RxCocoa (~> 5.0)
+    - RxCocoa (~> 5)
     - RxDataSources (~> 4.0)
-    - RxSwift (~> 5.0)
+    - RxSwift (~> 5)
     - RxWebKit (~> 1.0)
     - SwiftyJSON
     - SWRevealViewController (= 2.3.0)
-  - nanopb (0.3.9011):
-    - nanopb/decode (= 0.3.9011)
-    - nanopb/encode (= 0.3.9011)
-  - nanopb/decode (0.3.9011)
-  - nanopb/encode (0.3.9011)
+  - nanopb (1.30905.0):
+    - nanopb/decode (= 1.30905.0)
+    - nanopb/encode (= 1.30905.0)
+  - nanopb/decode (1.30905.0)
+  - nanopb/encode (1.30905.0)
   - ObjectMapper (3.5.1)
+  - PromisesObjC (1.2.8)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -78,6 +80,7 @@ SPEC REPOS:
     - HotmobiOSSDK
     - nanopb
     - ObjectMapper
+    - PromisesObjC
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -89,12 +92,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  Google-Mobile-Ads-SDK: 7052557293c75c676db55feb707ace9b790f32c1
-  GoogleAppMeasurement: e49be3954045b17d046f271b9cc1ec052bad9702
-  GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
-  HotmobiOSSDK: 736bf65c82ee448fc146cccb0fad6c7c5884bbe9
-  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  Google-Mobile-Ads-SDK: d70efb31e7ea19fe99d466dc5d4788966b6914f8
+  GoogleAppMeasurement: 137afe68bfa406c3f4221b9395253d9e5d4654cf
+  GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
+  HotmobiOSSDK: 6afdf555ba733db6a962f1febad9e1cab80601b8
+  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18

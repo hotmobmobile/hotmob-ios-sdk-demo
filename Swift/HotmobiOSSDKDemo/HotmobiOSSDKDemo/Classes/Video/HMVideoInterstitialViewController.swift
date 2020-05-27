@@ -198,7 +198,7 @@ extension HMVideoInterstitialViewController: HotmobControllerDelegate{
         
     }
     
-    func deepLinkDidClick(_ url: String) {
+    func deepLinkDidClick(_ ad: HotmobController, _ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
     }

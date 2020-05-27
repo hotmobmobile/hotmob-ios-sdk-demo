@@ -196,7 +196,7 @@ extension HMHTMLInterstitialViewController: HotmobControllerDelegate{
     func adDidResize(_ ad: HotmobController) {
     }
     
-    func deepLinkDidClick(_ url: String) {
+    func deepLinkDidClick(_ ad: HotmobController, _ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
     }

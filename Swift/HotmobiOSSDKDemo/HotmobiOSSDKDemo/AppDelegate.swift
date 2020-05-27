@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
         // Override point for customization after application launch.
         
         HotmobiOSSDK.startSDK()
+        HotmobiOSSDK.enableDebugMode()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         let mainVC = HMMainViewController()

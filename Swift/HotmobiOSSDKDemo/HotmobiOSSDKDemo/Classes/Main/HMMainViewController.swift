@@ -314,7 +314,7 @@ extension HMMainViewController: HotmobControllerDelegate{
         self.scrollView.contentSize.height = ad.displayView().frame.size.height + self.lblBGView.frame.size.height
     }
     
-    func deepLinkDidClick(_ url: String) {
+    func deepLinkDidClick(_ ad: HotmobController, _ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
     }
