@@ -44,25 +44,25 @@
                                {
                                "id": "4",
                                "title": "Dial",
-                               "display": true,
+                               "display": false,
                                "adCode": "hotmob_ios_videobanner_dial"
                                },
                                {
                                "id": "5",
                                "title": "SMS",
-                               "display": true,
+                               "display": false,
                                "adCode": "hotmob_ios_videobanner_sms"
                                },
                                {
                                "id": "6",
                                "title": "Email",
-                               "display": true,
+                               "display": false,
                                "adCode": "hotmob_ios_videobanner_email"
                                },
                                {
                                "id": "8",
                                "title": "Youtube",
-                               "display": true,
+                               "display": false,
                                "adCode": "hotmob_ios_videobanner_youtube"
                                },
                                {

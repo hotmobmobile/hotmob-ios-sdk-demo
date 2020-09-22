@@ -68,19 +68,19 @@
                                {
                                "id": "4",
                                "title": "Dial",
-                               "display": true,
+                               "display": false,
                                "adCode": "hotmob_ios_banner_dial"
                                },
                                {
                                "id": "5",
                                "title": "SMS",
-                               "display": true,
+                               "display": false,
                                "adCode": "hotmob_ios_banner_sms"
                                },
                                {
                                "id": "6",
                                "title": "Email",
-                               "display": true,
+                               "display": false,
                                "adCode": "hotmob_ios_banner_email"
                                },
                                {
@@ -92,7 +92,7 @@
                                {
                                "id": "8",
                                "title": "Youtube",
-                               "display": true,
+                               "display": false,
                                "adCode": "hotmob_ios_banner_youtube"
                                },
                                {
