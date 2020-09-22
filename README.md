@@ -4,10 +4,10 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 Visit http://www.hot-mob.com/ for more details.
 
 ### Compatibility
-* Minimum: iOS 8. (Only operate on iOS 11 or above)
-* Fully Tested: iOS 13.4
-* Swift 4
-* Xcode 10.2+
+* Minimum: iOS 10. (Only operate on iOS 11 or above)
+* Fully Tested: up to iOS 14
+* Swift 4.2
+* Xcode 12+
 
 ### Integration
 * [Installation](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Installation-v5)
