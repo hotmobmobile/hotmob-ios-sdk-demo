@@ -21,6 +21,7 @@ Visit http://www.hot-mob.com/ for more details.
 * [Interpage Ad](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Interpage-Ad)
 * [Data Collection](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Data-Collection-v5)
 * [Location Collection](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Location-Collection-v5)
+* [VAST URL](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/VAST-URL)
 * [Migrate from v4 to v5](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Migrate-from-v4-to-v5)
 * [Migrate from beta v5.0](https://github.com/hotmobmobile/hotmob-ios-sdk/wiki/Migrate-from-beta-v5.0)
 
