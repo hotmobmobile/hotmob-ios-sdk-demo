@@ -12,6 +12,9 @@ import RxCocoa
 import RxDataSources
 import SWRevealViewController
 
+import AppTrackingTransparency
+import AdSupport
+
 import CoreLocation
 //Custom SDK
 import HotmobiOSSDK
@@ -19,6 +22,7 @@ import HotmobiOSSDK
 
 class HMMainViewController: HMBaseViewController, UITableViewDelegate, HMUIViewTapDelegate  {
     
+//    var bannerView: UIView?
     @IBOutlet weak var lblAdCode: UILabel!
     @IBOutlet weak var adContainerView: UIView!
     @IBOutlet weak var lblBGView: UIView!
@@ -38,7 +42,6 @@ class HMMainViewController: HMBaseViewController, UITableViewDelegate, HMUIViewT
     
     @IBOutlet weak var adContainerheightConstraint: NSLayoutConstraint!
 
-    var banner: HotmobController? = nil
 
     var mainViewModel: HMMainViewModel? = HMMainViewModel()
     
@@ -67,6 +70,25 @@ class HMMainViewController: HMBaseViewController, UITableViewDelegate, HMUIViewT
         
         self.locationManager = CLLocationManager()
         self.startUpdateLocation()
+        
+        requestIDFA()
+    }
+    
+    func requestIDFA() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                if (status == ATTrackingManager.AuthorizationStatus.authorized) {
+                    print("IDFA: true")
+                } else {
+                    print("IDFA: false")
+                }
+            })
+        }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        scrollView.accessibilityIdentifier = "ScrollView"
+        scrollView.contentSize.height = 2000
     }
     
     
@@ -194,18 +216,22 @@ class HMMainViewController: HMBaseViewController, UITableViewDelegate, HMUIViewT
         }else if let viewModel = viewModel as? HMMainItemUnitTypeBViewModel {
 //            print("onClcik \(viewModel.title.value!)")
             self.addAdView(viewModel.adCode.value!)
-
         }
     }
     
     func addAdView(_ adCode: String){
-//        self.bannerView?.removeFromSuperview()
-//        let con = HotmobiOSSDK.getHotmobBannerController(adCode, needAutoReload: true, delegate: self, identifier: "banner")
-//        self.bannerView = con.returnDisplayView()
-//        self.adContainerView.addSubview(self.bannerView!)
-        self.banner = HotmobController(type: .Banner, identifier: "Banner", adCode: adCode, delegate: self)
-        self.adContainerView.addSubview(banner!.displayView())
-        
+        if let b = self.banner {
+            b.hide()
+            b.adCode = adCode
+            b.loadAd()
+        } else {
+            let banner = HotmobController(type: .Banner, identifier: "Banner", adCode: adCode, delegate: self)
+            banner.animated = true
+            banner.containsInView = scrollView
+            adContainerView.addSubview(banner.displayView())
+            banner.loadAd()
+            self.banner = banner
+        }
         self.lblAdCode.text = adCode
     }
 }
@@ -273,50 +299,61 @@ extension HMMainViewController: UIScrollViewDelegate{
 }
 
 extension HMMainViewController: HotmobControllerDelegate{
-    func adDidStartLoading(_ ad: HotmobController) {
-        
-    }
-    
-    func adDidLoad(_ ad: HotmobController) {
-        
-    }
-    
+    func adDidStartLoading(_ ad: HotmobController) {}
+    func adDidLoad(_ ad: HotmobController) {}
     func noAd(_ ad: HotmobController) {
-        self.adContainerheightConstraint.constant = 0
-        self.scrollView.contentSize.height = self.lblBGView.frame.size.height
+        self.lblAdCode.text = "No Ad Return"
     }
-    
     func adDidShow(_ ad: HotmobController) {
-        self.adContainerheightConstraint.constant = ad.displayView().frame.size.height
-        self.scrollView.contentSize.height = ad.displayView().frame.size.height + self.lblBGView.frame.size.height
+        let banner = ad.displayView()
+        self.adContainerheightConstraint.constant = banner.frame.size.height
+        self.scrollView.contentSize.height = banner.frame.size.height + self.lblBGView.frame.size.height
     }
-    
     func adDidHide(_ ad: HotmobController) {
         print("\(self.classForCoder) --- didHideBanner")
         self.adContainerheightConstraint.constant = 0
         self.scrollView.contentSize.height = self.lblBGView.frame.size.height
     }
-    
-    func adDidClick(_ ad: HotmobController) {
-        
-    }
-    
+    func adDidClick(_ ad: HotmobController) {}
     func videoAdDidMute(_ ad: HotmobController) {
-        
+        showToast(message: "Ad Mute", font: nil)
+        print("<<AUDIO>> ad mute")
     }
-    
     func videoAdDidUnmute(_ ad: HotmobController) {
-        
+        showToast(message: "Ad Unmute", font: nil)
+        print("<<AUDIO>> ad unmute")
     }
-    
     func adDidResize(_ ad: HotmobController) {
-        self.adContainerheightConstraint.constant = ad.displayView().frame.size.height
-        self.scrollView.contentSize.height = ad.displayView().frame.size.height + self.lblBGView.frame.size.height
+        showToast(message: "Resize \(ad.displayView().frame.height)", font: nil)
+        let banner = ad.displayView()
+        self.adContainerheightConstraint.constant = banner.frame.size.height
+        self.scrollView.contentSize.height = banner.frame.size.height + self.lblBGView.frame.size.height
     }
     
     func deepLinkDidClick(_ ad: HotmobController, _ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
+    }
+}
+
+extension HMMainViewController {
+
+    func showToast(message : String, font: UIFont?) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font ?? UIFont(name: "IranSansMobile", size: 19)
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 1.0, delay: 0.1, options: .curveEaseOut, animations: {
+             toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
     }
 }
 

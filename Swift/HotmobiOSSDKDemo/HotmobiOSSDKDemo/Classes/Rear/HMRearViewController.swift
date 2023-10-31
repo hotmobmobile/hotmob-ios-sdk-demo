@@ -92,9 +92,13 @@ class HMRearViewController: HMBaseViewController, UITableViewDelegate {
                 case "Video Interstitial":
                     vc = HMVideoInterstitialViewController()
                     break
+                case "Floating":
+                    vc = HMFloatingViewController()
                 case "Other":
                     if row == 0 {
                         vc = OtherViewController()
+                    }else if row == 1{
+                        vc = DeepLinkPopupViewController()
                     }
                     break
                 default:

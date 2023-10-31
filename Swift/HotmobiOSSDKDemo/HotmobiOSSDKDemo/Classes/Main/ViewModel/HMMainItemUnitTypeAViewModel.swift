@@ -8,18 +8,19 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 struct HMMainItemUnitTypeAViewModel: HMBaseViewModel {
     
-    var id: Variable<String?> = Variable("")
-    var title: Variable<String?> = Variable("")
-    var display: Variable<Bool> = Variable(false)
+    var id: BehaviorRelay<String?> = BehaviorRelay(value: "")
+    var title: BehaviorRelay<String?> = BehaviorRelay(value: "")
+    var display: BehaviorRelay<Bool> = BehaviorRelay(value: false)
 
     
     init(id: String, title: String, display: Bool) {
-        self.id.value = id
-        self.title.value = title
-        self.display.value = display
+        self.id.accept(id)
+        self.title.accept(title)
+        self.display.accept(display)
     }
 
 }

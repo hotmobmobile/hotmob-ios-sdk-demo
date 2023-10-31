@@ -8,12 +8,13 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 struct HMMainItemViewModel: HMBaseViewModel {
 
-    var id: Variable<String?> = Variable("")
-    var displayType: Variable<String?> = Variable("")
-    var itemUnitList: Variable<[HMBaseViewModel]?> = Variable([])
+    var id: BehaviorRelay<String?> = BehaviorRelay(value: "")
+    var displayType: BehaviorRelay<String?> = BehaviorRelay(value: "")
+    var itemUnitList: BehaviorRelay<[HMBaseViewModel]?> = BehaviorRelay(value: [])
         
     var model: HMMainMenuModel? {
         didSet {
@@ -27,8 +28,8 @@ struct HMMainItemViewModel: HMBaseViewModel {
     }
     
     private mutating func setupData(model: HMMainMenuModel) {
-        self.id.value = model.id ?? ""
-        self.displayType.value = model.displayType ?? ""
+        self.id.accept(model.id ?? "")
+        self.displayType.accept(model.displayType ?? "")
         
         var unitList: [HMBaseViewModel] = []
         for i in 0..<(model.items?.count)!
@@ -64,7 +65,7 @@ struct HMMainItemViewModel: HMBaseViewModel {
             }
         }
         
-        self.itemUnitList.value = unitList
+        self.itemUnitList.accept(unitList)
 
     }
 

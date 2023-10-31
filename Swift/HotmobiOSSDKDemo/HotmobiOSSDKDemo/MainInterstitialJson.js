@@ -28,6 +28,18 @@
                                "title": "LREC_Original",
                                "display": true,
                                "adCode": "hotmob_ios_popup_lrec_original"
+                               },
+                               {
+                               "id": "5",
+                               "title": "No Ad",
+                               "display": true,
+                               "adCode": "No_AD"
+                               },
+                               {
+                               "id": "6",
+                               "title": "Headline",
+                               "display": true,
+                               "adCode": "hkheadline_popup_ip5"
                                }
                                ]
                   },
@@ -103,6 +115,12 @@
                                },
                                {
                                "id": "16",
+                               "title": "3D Interstitial",
+                               "display": true,
+                               "adCode": "hotmob_ios_popup_3d"
+                               },
+                               {
+                               "id": "17",
                                "title": "Google Ad",
                                "display": true,
                                "adCode": "hotmob_ios_google_interstitial"

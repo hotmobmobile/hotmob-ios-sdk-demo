@@ -53,11 +53,28 @@
                   {
                   "id": "5",
                   "displayType": "1",
+                  "displayName": "Floating",
+                  "catItems": [
+                               {
+                               "id": "1",
+                               "title": "showcase",
+                               "display": true
+                               }
+                               ]
+                  },
+                  {
+                  "id": "6",
+                  "displayType": "1",
                   "displayName": "Other",
                   "catItems": [
                                {
                                "id": "1",
                                "title": "Other",
+                               "display": true
+                               },
+                               {
+                               "id": "2",
+                               "title": "Interstitial",
                                "display": true
                                }
                                ]

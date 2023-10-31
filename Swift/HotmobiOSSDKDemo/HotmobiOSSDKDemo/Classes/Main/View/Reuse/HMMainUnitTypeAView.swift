@@ -45,7 +45,7 @@ class HMMainUnitTypeAView: UIView {
     }
     
     deinit {
-        print("deinit HMMainUnitTypeAView")
+//        print("deinit HMMainUnitTypeAView")
         self.viewTapGesture = nil
     }
 

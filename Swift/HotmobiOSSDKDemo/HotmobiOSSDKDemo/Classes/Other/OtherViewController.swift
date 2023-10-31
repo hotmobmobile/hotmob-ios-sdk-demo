@@ -61,7 +61,8 @@ class OtherViewController: HMBaseViewController {
         self.btnLocation.rx.tap
             .subscribe(onNext: {
                 print("button Location")
-                self.lblValue.text = String(describing: HotmobiOSSDK.getCurrentLocation())
+                let location = HotmobiOSSDK.getCurrentLocation()
+                self.lblValue.text = String(describing: location)
             })
             .disposed(by: disposeBag)
     }

@@ -40,6 +40,12 @@
                                "title": "LREC Original",
                                "display": true,
                                "adCode": "hotmob_ios_banner_lrec_original"
+                               },
+                               {
+                               "id": "7",
+                               "title": "No Ad",
+                               "display": true,
+                               "adCode": "no_ad"
                                }
                                ]
                   },
@@ -178,6 +184,36 @@
                                "title": "Google Ad",
                                "display": true,
                                "adCode": "hotmob_ios_google_ad"
+                               },
+                               {
+                               "id": "12",
+                               "title": "Benz",
+                               "display": true,
+                               "adCode": "hotmob_ios_banner_benz"
+                               },
+                               {
+                               "id": "13",
+                               "title": "H&M",
+                               "display": true,
+                               "adCode": "hotmob_ios_banner_hnm"
+                               },
+                               {
+                               "id": "14",
+                               "title": "Panasonic",
+                               "display": true,
+                               "adCode": "hotmob_ios_banner_panasonic"
+                               },
+                               {
+                               "id": "15",
+                               "title": "Fullscreen Spin",
+                               "display": true,
+                               "adCode": "hotmob_ios_banner_spinfull"
+                               },
+                               {
+                               "id": "16",
+                               "title": "Image Slider",
+                               "display": true,
+                               "adCode": "hotmob_ios_banner_imgslider"
                                }
                                ]
                   }

@@ -15,7 +15,7 @@ import HotmobiOSSDK
 
 class HMVideoInterstitialViewController: HMBaseViewController, UITableViewDelegate, HMUIViewTapDelegate {
     
-    var popup: HotmobController? = nil
+    private var popup: HotmobController?
 
     @IBOutlet weak var mainTableView: UITableView!
     private let HMMainItemTableCellNibName = "HMMainItemTableCell"
@@ -106,10 +106,10 @@ class HMVideoInterstitialViewController: HMBaseViewController, UITableViewDelega
     }
     
     func addAdView(_ adCode: String){
-//        let popupAdCode = adCode
+        let popupAdCode = adCode
 //        HotmobiOSSDK.getHotmobPopup(adCode: popupAdCode, delegate: self)
-        self.popup = HotmobController(type: .Interstitial, identifier: "VideoPopup", adCode: adCode, delegate: self)
-        self.popup?.loadAd()
+        popup = HotmobController(type: .Interstitial, identifier: "Popup", adCode: popupAdCode, delegate: self)
+        popup?.loadAd()
     }
 }
 
@@ -162,45 +162,24 @@ extension HMVideoInterstitialViewController: UICollectionViewDelegateFlowLayout{
 }
 
 extension HMVideoInterstitialViewController: HotmobControllerDelegate{
-    func adDidStartLoading(_ ad: HotmobController) {
-        
-    }
-    
-    func adDidLoad(_ ad: HotmobController) {
-        
-    }
-    
-    func noAd(_ ad: HotmobController) {
-        
-    }
-    
-    func adDidShow(_ ad: HotmobController) {
-        
-    }
-    
+    func adDidStartLoading(_ ad: HotmobController) {}
+    func adDidLoad(_ ad: HotmobController) {}
+    func noAd(_ ad: HotmobController) {}
+    func adDidShow(_ ad: HotmobController) {}
     func adDidHide(_ ad: HotmobController) {
-        
+        popup = nil
     }
-    
-    func adDidClick(_ ad: HotmobController) {
-        
-    }
-    
+    func adDidClick(_ ad: HotmobController) {}
     func videoAdDidMute(_ ad: HotmobController) {
-        
+        print("<<AUDIO>> ad mute")
     }
-    
     func videoAdDidUnmute(_ ad: HotmobController) {
-        
+        print("<<AUDIO>> ad unmute")
     }
-    
-    func adDidResize(_ ad: HotmobController) {
-        
-    }
+    func adDidResize(_ ad: HotmobController) {}
     
     func deepLinkDidClick(_ ad: HotmobController, _ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
     }
-    
 }

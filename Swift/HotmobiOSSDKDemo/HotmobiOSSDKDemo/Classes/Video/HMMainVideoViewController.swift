@@ -15,8 +15,6 @@ import HotmobiOSSDK
 
 class HMMainVideoViewController: HMBaseViewController, UITableViewDelegate, HMUIViewTapDelegate  {
     
-    var banner: HotmobController? = nil
-    
     @IBOutlet weak var adContainerView: UIView!
     
     @IBOutlet weak var mainTableView: UITableView!
@@ -116,10 +114,23 @@ class HMMainVideoViewController: HMBaseViewController, UITableViewDelegate, HMUI
     func addAdView(_ adCode: String){
 //        self.bannerView?.removeFromSuperview()
 //        let con = HotmobiOSSDK.getHotmobBannerController(adCode, needAutoReload: true, delegate: self, identifier: "banner")
-//        self.bannerView = con.returnDisplayView()
+//        self.bannerView = con.displayView()
 //        self.adContainerView.addSubview(self.bannerView!)
-        self.banner = HotmobController(type: .Banner, identifier: "VideoBanner", adCode: adCode, delegate: self)
-        self.adContainerView.addSubview(banner!.displayView())
+        if let b = self.banner {
+            if (adCode == "mute_video") {
+                b.muteVideo()
+            } else {
+                b.hide()
+                b.adCode = adCode
+                b.loadAd()
+            }
+        } else {
+            self.banner = HotmobController(type: .Banner, identifier: "Banner", adCode: adCode, delegate: self)
+            self.banner?.animated = true
+            self.adContainerView.addSubview(self.banner!.displayView())
+            self.banner?.loadAd()
+        }
+//        self.lblAdCode.text = adCode
     }
 }
 
@@ -177,45 +188,50 @@ extension HMMainVideoViewController: UICollectionViewDelegateFlowLayout{
 }
 
 extension HMMainVideoViewController: HotmobControllerDelegate{
-    func adDidStartLoading(_ ad: HotmobController) {
-        
-    }
-    
-    func adDidLoad(_ ad: HotmobController) {
-        
-    }
-    
-    func noAd(_ ad: HotmobController) {
-        
-    }
-    
+    func adDidStartLoading(_ ad: HotmobController) {}
+    func adDidLoad(_ ad: HotmobController) {}
+    func noAd(_ ad: HotmobController) {}
     func adDidShow(_ ad: HotmobController) {
         self.adContainerView.frame.size.height = ad.displayView().frame.size.height
     }
-    
     func adDidHide(_ ad: HotmobController) {
-        self.adContainerView.frame.size.height = ad.displayView().frame.size.height
+        self.adContainerView.frame.size.height = 0
     }
-    
-    func adDidClick(_ ad: HotmobController) {
-        
-    }
-    
+    func adDidClick(_ ad: HotmobController) {}
     func videoAdDidMute(_ ad: HotmobController) {
-        
+        showToast(message: "Ad Mute", font: nil)
+        print("<<AUDIO>> ad mute")
     }
-    
     func videoAdDidUnmute(_ ad: HotmobController) {
-        
+        showToast(message: "Ad Unmute", font: nil)
+        print("<<AUDIO>> ad unmute")
     }
-    
-    func adDidResize(_ ad: HotmobController) {
-        
-    }
+    func adDidResize(_ ad: HotmobController) {}
     
     func deepLinkDidClick(_ ad: HotmobController, _ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
+    }
+}
+
+extension HMMainVideoViewController {
+
+    func showToast(message : String, font: UIFont?) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font ?? UIFont(name: "IranSansMobile", size: 19)
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 1.0, delay: 0.1, options: .curveEaseOut, animations: {
+             toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
     }
 }
 

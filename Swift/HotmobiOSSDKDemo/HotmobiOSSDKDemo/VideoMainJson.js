@@ -16,6 +16,12 @@
                                "title": "4:3 video",
                                "display": true,
                                "adCode": "hotmob_ios_videobanner_4_3"
+                               },
+                               {
+                               "id": "2",
+                               "title": "mute video",
+                               "display": true,
+                               "adCode": "mute_video"
                                }
                                ]
                   },
@@ -91,7 +97,7 @@
                   "catItems": [
                                {
                                "id": "1",
-                               "title": "Button Hide with Overaly",
+                               "title": "Button Hide with Overlay",
                                "display": true,
                                "adCode": "hotmob_ios_videobanner_hidebuttons"
                                },

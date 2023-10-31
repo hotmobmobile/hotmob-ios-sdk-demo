@@ -9,9 +9,10 @@
 import Foundation
 import RxSwift
 import RxDataSources
+import RxCocoa
 
 class HMMainViewModel {
-    var itemList: Variable<[SectionModel<String, HMBaseViewModel>]>? = Variable([])
+    var itemList: BehaviorRelay<[SectionModel<String, HMBaseViewModel>]>? = BehaviorRelay(value: [])
     
     func getLocalJSONMain() -> Observable<[HMBaseViewModel]> {
         
@@ -34,7 +35,7 @@ class HMMainViewModel {
                     
                     tmpItemList.append(mainViewModel)
                 }
-                self.itemList?.value = [SectionModel(model: "", items: tmpItemList)]
+                self.itemList?.accept([SectionModel(model: "", items: tmpItemList)])
                 
                 observer.onNext(tmpItemList)
                 observer.onCompleted()

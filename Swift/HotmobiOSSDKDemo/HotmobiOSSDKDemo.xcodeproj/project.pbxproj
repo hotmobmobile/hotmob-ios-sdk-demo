@@ -7,9 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11DBF1F047B86B392F1AB171 /* Pods_HotmobiOSSDKDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF6F07EB0B018377128BE6 /* Pods_HotmobiOSSDKDemoTests.framework */; };
-		5546999489CEC5FBDE1602DC /* Pods_HotmobiOSSDKDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BEF179E458BBDC9ABD0A15 /* Pods_HotmobiOSSDKDemoUITests.framework */; };
-		6888144840479E5EAAEA3761 /* Pods_HotmobiOSSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B78571FE0FC93E63AB3B8 /* Pods_HotmobiOSSDKDemo.framework */; };
+		021EA31366F4FC31EA82E58B /* Pods_HotmobiOSSDKDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1EF42DF2F6F35111610C09 /* Pods_HotmobiOSSDKDemoTests.framework */; };
+		06B6F17C2167F01C0B0AF9B0 /* Pods_HotmobiOSSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0A54F76AD14CB267410F76 /* Pods_HotmobiOSSDKDemo.framework */; };
+		3B413C9D2ABC4C9300C47242 /* HMFloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B413C9C2ABC4C9300C47242 /* HMFloatingViewController.swift */; };
+		3B413CA12ABC501600C47242 /* FloatingJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 3B413CA02ABC501600C47242 /* FloatingJson.js */; };
+		3B413CA32ABD443000C47242 /* HMFloatingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B413CA22ABD443000C47242 /* HMFloatingViewModel.swift */; };
+		3B413CA72ABD97A900C47242 /* HMFloatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B413CA62ABD97A900C47242 /* HMFloatingViewController.xib */; };
+		3F832A6A2412163300D17AD6 /* InterstitialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F832A692412163300D17AD6 /* InterstitialTests.swift */; };
+		3F832A6C241236C000D17AD6 /* InterstitialClickActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F832A6B241236C000D17AD6 /* InterstitialClickActionTests.swift */; };
+		3F98E0FC2419E50F00774E87 /* VideoInterstitialClickActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F98E0FB2419E50F00774E87 /* VideoInterstitialClickActionTests.swift */; };
+		3FA9F8C6240F61B5002D00A5 /* BannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9F8C5240F61B5002D00A5 /* BannerTests.swift */; };
+		3FA9F8C8240F626B002D00A5 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9F8C7240F626B002D00A5 /* BaseTestCase.swift */; };
+		3FA9FD4A2410AAE5001F95C4 /* BannerClickActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9FD492410AAE5001F95C4 /* BannerClickActionTests.swift */; };
+		3FD35E5024163769002CA1EA /* BannerMRAIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD35E4F24163769002CA1EA /* BannerMRAIDTests.swift */; };
+		3FDAE65B2417765600A1DCA2 /* BannerVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAE65A2417765600A1DCA2 /* BannerVideoTests.swift */; };
+		3FDAE65D24177B7400A1DCA2 /* BannerVideoClickActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAE65C24177B7400A1DCA2 /* BannerVideoClickActionTests.swift */; };
+		3FDAE65F2417842A00A1DCA2 /* VideoInterstitialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAE65E2417842A00A1DCA2 /* VideoInterstitialTests.swift */; };
+		856E181B848162183AFB8EDB /* Pods_HotmobiOSSDKDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B894EAAEA2A3604F2612CBE /* Pods_HotmobiOSSDKDemoUITests.framework */; };
 		981477DA2276EDAE00880765 /* HMMainInterstititalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981477D92276EDAE00880765 /* HMMainInterstititalViewModel.swift */; };
 		981477DC2276EDEB00880765 /* MainInterstitialJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 981477DB2276EDEB00880765 /* MainInterstitialJson.js */; };
 		981477DE2276F14C00880765 /* HMVideoInterstititalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981477DD2276F14C00880765 /* HMVideoInterstititalViewModel.swift */; };
@@ -19,6 +33,8 @@
 		98184546223F439600C5AF19 /* VideoMainJson.js in Resources */ = {isa = PBXBuildFile; fileRef = 98184545223F439600C5AF19 /* VideoMainJson.js */; };
 		981C0BFD22D5920D007D1FD2 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */; };
 		981C0BFE22D5920D007D1FD2 /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */; };
+		981C0C0A22D6D91F007D1FD2 /* DeepLinkPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */; };
+		981C0C0B22D6D91F007D1FD2 /* DeepLinkPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */; };
 		98255DDE2255F01A009F41D1 /* HMInternalLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98255DDC2255F01A009F41D1 /* HMInternalLinkViewController.swift */; };
 		98255DDF2255F01A009F41D1 /* HMInternalLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98255DDD2255F01A009F41D1 /* HMInternalLinkViewController.xib */; };
 		9838B359223B8E97000892F5 /* HMVideoInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9838B357223B8E97000892F5 /* HMVideoInterstitialViewController.swift */; };
@@ -91,9 +107,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E529A810B31E59C2AA4A4CD /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6F360595AAA777E4CA9A8E67 /* Pods-HotmobiOSSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		80FF6F07EB0B018377128BE6 /* Pods_HotmobiOSSDKDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0105748F869DCD09F11DF7 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2B894EAAEA2A3604F2612CBE /* Pods_HotmobiOSSDKDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B413C9C2ABC4C9300C47242 /* HMFloatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFloatingViewController.swift; sourceTree = "<group>"; };
+		3B413CA02ABC501600C47242 /* FloatingJson.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FloatingJson.js; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		3B413CA22ABD443000C47242 /* HMFloatingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMFloatingViewModel.swift; sourceTree = "<group>"; };
+		3B413CA62ABD97A900C47242 /* HMFloatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMFloatingViewController.xib; sourceTree = "<group>"; };
+		3F832A692412163300D17AD6 /* InterstitialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialTests.swift; sourceTree = "<group>"; };
+		3F832A6B241236C000D17AD6 /* InterstitialClickActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialClickActionTests.swift; sourceTree = "<group>"; };
+		3F98E0FB2419E50F00774E87 /* VideoInterstitialClickActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInterstitialClickActionTests.swift; sourceTree = "<group>"; };
+		3FA9F8C5240F61B5002D00A5 /* BannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTests.swift; sourceTree = "<group>"; };
+		3FA9F8C7240F626B002D00A5 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		3FA9FD492410AAE5001F95C4 /* BannerClickActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerClickActionTests.swift; sourceTree = "<group>"; };
+		3FD35E4F24163769002CA1EA /* BannerMRAIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerMRAIDTests.swift; sourceTree = "<group>"; };
+		3FDAE65A2417765600A1DCA2 /* BannerVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVideoTests.swift; sourceTree = "<group>"; };
+		3FDAE65C24177B7400A1DCA2 /* BannerVideoClickActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVideoClickActionTests.swift; sourceTree = "<group>"; };
+		3FDAE65E2417842A00A1DCA2 /* VideoInterstitialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInterstitialTests.swift; sourceTree = "<group>"; };
+		59059A40D419B7B7AF1D69F5 /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoTests.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		82D1981CA929C2B87950A36D /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		969FA8C5C9294DD7368FA77D /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		976C891EAD481B294474A888 /* Pods-HotmobiOSSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		981477D92276EDAE00880765 /* HMMainInterstititalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainInterstititalViewModel.swift; sourceTree = "<group>"; };
 		981477DB2276EDEB00880765 /* MainInterstitialJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = MainInterstitialJson.js; sourceTree = "<group>"; };
 		981477DD2276F14C00880765 /* HMVideoInterstititalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMVideoInterstititalViewModel.swift; sourceTree = "<group>"; };
@@ -103,6 +136,8 @@
 		98184545223F439600C5AF19 /* VideoMainJson.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = VideoMainJson.js; sourceTree = "<group>"; };
 		981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkPopupViewController.swift; sourceTree = "<group>"; };
+		981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeepLinkPopupViewController.xib; sourceTree = "<group>"; };
 		98255DDC2255F01A009F41D1 /* HMInternalLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMInternalLinkViewController.swift; sourceTree = "<group>"; };
 		98255DDD2255F01A009F41D1 /* HMInternalLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMInternalLinkViewController.xib; sourceTree = "<group>"; };
 		9838B357223B8E97000892F5 /* HMVideoInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMVideoInterstitialViewController.swift; sourceTree = "<group>"; };
@@ -162,12 +197,9 @@
 		9884C3DB2230E2D400E11736 /* HMRearCatItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMRearCatItemViewModel.swift; sourceTree = "<group>"; };
 		9884C3DE2230FF3E00E11736 /* HMMainVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMainVideoViewController.swift; sourceTree = "<group>"; };
 		9884C3DF2230FF3E00E11736 /* HMMainVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMMainVideoViewController.xib; sourceTree = "<group>"; };
-		B29D0351D002AD31F9BAD509 /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C99CCEB5ADDA4496A4DE4141 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		D0BEF179E458BBDC9ABD0A15 /* Pods_HotmobiOSSDKDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEFFB491FF6EFD2964FF880E /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoTests.release.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		EDF6524943519E2885458CD0 /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F58B78571FE0FC93E63AB3B8 /* Pods_HotmobiOSSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE84078657A2E26AF0DC6F3D /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobiOSSDKDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA1EF42DF2F6F35111610C09 /* Pods_HotmobiOSSDKDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0A54F76AD14CB267410F76 /* Pods_HotmobiOSSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobiOSSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6888144840479E5EAAEA3761 /* Pods_HotmobiOSSDKDemo.framework in Frameworks */,
+				06B6F17C2167F01C0B0AF9B0 /* Pods_HotmobiOSSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11DBF1F047B86B392F1AB171 /* Pods_HotmobiOSSDKDemoTests.framework in Frameworks */,
+				021EA31366F4FC31EA82E58B /* Pods_HotmobiOSSDKDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,13 +223,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5546999489CEC5FBDE1602DC /* Pods_HotmobiOSSDKDemoUITests.framework in Frameworks */,
+				856E181B848162183AFB8EDB /* Pods_HotmobiOSSDKDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F632D58240F611900961EFB /* banner */ = {
+			isa = PBXGroup;
+			children = (
+				3FA9F8C5240F61B5002D00A5 /* BannerTests.swift */,
+				3FA9FD492410AAE5001F95C4 /* BannerClickActionTests.swift */,
+				3FD35E4F24163769002CA1EA /* BannerMRAIDTests.swift */,
+				3FDAE65A2417765600A1DCA2 /* BannerVideoTests.swift */,
+				3FDAE65C24177B7400A1DCA2 /* BannerVideoClickActionTests.swift */,
+			);
+			path = banner;
+			sourceTree = "<group>";
+		};
+		3F832A682412161300D17AD6 /* interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				3F832A692412163300D17AD6 /* InterstitialTests.swift */,
+				3F832A6B241236C000D17AD6 /* InterstitialClickActionTests.swift */,
+				3FDAE65E2417842A00A1DCA2 /* VideoInterstitialTests.swift */,
+				3F98E0FB2419E50F00774E87 /* VideoInterstitialClickActionTests.swift */,
+			);
+			path = interstitial;
+			sourceTree = "<group>";
+		};
 		9818453F223F409100C5AF19 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +274,8 @@
 			children = (
 				981C0BFB22D5920D007D1FD2 /* OtherViewController.swift */,
 				981C0BFC22D5920D007D1FD2 /* OtherViewController.xib */,
+				981C0C0822D6D91F007D1FD2 /* DeepLinkPopupViewController.swift */,
+				981C0C0922D6D91F007D1FD2 /* DeepLinkPopupViewController.xib */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -258,6 +315,7 @@
 				981477DB2276EDEB00880765 /* MainInterstitialJson.js */,
 				98184545223F439600C5AF19 /* VideoMainJson.js */,
 				981477DF2276F16200880765 /* VideoInterstitialJson.js */,
+				3B413CA02ABC501600C47242 /* FloatingJson.js */,
 				983A1A6F221A58ED0002CFDC /* LaunchScreen.storyboard */,
 				983A1A72221A58ED0002CFDC /* Info.plist */,
 			);
@@ -276,8 +334,11 @@
 		983A1A85221A58ED0002CFDC /* HotmobiOSSDKDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3F832A682412161300D17AD6 /* interstitial */,
+				3F632D58240F611900961EFB /* banner */,
 				983A1A86221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.swift */,
 				983A1A88221A58ED0002CFDC /* Info.plist */,
+				3FA9F8C7240F626B002D00A5 /* BaseTestCase.swift */,
 			);
 			path = HotmobiOSSDKDemoUITests;
 			sourceTree = "<group>";
@@ -286,9 +347,9 @@
 			isa = PBXGroup;
 			children = (
 				983A1AA6221A641E0002CFDC /* HotmobiOSSDK.framework */,
-				F58B78571FE0FC93E63AB3B8 /* Pods_HotmobiOSSDKDemo.framework */,
-				80FF6F07EB0B018377128BE6 /* Pods_HotmobiOSSDKDemoTests.framework */,
-				D0BEF179E458BBDC9ABD0A15 /* Pods_HotmobiOSSDKDemoUITests.framework */,
+				FD0A54F76AD14CB267410F76 /* Pods_HotmobiOSSDKDemo.framework */,
+				DA1EF42DF2F6F35111610C09 /* Pods_HotmobiOSSDKDemoTests.framework */,
+				2B894EAAEA2A3604F2612CBE /* Pods_HotmobiOSSDKDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,6 +364,8 @@
 				987567AA2225451800CCD27C /* HMMainViewController.xib */,
 				9838B35B223B8EBD000892F5 /* HMHTMLInterstitialViewController.swift */,
 				9838B35C223B8EBD000892F5 /* HMHTMLInterstitialViewController.xib */,
+				3B413C9C2ABC4C9300C47242 /* HMFloatingViewController.swift */,
+				3B413CA62ABD97A900C47242 /* HMFloatingViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -333,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				98756809222D051100CCD27C /* HMMainViewModel.swift */,
+				3B413CA22ABD443000C47242 /* HMFloatingViewModel.swift */,
 				9875680D222D147E00CCD27C /* HMMainItemViewModel.swift */,
 				987567FC222CE89800CCD27C /* HMMainItemUnitTypeAViewModel.swift */,
 				98756813222D370C00CCD27C /* HMMainItemUnitTypeBViewModel.swift */,
@@ -439,12 +503,12 @@
 		EFDEDE5800B318F81D68398A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C99CCEB5ADDA4496A4DE4141 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */,
-				6F360595AAA777E4CA9A8E67 /* Pods-HotmobiOSSDKDemo.release.xcconfig */,
-				5E529A810B31E59C2AA4A4CD /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */,
-				DEFFB491FF6EFD2964FF880E /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */,
-				EDF6524943519E2885458CD0 /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */,
-				B29D0351D002AD31F9BAD509 /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */,
+				1E0105748F869DCD09F11DF7 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */,
+				976C891EAD481B294474A888 /* Pods-HotmobiOSSDKDemo.release.xcconfig */,
+				CE84078657A2E26AF0DC6F3D /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */,
+				59059A40D419B7B7AF1D69F5 /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */,
+				82D1981CA929C2B87950A36D /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */,
+				969FA8C5C9294DD7368FA77D /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -466,13 +530,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 983A1A8B221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemo" */;
 			buildPhases = (
-				1B5317E6E0CD839ED89EC23E /* [CP] Check Pods Manifest.lock */,
+				D44912A5D55AD08273798091 /* [CP] Check Pods Manifest.lock */,
 				983A1AAB221AA7CE0002CFDC /* Headers */,
 				983A1A5F221A58EC0002CFDC /* Sources */,
 				983A1A60221A58EC0002CFDC /* Frameworks */,
 				983A1A61221A58EC0002CFDC /* Resources */,
-				66F035265C2D05CAEE88DAB1 /* [CP] Embed Pods Frameworks */,
-				9B4C2DF5270594EF278F9D2B /* [CP] Copy Pods Resources */,
+				9113E3DF6634F79E5491DBE7 /* [CP] Embed Pods Frameworks */,
+				71119E576AA217644C043E77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -487,10 +551,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 983A1A8E221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemoTests" */;
 			buildPhases = (
-				80F3E76F31F976332CA285F6 /* [CP] Check Pods Manifest.lock */,
+				FABA7DCCF6ABAFCE11F3FCF9 /* [CP] Check Pods Manifest.lock */,
 				983A1A73221A58ED0002CFDC /* Sources */,
 				983A1A74221A58ED0002CFDC /* Frameworks */,
 				983A1A75221A58ED0002CFDC /* Resources */,
+				19D0DC0AB4A664CD1CBABFF8 /* [CP] Embed Pods Frameworks */,
+				BF4C65763F174150B5F3EBF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -506,10 +572,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 983A1A91221A58ED0002CFDC /* Build configuration list for PBXNativeTarget "HotmobiOSSDKDemoUITests" */;
 			buildPhases = (
-				412ED81E38EC00599ED2E1F8 /* [CP] Check Pods Manifest.lock */,
+				63BD3A5D3D5A37A3E0ECAB20 /* [CP] Check Pods Manifest.lock */,
 				983A1A7E221A58ED0002CFDC /* Sources */,
 				983A1A7F221A58ED0002CFDC /* Frameworks */,
 				983A1A80221A58ED0002CFDC /* Resources */,
+				EFE2B3F37A90FEB7B605622B /* [CP] Embed Pods Frameworks */,
+				76A66EC0BDE1934AAEA8B1B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -590,11 +658,14 @@
 				987567AC2225451800CCD27C /* HMMainViewController.xib in Resources */,
 				9884C3CE2230CB9D00E11736 /* RearJson.js in Resources */,
 				9884C3E12230FF3E00E11736 /* HMMainVideoViewController.xib in Resources */,
+				3B413CA12ABC501600C47242 /* FloatingJson.js in Resources */,
+				3B413CA72ABD97A900C47242 /* HMFloatingViewController.xib in Resources */,
 				98756805222CEEBE00CCD27C /* HMMainItemTableCell.xib in Resources */,
 				983A1A6C221A58EC0002CFDC /* Main.storyboard in Resources */,
 				987567F3222CD08900CCD27C /* HMMainUnitView.xib in Resources */,
 				9838B35E223B8EBD000892F5 /* HMHTMLInterstitialViewController.xib in Resources */,
 				981477E02276F16200880765 /* VideoInterstitialJson.js in Resources */,
+				981C0C0B22D6D91F007D1FD2 /* DeepLinkPopupViewController.xib in Resources */,
 				981C0BFE22D5920D007D1FD2 /* OtherViewController.xib in Resources */,
 				987567FF222CE9F400CCD27C /* MainJson.js in Resources */,
 				9838B35A223B8E97000892F5 /* HMVideoInterstitialViewController.xib in Resources */,
@@ -619,29 +690,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B5317E6E0CD839ED89EC23E /* [CP] Check Pods Manifest.lock */ = {
+		19D0DC0AB4A664CD1CBABFF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HotmobiOSSDKDemo-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		412ED81E38EC00599ED2E1F8 /* [CP] Check Pods Manifest.lock */ = {
+		63BD3A5D3D5A37A3E0ECAB20 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -663,7 +729,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		66F035265C2D05CAEE88DAB1 /* [CP] Embed Pods Frameworks */ = {
+		71119E576AA217644C043E77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A66EC0BDE1934AAEA8B1B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9113E3DF6634F79E5491DBE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -680,7 +780,63 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		80F3E76F31F976332CA285F6 /* [CP] Check Pods Manifest.lock */ = {
+		BF4C65763F174150B5F3EBF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoTests/Pods-HotmobiOSSDKDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D44912A5D55AD08273798091 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotmobiOSSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFE2B3F37A90FEB7B605622B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemoUITests/Pods-HotmobiOSSDKDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FABA7DCCF6ABAFCE11F3FCF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -700,23 +856,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B4C2DF5270594EF278F9D2B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotmobiOSSDKDemo/Pods-HotmobiOSSDKDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -749,7 +888,9 @@
 				98756808222CF15A00CCD27C /* HMResourcesLoader.swift in Sources */,
 				981477DE2276F14C00880765 /* HMVideoInterstititalViewModel.swift in Sources */,
 				983A1A69221A58EC0002CFDC /* ViewController.swift in Sources */,
+				3B413CA32ABD443000C47242 /* HMFloatingViewModel.swift in Sources */,
 				98255DDE2255F01A009F41D1 /* HMInternalLinkViewController.swift in Sources */,
+				981C0C0A22D6D91F007D1FD2 /* DeepLinkPopupViewController.swift in Sources */,
 				98756810222D151F00CCD27C /* HMHomeMenuModel.swift in Sources */,
 				98184544223F432B00C5AF19 /* HMMainVideoViewModel.swift in Sources */,
 				987567AB2225451800CCD27C /* HMMainViewController.swift in Sources */,
@@ -758,6 +899,7 @@
 				981C0BFD22D5920D007D1FD2 /* OtherViewController.swift in Sources */,
 				9875680E222D147E00CCD27C /* HMMainItemViewModel.swift in Sources */,
 				9838B35D223B8EBD000892F5 /* HMHTMLInterstitialViewController.swift in Sources */,
+				3B413C9D2ABC4C9300C47242 /* HMFloatingViewController.swift in Sources */,
 				987567E7222CCF1200CCD27C /* HMBaseViewModel.swift in Sources */,
 				987567F9222CD1FB00CCD27C /* HMMainUnitBaseCollectionViewCell.swift in Sources */,
 				98756818222D38B100CCD27C /* HMMainUnitTypeBTableViewCell.swift in Sources */,
@@ -781,7 +923,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA9FD4A2410AAE5001F95C4 /* BannerClickActionTests.swift in Sources */,
+				3F98E0FC2419E50F00774E87 /* VideoInterstitialClickActionTests.swift in Sources */,
+				3FDAE65B2417765600A1DCA2 /* BannerVideoTests.swift in Sources */,
+				3F832A6A2412163300D17AD6 /* InterstitialTests.swift in Sources */,
+				3FDAE65F2417842A00A1DCA2 /* VideoInterstitialTests.swift in Sources */,
 				983A1A87221A58ED0002CFDC /* HotmobiOSSDKDemoUITests.swift in Sources */,
+				3FDAE65D24177B7400A1DCA2 /* BannerVideoClickActionTests.swift in Sources */,
+				3FA9F8C8240F626B002D00A5 /* BaseTestCase.swift in Sources */,
+				3FD35E5024163769002CA1EA /* BannerMRAIDTests.swift in Sources */,
+				3F832A6C241236C000D17AD6 /* InterstitialClickActionTests.swift in Sources */,
+				3FA9F8C6240F61B5002D00A5 /* BannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,6 +976,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -871,7 +1024,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -885,6 +1038,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -926,7 +1080,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -938,18 +1092,18 @@
 		};
 		983A1A8C221A58ED0002CFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C99CCEB5ADDA4496A4DE4141 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */;
+			baseConfigurationReference = 1E0105748F869DCD09F11DF7 /* Pods-HotmobiOSSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6QYN4PKP;
+				DEVELOPMENT_TEAM = DPC58M684L;
 				INFOPLIST_FILE = HotmobiOSSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemo-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -958,18 +1112,18 @@
 		};
 		983A1A8D221A58ED0002CFDC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F360595AAA777E4CA9A8E67 /* Pods-HotmobiOSSDKDemo.release.xcconfig */;
+			baseConfigurationReference = 976C891EAD481B294474A888 /* Pods-HotmobiOSSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6QYN4PKP;
+				DEVELOPMENT_TEAM = DPC58M684L;
 				INFOPLIST_FILE = HotmobiOSSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-mob.HotmobiOSSDKDemo-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -978,11 +1132,12 @@
 		};
 		983A1A8F221A58ED0002CFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E529A810B31E59C2AA4A4CD /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */;
+			baseConfigurationReference = CE84078657A2E26AF0DC6F3D /* Pods-HotmobiOSSDKDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
 				INFOPLIST_FILE = HotmobiOSSDKDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -999,11 +1154,12 @@
 		};
 		983A1A90221A58ED0002CFDC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEFFB491FF6EFD2964FF880E /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */;
+			baseConfigurationReference = 59059A40D419B7B7AF1D69F5 /* Pods-HotmobiOSSDKDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
 				INFOPLIST_FILE = HotmobiOSSDKDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1020,10 +1176,11 @@
 		};
 		983A1A92221A58ED0002CFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDF6524943519E2885458CD0 /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */;
+			baseConfigurationReference = 82D1981CA929C2B87950A36D /* Pods-HotmobiOSSDKDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
 				INFOPLIST_FILE = HotmobiOSSDKDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1040,10 +1197,11 @@
 		};
 		983A1A93221A58ED0002CFDC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B29D0351D002AD31F9BAD509 /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */;
+			baseConfigurationReference = 969FA8C5C9294DD7368FA77D /* Pods-HotmobiOSSDKDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E6QYN4PKP;
 				INFOPLIST_FILE = HotmobiOSSDKDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

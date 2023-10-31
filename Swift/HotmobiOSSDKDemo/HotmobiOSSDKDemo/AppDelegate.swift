@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
         
         let mainVC = HMMainViewController()
 
-
         let mainNav = UINavigationController.init(rootViewController: mainVC)
         
         let rearVC = HMRearViewController()

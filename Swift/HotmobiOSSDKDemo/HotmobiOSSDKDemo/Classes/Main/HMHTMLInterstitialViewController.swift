@@ -15,7 +15,7 @@ import HotmobiOSSDK
 
 class HMHTMLInterstitialViewController: HMBaseViewController, UITableViewDelegate, HMUIViewTapDelegate{
     
-    var popup: HotmobController? = nil
+    private var popup: HotmobController?
     
     @IBOutlet weak var mainTableView: UITableView!
     private let HMMainItemTableCellNibName = "HMMainItemTableCell"
@@ -107,10 +107,10 @@ class HMHTMLInterstitialViewController: HMBaseViewController, UITableViewDelegat
     }
     
     func addAdView(_ adCode: String){
-//        let popupAdCode = adCode
+        let popupAdCode = adCode
 //        HotmobiOSSDK.getHotmobPopup(adCode: popupAdCode, delegate: self)
-        self.popup = HotmobController(type: .Interstitial, identifier: "Popup", adCode: adCode, delegate: self)
-        self.popup?.loadAd()
+        popup = HotmobController(type: .Interstitial, identifier: "Popup", adCode: popupAdCode, delegate: self)
+        popup?.loadAd()
     }
     
 }
@@ -164,40 +164,45 @@ extension HMHTMLInterstitialViewController: UICollectionViewDelegateFlowLayout{
 }
 
 extension HMHTMLInterstitialViewController: HotmobControllerDelegate{
-    func adDidStartLoading(_ ad: HotmobController) {
-        
-    }
-    
-    func adDidLoad(_ ad: HotmobController) {
-        
-    }
-    
+    func adDidStartLoading(_ ad: HotmobController) {}
+    func adDidLoad(_ ad: HotmobController) {}
     func noAd(_ ad: HotmobController) {
+        showToast(message: "No Ad Returned", font: nil)
+        print("HotmobSDK No Ad Returned")
     }
-    
-    func adDidShow(_ ad: HotmobController) {
-    }
-    
+    func adDidShow(_ ad: HotmobController) {}
     func adDidHide(_ ad: HotmobController) {
+        print("HotmobSDK adDidHide")
+        popup = nil
     }
-    
-    func adDidClick(_ ad: HotmobController) {
-        
-    }
-    
-    func videoAdDidMute(_ ad: HotmobController) {
-        
-    }
-    
-    func videoAdDidUnmute(_ ad: HotmobController) {
-        
-    }
-    
-    func adDidResize(_ ad: HotmobController) {
-    }
+    func adDidClick(_ ad: HotmobController) {}
+    func videoAdDidMute(_ ad: HotmobController) {}
+    func videoAdDidUnmute(_ ad: HotmobController) {}
+    func adDidResize(_ ad: HotmobController) {}
     
     func deepLinkDidClick(_ ad: HotmobController, _ url: String) {
         let internalLinkVC = HMInternalLinkViewController(url: url)
         self.navigationController?.pushViewController(internalLinkVC, animated: true)
+    }
+}
+
+extension HMHTMLInterstitialViewController {
+
+    func showToast(message : String, font: UIFont?) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font ?? UIFont(name: "IranSansMobile", size: 19)
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 1.0, delay: 0.1, options: .curveEaseOut, animations: {
+             toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
     }
 }

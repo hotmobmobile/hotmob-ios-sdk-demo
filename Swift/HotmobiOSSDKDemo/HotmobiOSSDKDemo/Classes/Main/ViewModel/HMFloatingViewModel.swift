@@ -1,8 +1,8 @@
 //
-//  HMMainInterstititalViewModel.swift
+//  HMMainViewModel.swift
 //  HotmobiOSSDKDemo
 //
-//  Created by Paul Cheung on 29/4/2019.
+//  Created by Paul Cheung on 4/3/2019.
 //  Copyright © 2019 Paul Cheung. All rights reserved.
 //
 
@@ -11,14 +11,14 @@ import RxSwift
 import RxDataSources
 import RxCocoa
 
-class HMMainInterstititalViewModel {
+class HMFloatingViewModel {
     var itemList: BehaviorRelay<[SectionModel<String, HMBaseViewModel>]>? = BehaviorRelay(value: [])
     
     func getLocalJSONMain() -> Observable<[HMBaseViewModel]> {
         
         return Observable.create{ (observer) in
             
-            let path = HMResourcesLoader.frameworkBundle().path(forResource: "MainInterstitialJson.js", ofType: "")
+            let path = HMResourcesLoader.frameworkBundle().path(forResource: "FloatingJson.js", ofType: "")
             let jsonString = try? String(contentsOfFile: path!)
             let jsonData = jsonString?.data(using: .utf8)
             let responseDict: NSDictionary = try! JSONSerialization.jsonObject(with: jsonData!, options: .mutableContainers) as! NSDictionary

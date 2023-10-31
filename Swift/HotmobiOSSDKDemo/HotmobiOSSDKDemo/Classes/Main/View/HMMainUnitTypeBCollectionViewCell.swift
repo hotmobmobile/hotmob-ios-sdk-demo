@@ -14,6 +14,7 @@ class HMMainUnitTypeBCollectionViewCell: HMMainUnitBaseCollectionViewCell {
         didSet {
             self.mainUnitView?.viewModel = viewModel
             self.mainUnitView?.lblTitle.text = viewModel?.title.value!
+            self.mainUnitView?.accessibilityIdentifier = viewModel?.title.value!
         }
     }
     

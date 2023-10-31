@@ -14,6 +14,9 @@ import HotmobiOSSDK
 class HMBaseViewController: UIViewController {
 
     let disposeBag = DisposeBag()
+    
+//    var bannerView: UIView?
+    var banner: HotmobController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,10 @@ class HMBaseViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.setupRightBarButtonItem()
 
+    }
+    
+    deinit{
+//        print("deinit HMBaseViewController")
     }
     
     func setupRightBarButtonItem() {

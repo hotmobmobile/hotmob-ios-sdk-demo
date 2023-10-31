@@ -8,13 +8,14 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 struct HMRearItemViewModel: HMBaseViewModel {
     
-    var id: Variable<String?> = Variable("")
-    var displayType: Variable<String?> = Variable("")
-    var displayName: Variable<String?> = Variable("")
-    var catItems: Variable<Array<NSDictionary>> = Variable([])
+    var id: BehaviorRelay<String?> = BehaviorRelay(value: "")
+    var displayType: BehaviorRelay<String?> = BehaviorRelay(value: "")
+    var displayName: BehaviorRelay<String?> = BehaviorRelay(value: "")
+    var catItems: BehaviorRelay<Array<NSDictionary>> = BehaviorRelay(value: [])
     
     var model: HMRearItemModel? {
         didSet {
@@ -28,9 +29,9 @@ struct HMRearItemViewModel: HMBaseViewModel {
     }
     
     private func setupData(model: HMRearItemModel) {
-        self.id.value = model.id ?? ""
-        self.displayType.value = model.displayType ?? ""
-        self.displayName.value = model.displayName ?? ""
-        self.catItems.value = model.catItems ?? []
+        self.id.accept(model.id ?? "")
+        self.displayType.accept(model.displayType ?? "")
+        self.displayName.accept(model.displayName ?? "")
+        self.catItems.accept(model.catItems ?? [])
     }
 }

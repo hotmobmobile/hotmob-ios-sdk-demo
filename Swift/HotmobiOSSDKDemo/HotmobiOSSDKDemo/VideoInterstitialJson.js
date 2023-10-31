@@ -97,7 +97,7 @@
                   "catItems": [
                                {
                                "id": "1",
-                               "title": "Button Hide with Overaly",
+                               "title": "Button Hide with Overlay",
                                "display": true,
                                "adCode": "hotmob_ios_videopopup_hidebuttons"
                                },
