@@ -4,13 +4,14 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 Visit http://www.hot-mob.com/ for more details.
 
 ### Compatibility
-* Minimum: iOS 10. (Only operate on iOS 11 or above)
-* Fully Tested: up to iOS 14
-* Swift 4.2
-* Xcode 12+
+* Minimum: iOS 12
+* Fully Tested: up to iOS 16
+* Swift 5
+* Xcode 14+
 
 ### Integration
-* [Installation](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Installation-v5)
+* [Installation](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Installation-v6)
+* [Migrate from v5](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Migrate-from-v5-to-v6)
 * [Basic Usage](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v5)
   * [Interstitial](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v5#interstitial)
   * [Banner](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v5#banner)
@@ -22,8 +23,6 @@ Visit http://www.hot-mob.com/ for more details.
 * [Data Collection](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Data-Collection-v5)
 * [Location Collection](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Location-Collection-v5)
 * [VAST URL](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/VAST-URL)
-* [Migrate from v4 to v5](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Migrate-from-v4-to-v5)
-* [Migrate from beta v5.0](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Migrate-from-beta-v5.0)
 
 ---
 ## Contact
