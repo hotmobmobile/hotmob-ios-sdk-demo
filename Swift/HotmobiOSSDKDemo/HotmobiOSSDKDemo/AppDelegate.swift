@@ -9,7 +9,6 @@
 import UIKit
 import SWRevealViewController
 import HotmobiOSSDK
-import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDelegate {
@@ -21,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
         
         HotmobiOSSDK.startSDK()
         HotmobiOSSDK.enableDebugMode()
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
+//        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         let mainVC = HMMainViewController()
 

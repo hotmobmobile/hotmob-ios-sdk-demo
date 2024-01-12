@@ -8,7 +8,7 @@ target 'HotmobiOSSDKDemo' do
   use_frameworks!
 
   # Pods for HotmobiOSSDKDemo
-  pod 'HotmobiOSSDK', :path => '../../hotmob-ios-sdk'
+  pod 'HotmobiOSSDK', :path => '../../../hotmob-ios-sdk'
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
@@ -17,19 +17,18 @@ target 'HotmobiOSSDKDemo' do
   pod 'SwiftyJSON'
   pod 'SWRevealViewController', '2.3.0'
   pod 'RxWebKit', '~> 2.0'
-  pod 'Google-Mobile-Ads-SDK', '~> 10.10.0'
 
   target 'HotmobiOSSDKDemoTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'HotmobiOSSDK', :path => '../../hotmob-ios-sdk'
+    pod 'HotmobiOSSDK', :path => '../../../hotmob-ios-sdk'
 
   end
 
   target 'HotmobiOSSDKDemoUITests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'HotmobiOSSDK', :path => '../../hotmob-ios-sdk'
+    pod 'HotmobiOSSDK', :path => '../../../hotmob-ios-sdk'
 
   end
 

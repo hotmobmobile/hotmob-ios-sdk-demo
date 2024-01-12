@@ -181,7 +181,7 @@ class HMFloatingViewController: HMBaseViewController, UITableViewDelegate, HMUIV
                 b.adCode = adCode
                 b.loadAd()
             } else {
-                let banner = HotmobController(type: .Floating, identifier: "Floating", adCode: adCode, delegate: self)
+                let banner = HotmobController(type: .Banner, identifier: "Floating", adCode: adCode, delegate: self)
                 banner.animated = false
                 banner.containsInView = self.view
                 self.view.addSubview(banner.displayView())
