@@ -10,8 +10,7 @@ Visit http://www.hot-mob.com/ for more details.
 * Xcode 14+
 
 ### Integration
-* [Installation](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Installation-v6)
-* [Migrate from v5](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Migrate-from-v5-to-v6)
+* [Installation](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Installation-v6-without-google)
 * [Basic Usage](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v5)
   * [Interstitial](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v5#interstitial)
   * [Banner](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v5#banner)
