@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -79,14 +79,10 @@
 		054DE8449724C43B7F32C47C /* Pods-HotmobPreloadDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemoUITests/Pods-HotmobPreloadDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0808FC8BEC1F8175C454FA57 /* Pods-HotmobPreloadDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemoUITests/Pods-HotmobPreloadDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		27A0A0D4EBBAC823430A359A /* Pods_HotmobPreloadDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobPreloadDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		342F77A0AABF8B384649F9C4 /* Pods-HotmobReloadDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemoUITests/Pods-HotmobReloadDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3F64D9A22435DE2900702B79 /* HMSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSplashViewController.swift; sourceTree = "<group>"; };
 		3F64D9A32435DE2900702B79 /* HMSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMSplashViewController.xib; sourceTree = "<group>"; };
-		5BBD665E8895919E670A0372 /* Pods-HotmobReloadDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemoTests/Pods-HotmobReloadDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		5DD31677B013B5527880E9BE /* Pods-HotmobPreloadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		684DF8DB493232204003FDB4 /* Pods-HotmobPreloadDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemoTests/Pods-HotmobPreloadDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		760EA74ED1241C932D46C979 /* Pods-HotmobReloadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemo/Pods-HotmobReloadDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7843B40DC744EDE06FCE4D49 /* Pods-HotmobReloadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemo/Pods-HotmobReloadDemo.release.xcconfig"; sourceTree = "<group>"; };
 		980CE828225C55160085F12F /* HMDetialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMDetialsViewController.swift; sourceTree = "<group>"; };
 		980CE829225C55160085F12F /* HMDetialsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMDetialsViewController.xib; sourceTree = "<group>"; };
 		98255DE9225AF371009F41D1 /* HotmobPreloadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotmobPreloadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,8 +135,6 @@
 		984CDFF522A8C05200851CC6 /* HMPageThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMPageThreeViewController.xib; sourceTree = "<group>"; };
 		BFCDC1B5F0C43ACE89652055 /* Pods_HotmobPreloadDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotmobPreloadDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31BD24563FC76C34DACAD57 /* Pods-HotmobPreloadDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemoTests/Pods-HotmobPreloadDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		C4C44B8EAB957E27C7686AA3 /* Pods-HotmobReloadDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemoTests/Pods-HotmobReloadDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E43DD822787C14E6D727A16F /* Pods-HotmobReloadDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobReloadDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobReloadDemoUITests/Pods-HotmobReloadDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F8FD0E8AF10BF9ED89741D6E /* Pods-HotmobPreloadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotmobPreloadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotmobPreloadDemo/Pods-HotmobPreloadDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,12 +169,6 @@
 		0A1CE70A89E47BB3760708B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				760EA74ED1241C932D46C979 /* Pods-HotmobReloadDemo.debug.xcconfig */,
-				7843B40DC744EDE06FCE4D49 /* Pods-HotmobReloadDemo.release.xcconfig */,
-				C4C44B8EAB957E27C7686AA3 /* Pods-HotmobReloadDemoTests.debug.xcconfig */,
-				5BBD665E8895919E670A0372 /* Pods-HotmobReloadDemoTests.release.xcconfig */,
-				E43DD822787C14E6D727A16F /* Pods-HotmobReloadDemoUITests.debug.xcconfig */,
-				342F77A0AABF8B384649F9C4 /* Pods-HotmobReloadDemoUITests.release.xcconfig */,
 				5DD31677B013B5527880E9BE /* Pods-HotmobPreloadDemo.debug.xcconfig */,
 				F8FD0E8AF10BF9ED89741D6E /* Pods-HotmobPreloadDemo.release.xcconfig */,
 				684DF8DB493232204003FDB4 /* Pods-HotmobPreloadDemoTests.debug.xcconfig */,
@@ -820,9 +808,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6QYN4PKP;
+				DEVELOPMENT_TEAM = DPC58M684L;
 				INFOPLIST_FILE = HotmobReloadDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -840,9 +828,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6QYN4PKP;
+				DEVELOPMENT_TEAM = DPC58M684L;
 				INFOPLIST_FILE = HotmobReloadDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

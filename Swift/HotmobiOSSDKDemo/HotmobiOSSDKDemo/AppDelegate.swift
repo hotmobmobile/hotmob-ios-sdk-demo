@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
         
         HotmobiOSSDK.startSDK()
         HotmobiOSSDK.enableDebugMode()
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        MobileAds.shared.start(completionHandler: nil)
         
         let mainVC = HMMainViewController()
 
