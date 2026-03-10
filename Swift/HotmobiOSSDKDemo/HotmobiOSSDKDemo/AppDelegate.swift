@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
         HotmobiOSSDK.startSDK()
         HotmobiOSSDK.enableDebugMode()
         MobileAds.shared.start(completionHandler: nil)
+        MobileAds.shared.isApplicationMuted = true
         
         let mainVC = HMMainViewController()
 

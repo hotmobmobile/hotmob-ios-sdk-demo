@@ -3,18 +3,19 @@ Mobile Advertising with Hotmob, the first and largest mobile ad network in Hong 
 
 Visit http://www.hot-mob.com/ for more details.
 
-## Demo app integrated with SDK v6
+## Demo app integrated with SDK v6.0.3
 
 This is a demo app integrated the latest version of iOS SDK, includes a bunch of bug fixes, performance improvements and error handling.
 
 ### SDK Compatibility
-* Minimum: iOS 12
-* Fully Tested: up to iOS 16
+* Minimum: iOS 13
+* Fully Tested: up to iOS 26
 * Swift 5
 * Xcode 14+
 
 ### Integration
-* [Installation](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Installation-v6)
+* [Installation](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Installation-v6.0.3)
+* [Migrate from v6 to v6.0.3](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Migrate-from-v6-to-v6.0.3)
 * [Basic Usage](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v6)
   * [Interstitial](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v6#interstitial)
   * [Banner](https://github.com/hotmobmobile/hotmob-ios-sdk-demo/wiki/Basic-Usage-v6#banner)
