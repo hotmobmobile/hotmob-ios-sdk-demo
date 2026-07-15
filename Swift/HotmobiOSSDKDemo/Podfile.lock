@@ -1,12 +1,12 @@
 PODS:
-  - Alamofire (5.11.1)
+  - Alamofire (5.11.2)
   - Differentiator (5.0.0)
-  - Google-Mobile-Ads-SDK (12.14.0):
+  - Google-Mobile-Ads-SDK (13.6.0):
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleUserMessagingPlatform (3.1.0)
-  - HotmobiOSSDK (6.0.0):
+  - HotmobiOSSDK (6.0.4):
     - Alamofire (~> 5)
-    - Google-Mobile-Ads-SDK (~> 12.14.0)
+    - Google-Mobile-Ads-SDK (~> 13.6.0)
     - ObjectMapper (~> 4.2)
     - RxCocoa (~> 6)
     - RxDataSources (~> 5.0)
@@ -33,7 +33,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Google-Mobile-Ads-SDK (~> 12.14.0)
+  - Google-Mobile-Ads-SDK (~> 13.6.0)
   - HotmobiOSSDK (from `../../../hotmob-ios-sdk`)
   - ObjectMapper (~> 4.2)
   - RxCocoa
@@ -63,11 +63,11 @@ EXTERNAL SOURCES:
     :path: "../../../hotmob-ios-sdk"
 
 SPEC CHECKSUMS:
-  Alamofire: eec6cd8f73b242b59e34153a606a909eb9864b14
+  Alamofire: 400275dd1c6d87d95a041861d2a59da4b520a203
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
-  Google-Mobile-Ads-SDK: 4534fd2dfcd3f705c5485a6633c5188d03d4eed2
+  Google-Mobile-Ads-SDK: 6e501ace4af8d63e967bd45497c8b2b05821163d
   GoogleUserMessagingPlatform: befe603da6501006420c206222acd449bba45a9c
-  HotmobiOSSDK: bb6320b2dbb018cb01b4215d4d378879c6485efe
+  HotmobiOSSDK: f4c879ba7e958ca8365822ef32e61ea58db0a8cf
   ObjectMapper: e6e4d91ff7f2861df7aecc536c92d8363f4c9677
   RxCocoa: ac16414696ae706516be3e1ab00fcce5bdc9be8a
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
@@ -77,6 +77,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: 7ef8aaf7f98ec282c43316f940e37ef958df2ae9
+PODFILE CHECKSUM: f6b209e42a246cf84e48d05c836d5fd4732c6254
 
 COCOAPODS: 1.16.2

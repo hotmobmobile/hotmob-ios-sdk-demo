@@ -32,6 +32,11 @@
 	<string>This is required for ranging.</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Testing 123</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
